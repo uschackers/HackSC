@@ -1,0 +1,40 @@
+body {
+	background-color: #003849;
+	margin: 0;
+}
+.top {
+	height: 60%;
+	position: absolute;
+    top: 20%;
+    width: 100%;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+}
+.date {
+	color: #CD372D;
+	font-family: 'Nunito';
+	font-size: 50px;
+	height: 50px;
+	margin: 0;
+	text-align: center;
+}
+.bottom {
+	height: 30%;
+}
+.bottom-image {
+	bottom:0; left: 0; right:0;
+	margin: 0 auto;
+	max-width: 1000px;
+	position: absolute;
+	width: 100%;
+}
+.bottom-bar {
+	background-color: #CD372D;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
