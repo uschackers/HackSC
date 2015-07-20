@@ -1,25 +1,50 @@
+* {
+  margin: 0;
+}
+
 body {
-	background-color: #003849;
+  background-color: #003849;
 	margin: 0;
+  min-height: 500px;
 }
 .top {
-	height: 60%;
+	height: 35%;
 	position: absolute;
-    top: 33%;
+    top: 10%;
     width: 100%;
 }
 .logo {
     display: block;
     margin: 0 auto;
-    width: 50%;
+    width: 30em;
 }
 .date {
 	color: #CD372D;
-	font-family: 'Nunito';
-	font-size: 30px;
-	height: 50px;
-	margin: 0;
+  font-family: 'Roboto Bold', sans-serif;
+  font-weight: 700;
+	font-size: 2em;
 	text-align: center;
+}
+
+.timer {
+  color: #F8E600;
+  font-family: 'Roboto Light', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  font-size: 1.2em;
+}
+.timer-border {
+  padding: 1%;
+  display: block;
+  width: 20em;
+  margin: 5% auto;
+  border: 2px solid #F8E600;
+  border-radius: 1em;
+}
+.timer span {
+  font-size: 1.5em;
+  padding: 0 1.5%;
 }
 .bottom {
 	height: 30%;
@@ -27,13 +52,33 @@ body {
 .bottom-image {
 	bottom:0; left: 0; right:0;
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 60em;
 	position: absolute;
 	width: 100%;
+}
+.robots {
+  width: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+}
+.robot-1, .robot-2, .robot-3, .robot-4, .robot-5 {
+  width: 10em;
+  padding: 0 2%;
+  margin-bottom: 2%;
 }
 .bottom-bar {
 	background-color: #CD372D;
 	bottom: 0;
+  height: 75em;
 	position: absolute;
 	width: 100%;
 	z-index: -1;
