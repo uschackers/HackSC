@@ -47,15 +47,22 @@ body {
   padding: 0 1.5%;
 }
 .bottom {
-	height: 30%;
+  overflow: auto;
+  height: 30%;
 }
+
 .bottom-image {
 	bottom:0; left: 0; right:0;
-	margin: 0 auto;
-	max-width: 60em;
 	position: absolute;
 	width: 100%;
 }
+
+.computers-image {
+  display: block;
+	margin: 0 auto;
+	max-width: 60em;
+}
+
 .robots {
   width: 100%;
   display: flex;
