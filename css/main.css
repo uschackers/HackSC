@@ -46,8 +46,8 @@ body {
 .robots {
   width: 100%;
   display: flex;
-  display: -webkit-box;
-  display: -moz-box;
+  display: -webkit-flexbox;
+  display: -moz-flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
   justify-content: center;
@@ -59,7 +59,8 @@ body {
 }
 .robot-1, .robot-2, .robot-3, .robot-4, .robot-5 {
   width: 10em;
-  padding: 0 2%;
+  margin-left: 2%;
+  margin-right: 2%;
   margin-bottom: 2%;
 }
 .bottom-bar {
