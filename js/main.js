@@ -13,14 +13,20 @@ function setBottomBarHeight() {
 }
 
 function entranceAnimation() {
-  $('.top').addClass('animated bounceInDown');
-  $(".top").css('visibility', 'visible');
   $('.bottom-bar').addClass('animated bounceInUp');
   $('.bottom-bar').css('visibility', 'visible');
-  $('.bottom-image').addClass('animated bounceInDown');
-  $('.bottom-image').css('visibility', 'visible');
-  $('.robots').addClass('animated bounceInDown');
-  $('.robots').css('visibility', 'visible');
+  $('.bottom-bar').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+    $('.bottom-image').addClass('animated bounceInDown');
+    $('.bottom-image').css('visibility', 'visible');
+    $('.bottom-image').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+      $('.robots').addClass('animated bounceInDown');
+      $('.robots').css('visibility', 'visible');
+      $('.robots').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+        $('.top').addClass('animated bounceInDown');
+        $('.top').css('visibility', 'visible');
+      });
+    });
+  });
 }
 
 function hoverAnimation() {
