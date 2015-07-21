@@ -10,7 +10,7 @@ body {
 .top {
 	height: 35%;
 	position: absolute;
-    top: 10%;
+    top: 20%;
     width: 100%;
 }
 .logo {
@@ -26,41 +26,27 @@ body {
 	text-align: center;
 }
 
-.timer {
-  color: #F8E600;
-  font-family: 'Roboto Light', sans-serif;
-  font-weight: 300;
-  text-align: center;
-  width: 100%;
-  font-size: 1.2em;
-}
-.timer-border {
-  padding: 1%;
-  display: block;
-  width: 20em;
-  margin: 5% auto;
-  border: 2px solid #F8E600;
-  border-radius: 1em;
-}
-.timer span {
-  font-size: 1.5em;
-  padding: 0 1.5%;
-}
 .bottom {
-	height: 30%;
+  overflow: auto;
+  height: 30%;
 }
+
 .bottom-image {
 	bottom:0; left: 0; right:0;
-	margin: 0 auto;
-	max-width: 60em;
 	position: absolute;
 	width: 100%;
 }
+
+.computers-image {
+  display: block;
+	margin: 0 auto;
+	max-width: 60em;
+}
+
 .robots {
-  width: 100%;
   display: flex;
-  display: -webkit-box;
-  display: -moz-box;
+  display: -webkit-flexbox;
+  display: -moz-flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
   justify-content: center;
@@ -72,8 +58,9 @@ body {
 }
 .robot-1, .robot-2, .robot-3, .robot-4, .robot-5 {
   width: 10em;
-  padding: 0 2%;
-  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 1em;
 }
 .bottom-bar {
 	background-color: #CD372D;
