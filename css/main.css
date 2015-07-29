@@ -37,6 +37,7 @@ body {
   display: block;
 	margin: 0 auto;
 	max-width: 60em;
+  width: 85%;
 }
 .robots {
   display: flex;
@@ -48,8 +49,9 @@ body {
   -webkit-justify-content: center;
   align-items: flex-end;
   -webkit-align-items: flex-end;
-  position: absolute;
+  position: fixed;
   bottom: 0; left: 0; right: 0;
+  overflow: scroll;
 }
 .robot-1, .robot-2, .robot-3, .robot-4, .robot-5 {
   width: 10em;
@@ -65,13 +67,20 @@ body {
 	width: 100%;
 	z-index: -1;
 }
-.top,.bottom,.bottom-bar {
+.top, .bottom, .bottom-bar {
   visibility: hidden;
+}
+
+@media (max-width: 950px) {
+  .robots {
+    justify-content: left;
+    -webkit-justify-content: left;
+  }
 }
 
 /* MOBILE */
 @media only screen and (max-device-width:800px) {
-  .computers-image, .bottom-bar {
+  .computers-image, .bottom-image {
     visibility: hidden;
   }
   .logo {
@@ -84,8 +93,7 @@ body {
     width: 50%;
   }
   .robots {
-    overflow: scroll;
+    justify-content: left;
+    -webkit-justify-content: left;
   }
-
-
 }

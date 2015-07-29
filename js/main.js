@@ -2,10 +2,18 @@ $(document).ready(function() {
     setBottomBarHeight();
     entranceAnimation();
     hoverAnimation();
+
+    // Center robots on smaller screens and mobile.
+    if ($(window).width() <= 950 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      centerRobots();
+    }
 });
 
 $(window).resize(function() {
 	setBottomBarHeight();
+  if ($(window).width() <= 950) {
+    centerRobots();
+  }
 });
 
 function setBottomBarHeight() {
@@ -79,4 +87,8 @@ function hoverAnimation() {
       });
     }
   );
+}
+
+function centerRobots() {
+  $('.robots').scrollTo('50%');
 }
