@@ -51,10 +51,12 @@ body {
   -webkit-align-items: flex-end;
   position: fixed;
   bottom: 0; left: 0; right: 0;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: visible;
 }
 .robot-1, .robot-2, .robot-3, .robot-4, .robot-5 {
   width: 10em;
+  height: auto;
   margin-left: 2%;
   margin-right: 2%;
   padding-bottom: 1em;
@@ -93,13 +95,14 @@ body {
     visibility: hidden;
   }
   .logo {
-    width: 50em;
+    width: 80%;
   }
   .date {
-    font-size: 4.5em;
+    font-size: 4em;
   }
   .robots > img {
-    width: 50%;
+    width: 55%;
+    height: auto;
   }
   .robots {
     justify-content: left;
