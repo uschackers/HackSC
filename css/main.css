@@ -54,6 +54,8 @@ body {
   overflow-x: scroll;
   overflow-y: visible;
   padding-top: 1em;
+  flex-shrink: 0;
+  flex-basis: auto;
 }
 .robot-1, .robot-2, .robot-3, .robot-4, .robot-5 {
   width: 10em;
@@ -92,6 +94,10 @@ body {
 
 /* MOBILE */
 @media only screen and (max-device-width:800px) {
+  body {
+    min-height: auto;
+  }
+
   .computers-image, .bottom-image {
     visibility: hidden;
   }
@@ -108,5 +114,15 @@ body {
   .robots {
     justify-content: left;
     -webkit-justify-content: left;
+  }
+
+  /* FIREFOX */
+  @-moz-document url-prefix() { 
+    .date {
+      font-size: 1.3em;
+    }
+    .robots > img {
+      width: 5em;
+    }
   }
 }
