@@ -89,6 +89,7 @@ body {
   display: -moz-flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
+  display: flex;
   justify-content: center;
   -webkit-justify-content: center;
   flex-direction: row;
