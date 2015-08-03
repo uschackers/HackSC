@@ -81,7 +81,7 @@ body {
 #mc_embed_signup {
   width: 100%;
   clear:left; 
-  padding: 3%;
+  padding: 3% 0 3% 0;
 }
 
 #mc_embed_signup_scroll {
@@ -99,7 +99,7 @@ body {
 
 #mc_embed_signup .email {
   width: 20em;
-  padding: 1%;
+  padding: 10px;
   text-align: center;
   font-family: 'Roboto Light', sans-serif;
 	font-size: 1.2em;
@@ -161,6 +161,17 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   }
   .computers-image, .bottom-image {
     visibility: hidden;
+  }
+  #mc_embed_signup_scroll {
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+  }
+  #mc_embed_signup .button {
+    margin-top: 2em;
   }
 }
 
