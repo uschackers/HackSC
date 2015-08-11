@@ -24,10 +24,10 @@ function entranceAnimation() {
   $('.bottom-bar').addClass('animated bounceInUp');
   $('.bottom-bar').css('visibility', 'visible');
   $('.bottom-bar').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-    $('.bottom-image').addClass('animated bounceInDown');
+    $('.bottom-image').addClass('animated bounceInRight');
     $('.bottom-image').css('visibility', 'visible');
     $('.bottom-image').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-      $('.robots').addClass('animated bounceInDown');
+      $('.robots').addClass('animated bounceInLeft');
       $('.robots').css('visibility', 'visible');
       $('.robots').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
         $('.top').addClass('animated bounceInDown');
