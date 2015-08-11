@@ -58,10 +58,13 @@ body {
   -webkit-align-items: flex-end;
   position: fixed;
   bottom: 0; left: 0; right: 0;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: visible;
+  padding-top: 1em;
 }
 .robot-1, .robot-2, .robot-3, .robot-4, .robot-5 {
   width: 10em;
+  height: auto;
   margin-left: 2%;
   margin-right: 2%;
   padding-bottom: 1em;
@@ -167,17 +170,22 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
 
 /* MOBILE */
 @media only screen and (max-device-width:800px) {
+  body {
+    min-height: auto;
+  }
+
   .computers-image, .bottom-image {
     visibility: hidden;
   }
   .logo {
-    width: 50em;
+    width: 80%;
   }
   .date {
-    font-size: 4.5em;
+    font-size: 4em;
   }
   .robots > img {
-    width: 50%;
+    width: 55%;
+    height: auto;
   }
   .robots {
     justify-content: left;
@@ -200,5 +208,14 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
     width: 80%;
     font-size: 3em;
     padding: 15px;
+
+  /* FIREFOX */
+  @-moz-document url-prefix() { 
+    .date {
+      font-size: 1.3em;
+    }
+    .robots > img {
+      width: 5em;
+    }
   }
 }
