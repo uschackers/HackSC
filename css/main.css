@@ -58,7 +58,7 @@ body {
   -webkit-align-items: flex-end;
   position: fixed;
   bottom: 0; left: 0; right: 0;
-  overflow-x: scroll;
+  overflow-x: visible;
   overflow-y: visible;
   padding-top: 1em;
 }
