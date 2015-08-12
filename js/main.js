@@ -22,16 +22,13 @@ function setBottomBarHeight() {
 }
 
 function entranceAnimation() {
+  $('.bottom-bar').css('visibility', 'visible');
   $('.bottom-image').addClass('animated bounceInRight');
-  $('.bottom-image').css('visibility', 'visible');
-  $('.bottom-image').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-    $('.robots').addClass('animated bounceInLeft');
-    $('.robots').css('visibility', 'visible');
-    $('.robots').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-      $('.top').addClass('animated bounceInDown');
-      $('.top').css('visibility', 'visible');
-    });
-  });
+  $('.bottom-image').css('visibility', 'visible');;
+  $('.robots').addClass('animated bounceInLeft');
+  $('.robots').css('visibility', 'visible');
+  $('.top').addClass('animated bounceInDown');
+  $('.top').css('visibility', 'visible');
 }
 
 function hoverAnimation() {
