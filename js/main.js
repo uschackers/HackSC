@@ -7,6 +7,19 @@ $(document).ready(function() {
     if ($(window).width() <= 950 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       centerRobots();
     }
+
+    $(".success-notification").hide();
+    $(".failed-notification").hide();
+    $( "form"  ).submit(function( event  ) {
+      if(validateEmail($("#mce-EMAIL").val())){
+        $(".success-notification").show();
+        $(".failed-notification").hide();
+      } else {
+        $(".success-notification").hide();
+        $(".failed-notification").show();
+      }
+      event.preventDefault();
+    });
 });
 
 $(window).resize(function() {
@@ -15,6 +28,11 @@ $(window).resize(function() {
     centerRobots();
   }
 });
+
+function validateEmail(email) {
+  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+  return re.test(email);
+}
 
 function setBottomBarHeight() {
   $('.bottom-bar').height(.3 * $('.computers-image').height());

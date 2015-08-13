@@ -130,6 +130,30 @@ body {
   background-color: #FF9F39;
 }
 
+.notification-bar {
+  display: -webkit-flexbox;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  align-items: center;
+  -webkit-align-items: center;
+  font-family: 'Roboto Light', sans-serif;
+	font-size: 1.2em;
+  padding: 1em;
+}
+
+.success-notification {
+  color: #FFAD0B;
+}
+
+.failed-notification {
+  color: #CD372D;
+}
 
 /* do not group these rules */
 *::-webkit-input-placeholder {
