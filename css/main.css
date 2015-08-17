@@ -1,29 +1,34 @@
 * {
   margin: 0;
 }
+
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-      outline: none;
+  outline: none;
 
 }
+
 body {
   background-color: #003849;
 	margin: 0;
   min-height: 500px;
 }
+
 .top {
 	height: 35%;
 	position: absolute;
   top: 20%;
   width: 100%;
 }
+
 .logo {
   display: block;
   margin: 0 auto;
   width: 30em;
 }
+
 .date {
 	color: #CD372D;
   font-family: 'Roboto Bold', sans-serif;
@@ -31,21 +36,25 @@ body {
 	font-size: 2em;
 	text-align: center;
 }
+
 .bottom {
-  overflow: auto;
   height: 30%;
+  overflow: auto;
 }
+
 .bottom-image {
 	bottom:0; left: 0; right:0;
 	position: absolute;
 	width: 100%;
 }
+
 .computers-image {
   display: block;
 	margin: 0 auto;
 	max-width: 60em;
   width: 85%;
 }
+
 .robots {
   display: flex;
   display: -webkit-flexbox;
@@ -62,13 +71,15 @@ body {
   overflow-y: visible;
   padding-top: 1em;
 }
+
 .robot-1, .robot-2, .robot-3, .robot-4, .robot-5 {
-  width: 10em;
   height: auto;
   margin-left: 2%;
   margin-right: 2%;
   padding-bottom: 1em;
+  width: 10em;
 }
+
 .bottom-bar {
 	background-color: #CD372D;
 	bottom: 0;
@@ -77,14 +88,15 @@ body {
 	width: 100%;
 	z-index: -1;
 }
+
 .top, .robots {
   visibility: hidden;
 }
 
 #mc_embed_signup {
-  width: 100%;
   clear:left; 
   padding: 3% 0 3% 0;
+  width: 100%;
 }
 
 #mc_embed_signup_scroll {
@@ -102,27 +114,27 @@ body {
 }
 
 #mc_embed_signup .email {
-  width: 20em;
-  padding: 10px;
-  text-align: center;
-  font-family: 'Roboto Light', sans-serif;
-	font-size: 1.2em;
   background: transparent;
   border-color: #CD372D;
   border-radius: 15px;
   border-style: solid;
   box-shadow: none;
   color: #FFAD0B;
+  font-family: 'Roboto Light', sans-serif;
+  font-size: 1.2em;
+  padding: 10px;
+  text-align: center;
+  width: 20em;
 }
 
 #mc_embed_signup .button {
-  margin-left: 20px;
   background-color: #FFAD0B;
-  color: #003849;
-	font-size: 1.2em;
-  box-shadow: none;
   border: none;
   border-radius: 15px;
+  box-shadow: none;
+  color: #003849;
+	font-size: 1.2em;
+  margin-left: 20px;
   padding: 10px;
 }
 
@@ -171,6 +183,7 @@ body {
       /* IE 10+ */
   color: #CD372D;
 }
+
 input:focus::-webkit-input-placeholder { color:transparent;  }
 input:focus:-moz-placeholder { color:transparent;  } /* FF 4-18 */
 input:focus::-moz-placeholder { color:transparent;  } /* FF 19+ */
@@ -208,8 +221,8 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
     font-size: 4em;
   }
   .robots > img {
-    width: 55%;
     height: auto;
+    width: 55%;
   }
   .robots {
     justify-content: left;
@@ -224,14 +237,14 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
     -webkit-align-items: center;
   }
   #mc_embed_signup .button {
+    font-size: 3em;
     margin-top: 1em;
     width: 10em;
-    font-size: 3em;
   }
   #mc_embed_signup .email {
-    width: 80%;
     font-size: 3em;
     padding: 15px;
+    width: 80%;
 
   /* FIREFOX */
   @-moz-document url-prefix() { 
