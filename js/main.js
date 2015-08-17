@@ -4,7 +4,7 @@ $(document).ready(function() {
     hoverAnimation();
 
     // Center robots on smaller screens and mobile.
-    if ($(window).width() <= 950 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    if ($(window).width() <= 950 || isMobile()) {
       centerRobots();
     }
 
@@ -36,16 +36,19 @@ function validateEmail(email) {
 
 function setBottomBarHeight() {
   $('.bottom-bar').height(.3 * $('.computers-image').height());
-  //$(window).resize();
 }
 
 function entranceAnimation() {
-  $('.bottom-bar').css('visibility', 'visible');
-  $('.bottom-image').addClass('animated bounceInRight');
-  $('.bottom-image').css('visibility', 'visible');;
-  $('.robots').addClass('animated bounceInLeft');
+  if ($(window).width() <= 600 || isMobile()) {
+    $('.robots').addClass('animated bounceInDown');
+    $('.top').addClass('animated bounceInDown');
+  } else {
+    $('.bottom-image').addClass('animated bounceInRight');
+    $('.robots').addClass('animated bounceInLeft');
+    $('.top').addClass('animated bounceInDown');
+  }
+  $('.bottom-image').css('visibility', 'visible');
   $('.robots').css('visibility', 'visible');
-  $('.top').addClass('animated bounceInDown');
   $('.top').css('visibility', 'visible');
 }
 
@@ -65,4 +68,8 @@ function hoverAnimation() {
 
 function centerRobots() {
   $('.robots').scrollTo('50%');
+}
+
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
