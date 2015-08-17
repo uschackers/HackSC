@@ -35,7 +35,9 @@ function validateEmail(email) {
 }
 
 function setBottomBarHeight() {
-  $('.bottom-bar').height(.3 * $('.computers-image').height());
+  /* Work around for safari where bottom bar height is not set until resize. */
+  var height = .3 * $('.computers-image').height();
+  $('.bottom-bar').height(height == 0 ? '3em' : height);
 }
 
 function entranceAnimation() {

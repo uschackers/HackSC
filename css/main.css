@@ -136,6 +136,7 @@ body {
   height: 75em;
   position: absolute;
   width: 100%;
+  visibility: visible;
   z-index: -1;
 }
 
