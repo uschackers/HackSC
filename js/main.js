@@ -50,55 +50,17 @@ function entranceAnimation() {
 }
 
 function hoverAnimation() {
-  var element1 = $('.robot-1');
-  element1.hover(
-    function() {
-      element1.addClass('animated pulse');        
-      element1.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-        element1.removeClass('animated pulse');
-      });
-    }
-  );
-
-  var element2 = $('.robot-2');
-  element2.hover(
-    function() {
-      element2.addClass('animated pulse');        
-      element2.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-        element2.removeClass('animated pulse');
-      });
-    }
-  );
-
-  var element3 = $('.robot-3');
-  element3.hover(
-    function() {
-      element3.addClass('animated pulse');        
-      element3.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-        element3.removeClass('animated pulse');
-      });
-    }
-  );
-
-  var element4 = $('.robot-4');
-  element4.hover(
-    function() {
-      element4.addClass('animated pulse');        
-      element4.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-        element4.removeClass('animated pulse');
-      });
-    }
-  );
-
-  var element5 = $('.robot-5');
-  element5.hover(
-    function() {
-      element5.addClass('animated pulse');        
-      element5.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-        element5.removeClass('animated pulse');
-      });
-    }
-  );
+  var robotClasses = ['.robot-1', '.robot-2', '.robot-3', '.robot-4', '.robot-5'];
+  robotClasses.forEach(function(robot) {
+    var element = $(robot);
+    element.hover(
+      function() {
+        element.addClass('animated pulse');        
+        element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+          element.removeClass('animated pulse');
+        });
+    });
+  });
 }
 
 function centerRobots() {
