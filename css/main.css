@@ -210,7 +210,6 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   body {
     min-height: auto;
   }
-
   .computers-image, .bottom-image {
     visibility: hidden;
   }
@@ -245,8 +244,9 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
     font-size: 3em;
     padding: 15px;
     width: 80%;
+  }
 
-  /* FIREFOX */
+  /* FIREFOX MOBILE */
   @-moz-document url-prefix() { 
     .date {
       font-size: 1.3em;
