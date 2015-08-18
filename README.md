@@ -16,6 +16,7 @@ Sometimes colloquially, and appropriately, referred to as SnackSC.
 ####When Getting Code Reviewed
 1. Create branch and commit your changes.
 1. QA test.
+1. Merge master into branch first and resolve all conflicts.
 1. Create a pull request to merge your branch to master.
 1. Get your code reviewed by at least one other person.  
 	+ Create an issue called CODE REVIEW: *Name of branch* with a short description of the change and assign your code reviewer(s).
