@@ -3,6 +3,7 @@ $(document).ready(function() {
     setLogoTopPadding();
     entranceAnimation();
     hoverAnimation();
+    showNavBar();
 
     // Center robots on smaller screens and mobile.
     if ($(window).width() <= 950 || isMobile()) {
@@ -29,6 +30,10 @@ $(window).resize(function() {
   if ($(window).width() <= 950) {
     centerRobots();
   }
+});
+
+$(window).scroll(function () {
+  showNavBar();
 });
 
 function validateEmail(email) {
@@ -82,4 +87,17 @@ function centerRobots() {
 
 function isMobile() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+function showNavBar() {
+  if ($('.bottom-bar').offset().top + $('.bottom-bar').height() < $(window).scrollTop()) {
+    $('nav').css('position', 'fixed');
+    $('.nav-option-bar').css('float', 'right');
+    $('.nav-logo').css('display', 'inline-block');
+  } else {
+    $('nav').css('position', 'relative');
+    $('.nav-option-bar').css('float', 'none');
+    $('.nav-option-bar').css('margin', '0 auto');
+    $('.nav-logo').css('display', 'none');
+  }
 }

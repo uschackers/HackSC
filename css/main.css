@@ -200,6 +200,35 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   visibility: hidden;
 }
 
+nav {
+  background-color: #CD372D;
+  height: 80px;
+  top: 0;
+  width: 100%;
+}
+
+.nav-logo {
+  float: left;
+  height: 70px;
+  padding: 5px 20px;
+}
+
+.nav-option-bar {
+  display: table;
+  float: right;
+  height: 100%;
+  padding-right: 10px;
+}
+
+.nav-option {
+  color: #F8AC45;
+  display: table-cell; 
+  font-family: 'Roboto Bold', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  vertical-align: middle;
+}
+
 /* WHO WE ARE */
 .who-we-are {
   height: 850px;
