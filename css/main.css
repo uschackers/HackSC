@@ -22,7 +22,7 @@ body {
 }
 
 .top {
-	height: 100%;
+	height: 850px;
   min-height: 600px;
   position: relative;
   width: 100%;
@@ -92,6 +92,28 @@ body {
   background-color: #FF9F39;
 }
 
+/* do not group these rules */
+*::-webkit-input-placeholder {
+  color: #CD372D;
+}
+*:-moz-placeholder {
+      /* FF 4-18 */
+  color: #CD372D;
+}
+*::-moz-placeholder {
+      /* FF 19+ */
+  color: #CD372D;
+}
+*:-ms-input-placeholder {
+      /* IE 10+ */
+  color: #CD372D;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent;  }
+input:focus:-moz-placeholder { color:transparent;  } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent;  } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
+
 .notification-bar {
   display: -webkit-flexbox;
   display: -moz-flexbox;
@@ -118,8 +140,8 @@ body {
 }
 
 .bottom {
-  height: 100em;
-  margin-top: -100em;
+  height: 20em;
+  margin-top: -20em;
   overflow: auto;
   position: relative;
 }
@@ -178,27 +200,15 @@ body {
   visibility: hidden;
 }
 
-/* do not group these rules */
-*::-webkit-input-placeholder {
-  color: #CD372D;
-}
-*:-moz-placeholder {
-      /* FF 4-18 */
-  color: #CD372D;
-}
-*::-moz-placeholder {
-      /* FF 19+ */
-  color: #CD372D;
-}
-*:-ms-input-placeholder {
-      /* IE 10+ */
-  color: #CD372D;
+/* WHO WE ARE */
+.who-we-are {
+  height: 850px;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent;  }
-input:focus:-moz-placeholder { color:transparent;  } /* FF 4-18 */
-input:focus::-moz-placeholder { color:transparent;  } /* FF 19+ */
-input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
+/* FAQ */
+.faq {
+  height: 850px;
+}
 
 @media (max-height: 650px) {
   .logo {
@@ -225,6 +235,10 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
 
 /* MOBILE */
 @media only screen and (max-device-width:800px) {
+  .top {
+    height: 1700px;
+  }
+
   .logo {
     width: 80%;
   }
@@ -254,6 +268,11 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
     width: 80%;
   }
 
+  .bottom {
+    height: 100em;
+    margin-top: -100em;
+  }
+
   .computers-image, 
   .bottom-image {
     visibility: hidden;
@@ -279,6 +298,7 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   /* FIREFOX MOBILE */
   @-moz-document url-prefix() { 
     .top {
+      height: 50em;
       min-height: 400px;
     }
 
@@ -297,6 +317,18 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
 
     .robots > img {
       width: 5em;
+    }
+
+    @media (max-device-height:700px) {
+      .top {
+        height: 38em;
+      }
+    }
+
+    @media (max-device-height:500px) {
+      .top {
+        height: 450px;
+      }
     }
   }
 }
