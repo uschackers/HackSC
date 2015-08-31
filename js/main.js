@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    setBottomBarHeight();
+//    setBottomBarHeight();
     setLogoTopPadding();
     
 
@@ -62,6 +62,9 @@ function entranceAnimation() {
     $('.top').addClass('animated bounceInDown');
   }
   $('.bottom-image').css('visibility', 'visible');
+//	$('.bottom-image').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		setBottomBarHeight();
+//	});
   $('.robots').css('visibility', 'visible');
   $('.top').css('visibility', 'visible');
 }
