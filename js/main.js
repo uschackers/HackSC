@@ -1,8 +1,7 @@
 $(document).ready(function() {
-    setBottomBarHeight();
+//    setBottomBarHeight();
     setLogoTopPadding();
-    entranceAnimation();
-    hoverAnimation();
+    
 
     // Center robots on smaller screens and mobile.
     if ($(window).width() <= 950 || isMobile()) {
@@ -29,6 +28,11 @@ $(window).resize(function() {
   if ($(window).width() <= 950) {
     centerRobots();
   }
+});
+
+$(window).load(function() {
+		entranceAnimation();
+    hoverAnimation();
 });
 
 function validateEmail(email) {
@@ -58,6 +62,9 @@ function entranceAnimation() {
     $('.top').addClass('animated bounceInDown');
   }
   $('.bottom-image').css('visibility', 'visible');
+//	$('.bottom-image').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		setBottomBarHeight();
+//	});
   $('.robots').css('visibility', 'visible');
   $('.top').css('visibility', 'visible');
 }
