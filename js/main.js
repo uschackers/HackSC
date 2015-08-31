@@ -34,6 +34,7 @@ $(window).resize(function() {
   if ($(window).width() <= 950) {
     centerRobots();
   }
+  showNavBar();
 });
 
 $(window).scroll(function () {
