@@ -207,7 +207,31 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
 
 /* FAQ */
 .faq {
-  height: 850px;
+	height: 850px;
+	width: 1000px;
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+	background-image: url(../images/Background%20Machinery-01.png)
+	background-size: contain;
+}
+
+#faq-title {
+	font-size: 2em;
+	font-weight: 700;
+}
+
+.faq-text {
+	color: #FFAD0B;
+	font-family: 'Roboto Bold', sans-serif;
+	font-weight: 100;
+	line-height: 150%;
+	margin-top: 30px;
+}
+
+.faq-link {
+	color: #FFAD0B;
+	text-decoration: none;
 }
 
 @media (max-height: 650px) {
