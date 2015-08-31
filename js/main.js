@@ -1,30 +1,30 @@
 $(document).ready(function() {
-    setLogoTopPadding();
-    entranceAnimation();
-    hoverAnimation();
-    showNavBar();
+  setLogoTopPadding();
+  entranceAnimation();
+  hoverAnimation();
+  showNavBar();
 
-    // Center robots on smaller screens and mobile.
-    if ($(window).width() <= 950 || isMobile()) {
-      centerRobots();
+  // Center robots on smaller screens and mobile.
+  if ($(window).width() <= 950 || isMobile()) {
+    centerRobots();
+  }
+
+  $(".success-notification").hide();
+  $(".failed-notification").hide();
+  $( "form"  ).submit(function( event  ) {
+    if(validateEmail($("#mce-EMAIL").val())){
+      $(".success-notification").show();
+      $(".failed-notification").hide();
+    } else {
+      $(".success-notification").hide();
+      $(".failed-notification").show();
     }
+    event.preventDefault();
+  });
 
-    $(".success-notification").hide();
-    $(".failed-notification").hide();
-    $( "form"  ).submit(function( event  ) {
-      if(validateEmail($("#mce-EMAIL").val())){
-        $(".success-notification").show();
-        $(".failed-notification").hide();
-      } else {
-        $(".success-notification").hide();
-        $(".failed-notification").show();
-      }
-      event.preventDefault();
-    });
-
-    $(".menu-btn").click(function() {
-      menuBtnClick();
-    });
+  $(".menu-btn").click(function() {
+    menuBtnClick();
+  });
 });
 
 $(window).resize(function() {
@@ -41,8 +41,8 @@ $(window).scroll(function () {
 });
 
 $(window).load(function() {
-		entranceAnimation();
-    hoverAnimation();
+	entranceAnimation();
+  hoverAnimation();
 });
 
 function validateEmail(email) {
@@ -72,9 +72,7 @@ function entranceAnimation() {
     $('.top').addClass('animated bounceInDown');
   }
   $('.bottom-image').css('visibility', 'visible');
-//	$('.bottom-image').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-		setBottomBarHeight();
-//	});
+	setBottomBarHeight();
   $('.robots').css('visibility', 'visible');
   $('.top').css('visibility', 'visible');
 }
@@ -112,7 +110,7 @@ function showNavBar() {
     $('.nav-option-bar').css('float', 'none');
     $('.nav-option-bar').css('margin', '0 auto');
     $('.nav-logo').css('display', 'none');
-
+    // Don't show nav until scroll down on smaller screens when menu is collapsed.
     if ($(window).width() <= 1100) {
       $('nav').css('display', 'none');
     }
@@ -137,6 +135,5 @@ function menuBtnClick() {
 }
 
 function bodyClickFn(evt) {
-  console.log("click");
   menuBtnClick();
 }
