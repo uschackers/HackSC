@@ -22,6 +22,10 @@ $(document).ready(function() {
       }
       event.preventDefault();
     });
+
+    $(".menu-btn").click(function() {
+      menuBtnClick();
+    });
 });
 
 $(window).resize(function() {
@@ -91,6 +95,7 @@ function isMobile() {
 
 function showNavBar() {
   if ($('.bottom-bar').offset().top + $('.bottom-bar').height() < $(window).scrollTop()) {
+    $('nav').css('display', 'block');
     $('nav').css('position', 'fixed');
     $('.nav-option-bar').css('float', 'right');
     $('.nav-logo').css('display', 'inline-block');
@@ -99,5 +104,31 @@ function showNavBar() {
     $('.nav-option-bar').css('float', 'none');
     $('.nav-option-bar').css('margin', '0 auto');
     $('.nav-logo').css('display', 'none');
+
+    if ($(window).width() <= 1100) {
+      $('nav').css('display', 'none');
+    }
   }
+}
+
+function menuBtnClick() {
+  var navbar = $(".nav-option-bar");
+  var width = $(".nav-option-bar").width();
+  if (navbar.hasClass("open")) {
+    navbar.removeClass("open");
+    navbar.animate({ "right": -width + "px" }, "now" );
+  } else {
+    navbar.addClass("open");
+    navbar.css("top", $("nav").height());
+    navbar.animate({ "right": "0" }, "now" );
+    $('.page-content').click(bodyClickFn);
+    $('body').css('overflow', 'hidden');
+  }
+}
+
+function bodyClickFn(evt) {
+  console.log("click");
+  $('.page-content').unbind('click');
+  $('body').css('overflow', 'visible');
+  menuBtnClick();
 }

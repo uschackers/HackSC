@@ -229,6 +229,17 @@ nav {
   vertical-align: middle;
 }
 
+.menu-btn {
+  display: none;
+  float: right;
+  height: calc(100% - 20px);
+  padding: 10px;
+}
+
+.menu-btn img {
+  height: 100%;
+}
+
 /* WHO WE ARE */
 .who-we-are {
   height: 850px;
@@ -237,6 +248,35 @@ nav {
 /* FAQ */
 .faq {
   height: 850px;
+}
+
+@media (max-width: 1100px) {
+  .nav-option-bar {
+    background: #F8AC45;
+    padding: 0;
+    position: fixed;
+    right: -400px;
+    width: 400px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+
+  .nav-option {
+    border-bottom: dotted 2px;
+    color: #CD372D;
+    display: block;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: inline;
+  }
 }
 
 @media (max-height: 650px) {
@@ -264,6 +304,8 @@ nav {
 
 /* MOBILE */
 @media only screen and (max-device-width:800px) {
+
+  /* TOP SECTION */
   .top {
     height: 1700px;
   }
@@ -317,6 +359,35 @@ nav {
     width: 55%;
   }
 
+  /* NAV BAR */
+  nav {
+    height: 150px;
+  }
+
+  .nav-logo {
+    height: calc(100% - 20px);
+    padding: 10px 20px;
+  }
+
+  .nav-option-bar {
+    width: 70%;
+    right: -70%;
+  }
+
+  .nav-option {
+    font-size: 3em;
+  }
+
+  /* WHO WE ARE */
+  .who-we-are {
+    height: 2000px;
+  }
+
+  /* FAQ */
+  .faq {
+    height: 2000px;
+  }
+
   /* iPHONE 4 and similar height screens */
   @media (max-device-height:500px) {
     .robots > img {
@@ -346,6 +417,15 @@ nav {
 
     .robots > img {
       width: 5em;
+    }
+
+    nav {
+      height: 55px;
+    }
+
+    .nav-logo {
+      height: calc(100% - 10px);
+      padding: 5px 10px;
     }
 
     @media (max-device-height:700px) {
