@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    setBottomBarHeight();
     setLogoTopPadding();
     entranceAnimation();
     hoverAnimation();
@@ -41,6 +40,11 @@ $(window).scroll(function () {
   showNavBar();
 });
 
+$(window).load(function() {
+		entranceAnimation();
+    hoverAnimation();
+});
+
 function validateEmail(email) {
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
   return re.test(email);
@@ -68,6 +72,9 @@ function entranceAnimation() {
     $('.top').addClass('animated bounceInDown');
   }
   $('.bottom-image').css('visibility', 'visible');
+//	$('.bottom-image').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		setBottomBarHeight();
+//	});
   $('.robots').css('visibility', 'visible');
   $('.top').css('visibility', 'visible');
 }
@@ -117,6 +124,8 @@ function menuBtnClick() {
   var width = $(".nav-option-bar").width();
   if (navbar.hasClass("open")) {
     navbar.removeClass("open");
+    $('.page-content').unbind('click');
+    $('body').css('overflow', 'visible');
     navbar.animate({ "right": -width + "px" }, "now" );
   } else {
     navbar.addClass("open");
@@ -129,7 +138,5 @@ function menuBtnClick() {
 
 function bodyClickFn(evt) {
   console.log("click");
-  $('.page-content').unbind('click');
-  $('body').css('overflow', 'visible');
   menuBtnClick();
 }
