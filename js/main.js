@@ -1,8 +1,7 @@
 $(document).ready(function() {
     setBottomBarHeight();
     setLogoTopPadding();
-    entranceAnimation();
-    hoverAnimation();
+    
 
     // Center robots on smaller screens and mobile.
     if ($(window).width() <= 950 || isMobile()) {
@@ -29,6 +28,11 @@ $(window).resize(function() {
   if ($(window).width() <= 950) {
     centerRobots();
   }
+});
+
+$(window).load(function() {
+		entranceAnimation();
+    hoverAnimation();
 });
 
 function validateEmail(email) {
