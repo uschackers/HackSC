@@ -209,10 +209,10 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
 .faq {
 	height: 850px;
 	width: 1000px;
-	margin-top: 50px;
-	margin-left: 250px;
-	margin-right: 250px;
-	background-image: url(../images/Background%20Machinery-01.png)
+	padding-top: 50px;
+	padding-left: 250px;
+	padding-right: 250px;
+	background-image: url(../images/Background%20Machinery-01.png);
 	background-size: contain;
 }
 
@@ -226,7 +226,7 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
 	font-family: 'Roboto Bold', sans-serif;
 	font-weight: 100;
 	line-height: 150%;
-	margin-top: 30px;
+	padding-top: 30px;
 }
 
 .faq-link {
