@@ -428,6 +428,11 @@ nav {
       padding: 5px 10px;
     }
 
+    .nav-option {
+      font-size: 1em;
+      padding: 10px 10px;
+    }
+
     @media (max-device-height:700px) {
       .top {
         height: 38em;
