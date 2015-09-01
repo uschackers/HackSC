@@ -1,5 +1,4 @@
 $(document).ready(function() {
-//    setBottomBarHeight();
     setLogoTopPadding();
     
 
@@ -31,8 +30,8 @@ $(window).resize(function() {
 });
 
 $(window).load(function() {
-		entranceAnimation();
-    hoverAnimation();
+  entranceAnimation();
+  hoverAnimation();
 });
 
 function validateEmail(email) {
@@ -62,9 +61,7 @@ function entranceAnimation() {
     $('.top').addClass('animated bounceInDown');
   }
   $('.bottom-image').css('visibility', 'visible');
-//	$('.bottom-image').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-		setBottomBarHeight();
-//	});
+  setBottomBarHeight();
   $('.robots').css('visibility', 'visible');
   $('.top').css('visibility', 'visible');
 }
