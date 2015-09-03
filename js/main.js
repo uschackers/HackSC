@@ -1,13 +1,6 @@
 $(document).ready(function() {
   setLogoTopPadding();
-  entranceAnimation();
-  hoverAnimation();
   showNavBar();
-
-  // Center robots on smaller screens and mobile.
-  if ($(window).width() <= 950 || isMobile()) {
-    centerRobots();
-  }
 
   $(".success-notification").hide();
   $(".failed-notification").hide();
@@ -41,7 +34,7 @@ $(window).scroll(function () {
 });
 
 $(window).load(function() {
-	entranceAnimation();
+  entranceAnimation();
   hoverAnimation();
 });
 
@@ -72,9 +65,14 @@ function entranceAnimation() {
     $('.top').addClass('animated bounceInDown');
   }
   $('.bottom-image').css('visibility', 'visible');
-	setBottomBarHeight();
+  setBottomBarHeight();
   $('.robots').css('visibility', 'visible');
   $('.top').css('visibility', 'visible');
+
+  // Center robots on smaller screens and mobile.
+  if ($(window).width() <= 950 || isMobile()) {
+    centerRobots();
+  }
 }
 
 function hoverAnimation() {

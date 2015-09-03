@@ -26,6 +26,7 @@ body {
   min-height: 600px;
   position: relative;
   width: 100%;
+  z-index: 1;
 }
 
 .logo {
@@ -66,7 +67,7 @@ body {
 #mc_embed_signup .email {
   background: transparent;
   border-color: #CD372D;
-  border-radius: 15px;
+  border-radius: 7px;
   border-style: solid;
   box-shadow: none;
   color: #FFAD0B;
@@ -80,12 +81,13 @@ body {
 #mc_embed_signup .button {
   background-color: #FFAD0B;
   border: none;
-  border-radius: 15px;
+  border-radius: 7px;
   box-shadow: none;
   color: #003849;
   font-size: 1.2em;
   margin-left: 20px;
   padding: 10px;
+  -webkit-appearance: none;
 }
 
 #mc_embed_signup .button:hover {
@@ -129,6 +131,7 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   font-family: 'Roboto Light', sans-serif;
   font-size: 1.2em;
   padding: 1em;
+  text-align: center;
 }
 
 .success-notification {
@@ -184,6 +187,7 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   overflow-y: visible;
   padding-top: 1em;
   position: absolute;
+  z-index: 1;
 }
 
 .robot-1, .robot-2, .robot-3, .robot-4, .robot-5 {
@@ -314,6 +318,11 @@ nav {
     width: 80%;
   }
 
+  .bottom {
+    height: 100em;
+    margin-top: -100em;
+  }
+
   .date {
     font-size: 4em;
   }
@@ -339,9 +348,8 @@ nav {
     width: 80%;
   }
 
-  .bottom {
-    height: 100em;
-    margin-top: -100em;
+  .notification-bar {
+    font-size: 2.6em;
   }
 
   .computers-image, 
@@ -413,6 +421,10 @@ nav {
     #mc_embed_signup .button {
       font-size: 1em;
       margin-left: 0;
+    }
+
+    .notification-bar {
+      font-size: 1.2em;
     }
 
     .robots > img {
