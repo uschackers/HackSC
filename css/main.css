@@ -87,6 +87,7 @@ body {
   font-size: 1.2em;
   margin-left: 20px;
   padding: 10px;
+  -webkit-appearance: none;
 }
 
 #mc_embed_signup .button:hover {
