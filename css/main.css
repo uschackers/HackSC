@@ -108,6 +108,7 @@ body {
   font-family: 'Roboto Light', sans-serif;
   font-size: 1.2em;
   padding: 1em;
+  text-align: center;
 }
 
 .success-notification {
@@ -227,6 +228,10 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
 
 /* MOBILE */
 @media only screen and (max-device-width:800px) {
+  .top {
+    min-height: 1600px;
+  }
+
   .logo {
     width: 80%;
   }
@@ -256,6 +261,10 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
     width: 80%;
   }
 
+  .notification-bar {
+    font-size: 2.6em;
+  }
+
   .computers-image, 
   .bottom-image {
     visibility: hidden;
@@ -281,7 +290,7 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   /* FIREFOX MOBILE */
   @-moz-document url-prefix() { 
     .top {
-      min-height: 400px;
+      min-height: 450px;
     }
 
     .date {
@@ -295,6 +304,10 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
     #mc_embed_signup .button {
       font-size: 1em;
       margin-left: 0;
+    }
+
+    .notification-bar {
+      font-size: 1.2em;
     }
 
     .robots > img {

@@ -1,24 +1,18 @@
 $(document).ready(function() {
-    setLogoTopPadding();
-    
+  setLogoTopPadding();
 
-    // Center robots on smaller screens and mobile.
-    if ($(window).width() <= 950 || isMobile()) {
-      centerRobots();
+  $(".success-notification").hide();
+  $(".failed-notification").hide();
+  $( "form"  ).submit(function( event  ) {
+    if(validateEmail($("#mce-EMAIL").val())){
+      $(".success-notification").show();
+      $(".failed-notification").hide();
+    } else {
+      $(".success-notification").hide();
+      $(".failed-notification").show();
     }
-
-    $(".success-notification").hide();
-    $(".failed-notification").hide();
-    $( "form"  ).submit(function( event  ) {
-      if(validateEmail($("#mce-EMAIL").val())){
-        $(".success-notification").show();
-        $(".failed-notification").hide();
-      } else {
-        $(".success-notification").hide();
-        $(".failed-notification").show();
-      }
-      event.preventDefault();
-    });
+    event.preventDefault();
+  });
 });
 
 $(window).resize(function() {
@@ -64,6 +58,11 @@ function entranceAnimation() {
   setBottomBarHeight();
   $('.robots').css('visibility', 'visible');
   $('.top').css('visibility', 'visible');
+
+  // Center robots on smaller screens and mobile.
+  if ($(window).width() <= 950 || isMobile()) {
+    centerRobots();
+  }
 }
 
 function hoverAnimation() {
