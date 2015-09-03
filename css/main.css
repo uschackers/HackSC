@@ -67,7 +67,7 @@ body {
 #mc_embed_signup .email {
   background: transparent;
   border-color: #CD372D;
-  border-radius: 15px;
+  border-radius: 7px;
   border-style: solid;
   box-shadow: none;
   color: #FFAD0B;
@@ -81,7 +81,7 @@ body {
 #mc_embed_signup .button {
   background-color: #FFAD0B;
   border: none;
-  border-radius: 15px;
+  border-radius: 7px;
   box-shadow: none;
   color: #003849;
   font-size: 1.2em;
@@ -163,6 +163,7 @@ body {
   overflow-y: visible;
   padding-top: 1em;
   position: absolute;
+  z-index: 1;
 }
 
 .robot-1, .robot-2, .robot-3, .robot-4, .robot-5 {
