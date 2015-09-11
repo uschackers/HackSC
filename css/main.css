@@ -238,6 +238,17 @@ nav {
   vertical-align: middle;
 }
 
+.menu-btn {
+  display: none;
+  float: right;
+  height: calc(100% - 20px);
+  padding: 10px;
+}
+
+.menu-btn img {
+  height: 100%;
+}
+
 .nav-show {
   display: block;
   position: fixed;
@@ -249,17 +260,6 @@ nav {
 
 .nav-show > .nav-logo {
   display: inline-block;
-}
-
-.menu-btn {
-  display: none;
-  float: right;
-  height: calc(100% - 20px);
-  padding: 10px;
-}
-
-.menu-btn img {
-  height: 100%;
 }
 
 /* WHO WE ARE */
