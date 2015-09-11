@@ -271,12 +271,28 @@ nav {
   padding: 15px 0;
 }
 
+.who-we-are-welcome {
+  display: inline;
+}
+
+.red-line {
+  background-color: #CD372D;
+  display: none;
+  height: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+
 /* FAQ */
 .faq {
   height: 850px;
 }
 
 @media (max-width: 1100px) {
+  .not-small-screen {
+    display: none;
+  }
+
   .nav-option-bar {
     background: #F8AC45;
     padding: 0;
@@ -302,6 +318,40 @@ nav {
 
   .menu-btn {
     display: inline;
+  }
+
+  .who-we-are {
+    background: none;
+  }
+
+  .who-we-are-title {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .who-we-are-text {
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+  }
+
+  .who-we-are-text p {
+    font-family: 'Open Sans';
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin: 15px 0;
+  }
+
+  .who-we-are-welcome {
+    display: block;
+    font-weight: 600;
+  }
+
+  .red-line {
+    display: block;
   }
 }
 
