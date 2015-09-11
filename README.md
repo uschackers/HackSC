@@ -53,3 +53,8 @@ Add to this list as needed.
    + Robots animate from top and computers are hidden.  
    + Robots are scrollable and centered at the blue robot.
 + Robots pulse on hover.
+
+####NAVBAR
++ On desktop, centers w/o logo on top screen.  Changes to logo and right aligned on scrolling below the top section.
++ On small screens and mobile: Doesn't display nav/topbar until scrolling below top section.  Then displays as logo and menu button.
+	+ Clicking the menu button slides open the menu from the right.  The screen should freeze in place until the nav drawer is closed.  Clicking outside the nav drawer or clikcing the menu button should close the menu.
