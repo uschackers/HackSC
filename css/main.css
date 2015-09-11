@@ -246,7 +246,29 @@ nav {
 
 /* WHO WE ARE */
 .who-we-are {
-  height: 850px;
+  background: url(../images/who-we-are.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #F8AC45;
+  font-family: 'Montserrat', sans-serif;
+  height: 2000px;
+}
+
+.who-we-are-text {
+  padding: 40px;
+  padding-top: 8em;
+  text-align: left;
+  width: 40%;
+}
+
+.who-we-are-title {
+  font-size: 3em;
+}
+
+.who-we-are-text p {
+  font-size: 20px;
+  line-height: 33px;
+  padding: 15px 0;
 }
 
 /* FAQ */
