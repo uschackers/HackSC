@@ -284,6 +284,42 @@ nav {
   width: 100%;
 }
 
+.top-left-gears {
+  height: 400px;
+  left: 0;
+  padding: 12px;
+  position: absolute;
+  top: 90px;
+  width: 200px;
+  z-index: -1;
+}
+
+.spinning-turbine {
+  background: url(../images/spinning-small-wind-turbine.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.spinning-gear {
+  background: url(../images/spinning-gear.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.top-left-gears > .spinning-turbine {
+  display: inline-block;
+  height: 175px;
+  width: 90%;
+}
+
+.top-left-gears > .spinning-gear {
+  display: inline-block;
+  height: 80px;
+  margin-left: 134px;
+  margin-top: -54px;
+  width: 40%;
+}
+
 .top-right-gearbox {
   background-color: #003243;
   height: 75px;
@@ -295,9 +331,6 @@ nav {
 }
 
 .top-right-gearbox > .spinning-turbine {
-  background: url(../images/spinning-small-wind-turbine.png);
-  background-repeat: no-repeat;
-  background-size: contain;
   display: inline-block;
   height: 100%;
   margin: 8px;
@@ -329,7 +362,7 @@ nav {
 
 .who-we-are-text {
   padding: 40px;
-  padding-top: 8em;
+  padding-top: 3em;
   text-align: left;
   width: 40%;
 }
