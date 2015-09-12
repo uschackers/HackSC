@@ -211,7 +211,7 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
 
 nav {
   background-color: #CD372D;
-  height: 80px;
+  height: 60px;
   min-width: 425px;
   position: relative;
   top: 0;
@@ -222,7 +222,7 @@ nav {
 .nav-logo {
   display: none;
   float: left;
-  height: 70px;
+  height: 50px;
   padding: 5px 20px;
 }
 
@@ -238,7 +238,7 @@ nav {
   color: #F8AC45;
   display: table-cell; 
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   padding: 10px;
   vertical-align: middle;
 }
@@ -409,7 +409,7 @@ nav {
 }
 
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .logo {
     width: 80%;
   }
@@ -419,20 +419,20 @@ nav {
   }
 }
 
-@media (max-height: 650px) {
+@media only screen and (max-height: 650px) {
   .logo {
     padding-top: 10%;
   }
 }
 
-@media (max-width: 950px) {
+@media only screen and (max-width: 950px) {
   .robots {
     justify-content: left;
     -webkit-justify-content: left;
   }
 }
 
-@media (max-width: 1100px) {
+@media only screen and (max-width: 870px) {
   .not-small-screen {
     display: none;
   }
@@ -457,14 +457,51 @@ nav {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
   }
 
   .nav-option {
-    border-bottom: dotted 2px;
+    border-bottom: dotted 2px #CD372D;
+    color: #CD372D;
+    display: block;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: inline;
+  }
+}
+
+/* TABLETish */
+@media only screen and (max-device-width: 1100px) {
+  nav {
+    display: none;
+  }
+  .nav-show {
+    display: block;
+  }
+
+  .nav-option-bar {
+    background: #F8AC45;
+    padding: 0;
+    position: fixed;
+    right: -400px;
+    width: 400px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .nav-option {
+    border-bottom: dotted 2px #CD372D;
     color: #CD372D;
     display: block;
     padding: 20px 10px;
@@ -511,7 +548,7 @@ nav {
 }
 
 /* MOBILE */
-@media only screen and (max-device-width:800px) {
+@media only screen and (max-device-width: 800px) {
 
   /* TOP SECTION */
   .top {
