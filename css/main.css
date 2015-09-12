@@ -348,11 +348,25 @@ nav {
   display: inline;
 }
 
+.bottom-four-boxes {
+  height: 8em;
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+}
+
+.bottom-four-boxes img {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
 .red-line {
   background-color: #CD372D;
   display: none;
   height: 10px;
   margin: 10px 0;
+  margin-top: 0;
   width: 100%;
 }
 
@@ -391,7 +405,7 @@ nav {
   }
 
   .only-small-screen {
-    display: inline;
+    display: block;
   }
 
   nav {
