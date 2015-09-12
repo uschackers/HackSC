@@ -284,12 +284,14 @@ nav {
 
 /* FAQ */
 .faq {
+	position: relative;
+	z-index: 1;
 	height: 850px;
 /*	width: 1000px;*/
 	padding-top: 30px;
 	padding-left: 250px;
 	padding-right: 250px;
-	background-image: url(../images/FAQ%20images/Background%20Machinery%20no%20animated%20objects-01.png);
+/*	background-image: url(../images/FAQ%20images/Background%20Machinery%20no%20animated%20objects-01.png);*/
 	background-repeat: no-repeat;
 	background-size: contain;
 }
@@ -314,6 +316,20 @@ nav {
 .faq-link {
 	color: #FFAD0B;
 	text-decoration: none;
+}
+
+.faq-machine-dropper-left {
+	position: absolute;
+	width:12%;
+	height:40%;
+	left: 3%;
+}
+
+.faq-machine-dropper-right {
+	position: absolute;
+	width:12%;
+	height:40%;
+	right: 3%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -563,8 +579,6 @@ nav {
       font-size: 1em;
       margin-left: 0;
     }
-		
-		
 
     .notification-bar {
       font-size: 1.2em;
