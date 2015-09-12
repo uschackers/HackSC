@@ -1,5 +1,6 @@
 $(document).ready(function() {
   setLogoTopPadding();
+  showNavBar();
 
   $(".success-notification").hide();
   $(".failed-notification").hide();
@@ -13,6 +14,10 @@ $(document).ready(function() {
     }
     event.preventDefault();
   });
+
+  $(".menu-btn").click(function() {
+    menuBtnClick();
+  });
 });
 
 $(window).resize(function() {
@@ -21,6 +26,11 @@ $(window).resize(function() {
   if ($(window).width() <= 950) {
     centerRobots();
   }
+  showNavBar();
+});
+
+$(window).scroll(function () {
+  showNavBar();
 });
 
 $(window).load(function() {
@@ -85,4 +95,33 @@ function centerRobots() {
 
 function isMobile() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+function showNavBar() {
+  if ($('.bottom-bar').offset().top + $('.bottom-bar').height() < $(window).scrollTop()) {
+    $('nav').addClass('nav-show');
+  } else {
+    $('nav').removeClass('nav-show');
+  }
+}
+
+function menuBtnClick() {
+  var navbar = $(".nav-option-bar");
+  var width = $(".nav-option-bar").width();
+  if (navbar.hasClass("open")) {
+    navbar.removeClass("open");
+    $('.page-content').unbind('click');
+    $('body').css('overflow', 'visible');
+    navbar.animate({ "right": -width + "px" }, "now" );
+  } else {
+    navbar.addClass("open");
+    navbar.css("top", $("nav").height());
+    navbar.animate({ "right": "0" }, "now" );
+    $('.page-content').click(bodyClickFn);
+    $('body').css('overflow', 'hidden');
+  }
+}
+
+function bodyClickFn(evt) {
+  menuBtnClick();
 }
