@@ -18,7 +18,12 @@ body {
   background-color: #003849;
   height: 100%;
 	margin: 0;
+  min-width: 425px;
   width: auto;
+}
+
+.only-small-screen {
+  display: none;
 }
 
 .top {
@@ -207,11 +212,15 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
 nav {
   background-color: #CD372D;
   height: 80px;
+  min-width: 425px;
+  position: relative;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .nav-logo {
+  display: none;
   float: left;
   height: 70px;
   padding: 5px 20px;
@@ -219,8 +228,9 @@ nav {
 
 .nav-option-bar {
   display: table;
-  float: right;
+  float: none;
   height: 100%;
+  margin: 0 auto;
   padding-right: 10px;
 }
 
@@ -244,6 +254,19 @@ nav {
   height: 100%;
 }
 
+.nav-show {
+  display: block;
+  position: fixed;
+}
+
+.nav-show > .nav-option-bar {
+  float: right;
+}
+
+.nav-show > .nav-logo {
+  display: inline-block;
+}
+
 /* WHO WE ARE */
 .who-we-are {
   background: url(../images/who-we-are.png);
@@ -252,6 +275,56 @@ nav {
   color: #F8AC45;
   font-family: 'Montserrat', sans-serif;
   height: 2000px;
+  position: relative;
+}
+
+.who-we-are-top-bar {
+  background-color: #002939;
+  height: 90px;
+  width: 100%;
+}
+
+.top-right-gearbox {
+  background-color: #003243;
+  height: 75px;
+  position: absolute;
+  right: 0;
+  top: 90px;
+  width: 120px;
+  z-index: -1;
+}
+
+.top-right-gearbox > .spinning-turbine {
+  background: url(../images/spinning-small-wind-turbine.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 100%;
+  margin: 8px;
+  padding: 5px;
+  width: 40%;
+}
+
+.top-right-gearbox  > .panel {
+  display: inline-block;
+  height: 100%;
+  padding: 17px 0;
+  position: absolute;
+  top: 0;
+  width: 35%;
+}
+
+.top-right-gearbox  > .panel > .blue-round-rectangle {
+  background-color: #002939;
+  border-radius: 5px;
+  display: inline-block;
+  height: 15px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.top-right-gearbox  > .panel > .blue-round-rectangle:first-child {
+  margin-bottom: 5px;
 }
 
 .who-we-are-text {
@@ -288,9 +361,44 @@ nav {
   height: 850px;
 }
 
+
+@media (max-width: 600px) {
+  .logo {
+    width: 80%;
+  }
+  .computers-image, 
+  .bottom-image {
+    visibility: hidden;
+  }
+}
+
+@media (max-height: 650px) {
+  .logo {
+    padding-top: 10%;
+  }
+}
+
+@media (max-width: 950px) {
+  .robots {
+    justify-content: left;
+    -webkit-justify-content: left;
+  }
+}
+
 @media (max-width: 1100px) {
   .not-small-screen {
     display: none;
+  }
+
+  .only-small-screen {
+    display: inline;
+  }
+
+  nav {
+    display: none;
+  }
+  .nav-show {
+    display: block;
   }
 
   .nav-option-bar {
@@ -352,29 +460,6 @@ nav {
 
   .red-line {
     display: block;
-  }
-}
-
-@media (max-height: 650px) {
-  .logo {
-    padding-top: 10%;
-  }
-}
-
-@media (max-width: 950px) {
-  .robots {
-    justify-content: left;
-    -webkit-justify-content: left;
-  }
-}
-
-@media (max-width: 600px) {
-  .logo {
-    width: 80%;
-  }
-  .computers-image, 
-  .bottom-image {
-    visibility: hidden;
   }
 }
 
@@ -477,6 +562,10 @@ nav {
 
   /* FIREFOX MOBILE */
   @-moz-document url-prefix() { 
+    body {
+      min-width: 300px;
+    }
+
     .top {
       height: 50em;
       min-height: 400px;
@@ -505,6 +594,7 @@ nav {
 
     nav {
       height: 55px;
+      min-width: 300px;
     }
 
     .nav-logo {

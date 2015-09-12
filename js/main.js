@@ -99,19 +99,9 @@ function isMobile() {
 
 function showNavBar() {
   if ($('.bottom-bar').offset().top + $('.bottom-bar').height() < $(window).scrollTop()) {
-    $('nav').css('display', 'block');
-    $('nav').css('position', 'fixed');
-    $('.nav-option-bar').css('float', 'right');
-    $('.nav-logo').css('display', 'inline-block');
+    $('nav').addClass('nav-show');
   } else {
-    $('nav').css('position', 'relative');
-    $('.nav-option-bar').css('float', 'none');
-    $('.nav-option-bar').css('margin', '0 auto');
-    $('.nav-logo').css('display', 'none');
-    // Don't show nav until scroll down on smaller screens when menu is collapsed.
-    if ($(window).width() <= 1100) {
-      $('nav').css('display', 'none');
-    }
+    $('nav').removeClass('nav-show');
   }
 }
 
