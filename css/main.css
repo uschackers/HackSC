@@ -267,14 +267,30 @@ nav {
   height: 850px;
 }
 
+@font-face {
+    font-family: Avenir-Light;
+    src: url(../assets/Avenir-Light.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Black;
+    src: url(../assets/Avenir-Black.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Heavy;
+    src: url(../assets/Avenir-Heavy.ttf);
+}
+
 /* FAQ */
 .faq {
 	height: 850px;
-	width: 1000px;
-	padding-top: 50px;
+/*	width: 1000px;*/
+	padding-top: 30px;
 	padding-left: 250px;
 	padding-right: 250px;
 	background-image: url(../images/FAQ%20images/Background%20Machinery%20no%20animated%20objects-01.png);
+	background-repeat: no-repeat;
 	background-size: contain;
 }
 
@@ -285,26 +301,20 @@ nav {
 
 .faq-text {
 	color: #FFAD0B;
-	font-family: 'Roboto Bold', sans-serif;
+	font-family: 'Avenir-Light';
 	font-weight: 100;
 	line-height: 150%;
 	padding-top: 30px;
 }
 
-.faq-background {
-/*	position: absolute;*/
-	top:0;
-	left:0;
-	background-size: auto;
-	width: 800px;
-	height:400px;
+.faq-bold-text {
+	font-family: 'Avenir-Heavy';
 }
 
 .faq-link {
 	color: #FFAD0B;
 	text-decoration: none;
 }
-
 
 @media (max-width: 600px) {
   .logo {
@@ -452,8 +462,39 @@ nav {
 
   /* FAQ */
   .faq {
-    height: 2000px;
+		padding-top: 200px;
+		height: auto;
+		padding-left: 23px;
+		padding-right: 23px;
+		background-image: none;
+		text-align: center;
   }
+
+	#faq-title {
+		font-size: 100px;
+		font-weight: 700;
+		text-align: center;
+	}
+	
+	.faq-text {
+		color: #FFAD0B;
+		font-family: 'Avenir-Light';
+		font-weight: 100;
+		line-height: 100%;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 25px;
+	}
+
+	.faq-bold-text {
+		font-family: 'Avenir-Heavy';
+	}
+
+	.faq-link {
+		color: #FFAD0B;
+		text-decoration: none;
+	}
+
 
   /* iPHONE 4 and similar height screens */
   @media (max-device-height:500px) {
@@ -485,6 +526,8 @@ nav {
       font-size: 1em;
       margin-left: 0;
     }
+		
+		
 
     .notification-bar {
       font-size: 1.2em;
@@ -508,6 +551,15 @@ nav {
       font-size: 1em;
       padding: 10px 10px;
     }
+		
+		#faq-title {
+			font-size: 50px;
+		}
+		.faq-text {
+			font-size: 20px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
 
     @media (max-device-height:700px) {
       .top {
