@@ -285,15 +285,15 @@ nav {
 
 /* FAQ */
 .faq {
-	position: relative;
-	padding-top: 20px;
-	padding-left: 250px;
-	padding-right: 250px;
 	background-image: url(../images/FAQ%20images/Background%20Machinery-01.png);
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: contain;
+	padding-top: 20px;
+	padding-left: 250px;
+	padding-right: 250px;
 	padding-bottom: 120px;
+	position: relative;
 }
 
 #faq-title {
@@ -319,17 +319,17 @@ nav {
 }
 
 .faq-machine-dropper-left {
+	left: 3%;
+	height:450px;
 	position: absolute;
 	width:175px;
-	height:450px;
-	left: 3%;
 }
 
 .faq-machine-dropper-right {
-	position: absolute;
-	width:175px;
 	height:450px;
+	position: absolute;
 	right: 3%;
+	width:175px;
 }
 
 
@@ -412,8 +412,8 @@ nav {
 
 @media only screen and (max-width: 560px) {
 	.faq {
-		text-align: left;
 		padding-top: 0px;
+		text-align: left;
 	}
 	
 	#faq-title {
