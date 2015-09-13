@@ -210,8 +210,9 @@ nav {
   height: 60px;
   min-width: 425px;
   position: relative;
-  top: 0;
+  top: 0;	
   width: 100%;
+	z-index: 1000;
 }
 
 .nav-logo {
@@ -285,15 +286,14 @@ nav {
 /* FAQ */
 .faq {
 	position: relative;
-	z-index: 1;
-	height: 850px;
-/*	width: 1000px;*/
-	padding-top: 30px;
+	padding-top: 20px;
 	padding-left: 250px;
 	padding-right: 250px;
-/*	background-image: url(../images/FAQ%20images/Background%20Machinery%20no%20animated%20objects-01.png);*/
+	background-image: url(../images/FAQ%20images/Background%20Machinery-01.png);
+	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: contain;
+	padding-bottom: 120px;
 }
 
 #faq-title {
@@ -320,17 +320,20 @@ nav {
 
 .faq-machine-dropper-left {
 	position: absolute;
-	width:12%;
-	height:40%;
+	width:175px;
+	height:450px;
 	left: 3%;
 }
 
 .faq-machine-dropper-right {
 	position: absolute;
-	width:12%;
-	height:40%;
+	width:175px;
+	height:450px;
 	right: 3%;
 }
+
+
+
 
 @media only screen and (max-width: 600px) {
   .logo {
@@ -348,11 +351,27 @@ nav {
   }
 }
 
+
+
 @media only screen and (max-width: 950px) {
   .robots {
     justify-content: left;
     -webkit-justify-content: left;
   }
+	.faq {
+		padding-left: 125px;
+		padding-right: 125px;
+	}
+	
+	.faq-machine-dropper-left {
+		width: 75px;
+		height: 150px;
+	}
+
+	.faq-machine-dropper-right {
+		width: 75px;
+		height: 150px;
+	}
 }
 
 @media only screen and (max-width: 870px) {
@@ -389,6 +408,17 @@ nav {
   .menu-btn {
     display: inline;
   }
+}
+
+@media only screen and (max-width: 560px) {
+	.faq {
+		text-align: left;
+		padding-top: 0px;
+	}
+	
+	#faq-title {
+		padding-bottom: 0px;
+	}
 }
 
 /* TABLETish */
@@ -522,6 +552,14 @@ nav {
 		background-image: none;
 		text-align: center;
   }
+	
+	.faq-machine-dropper-right {
+		display: none;
+	}
+	
+	.faq-machine-dropper-left {
+		display: none;
+	}
 
 	#faq-title {
 		font-size: 100px;
