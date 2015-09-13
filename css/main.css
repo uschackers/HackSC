@@ -533,6 +533,14 @@ nav {
 
 /* TABLETish */
 @media only screen and (max-device-width: 1100px) {
+  .not-small-screen {
+    display: none;
+  }
+
+  .only-small-screen {
+    display: block;
+  }
+
   nav {
     display: none;
   }
@@ -565,6 +573,40 @@ nav {
 
   .menu-btn {
     display: inline;
+  }
+
+  .who-we-are {
+    background: none;
+  }
+
+  .who-we-are-title {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .who-we-are-text {
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+  }
+
+  .who-we-are-text p {
+    font-family: 'Open Sans';
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin: 15px 0;
+  }
+
+  .who-we-are-welcome {
+    display: block;
+    font-weight: 600;
+  }
+
+  .red-line {
+    display: block;
   }
 }
 
@@ -649,8 +691,18 @@ nav {
   }
 
   /* WHO WE ARE */
-  .who-we-are {
-    height: 2000px;
+  .who-we-are-title {
+    font-size: 100px;
+  }
+
+  .who-we-are-welcome {
+    margin-bottom: 50px;
+  }
+
+  .who-we-are-text p {
+    font-size: 70px;
+    line-height: 70px;
+    margin: 50px 0;
   }
 
   /* FAQ */
@@ -710,6 +762,16 @@ nav {
     .nav-option {
       font-size: 1em;
       padding: 10px 10px;
+    }
+
+    .who-we-are-title {
+      font-size: 50px;
+    }
+
+    .who-we-are-text p {
+      font-size: 25px;
+      line-height: 35px;
+      margin: 10px 0px;
     }
 
     @media (max-device-height:700px) {
