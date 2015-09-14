@@ -280,8 +280,8 @@ nav {
 /* WHO WE ARE */
 .who-we-are {
   background: url(../images/who-we-are.png);
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: contain;
   color: #F8AC45;
   font-family: 'Montserrat', sans-serif;
   height: 2000px;
