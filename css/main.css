@@ -323,6 +323,10 @@ nav {
 }
 
 .sponsors > .backgrounds .glasses-bar > .glasses {
+  display: -webkit-flexbox;
+  display: -webkit-flex;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   margin-top: 20px;
