@@ -247,7 +247,7 @@ nav {
 .nav-option {
   color: #F8AC45;
   display: table-cell; 
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Avenir Heavy", sans-serif;
   font-size: 15px;
   padding: 10px;
   vertical-align: middle;
@@ -283,7 +283,7 @@ nav {
   background-repeat: no-repeat;
   background-size: contain;
   color: #F8AC45;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Avenir Heavy', sans-serif;
   height: 2000px;
   position: relative;
 }
@@ -394,6 +394,7 @@ nav {
 }
 
 .who-we-are-text p {
+  font-family: "Avenir Light", sans-serif;
   font-size: 20px;
   line-height: 33px;
   padding: 15px 0;
@@ -691,7 +692,7 @@ nav {
 
   .nav-option-bar {
     background: #F8AC45;
-    padding: 0;
+    padding: 0;font-family: "Avenir Heavy", sans-serif;
     position: fixed;
     right: -400px;
     width: 400px;
@@ -733,7 +734,6 @@ nav {
   }
 
   .who-we-are-text p {
-    font-family: 'Open Sans';
     font-size: 27px;
     font-weight: 100;
     letter-spacing: 1px;
@@ -743,7 +743,7 @@ nav {
 
   .who-we-are-welcome {
     display: block;
-    font-weight: 600;
+    font-family: "Avenir Heavy", sans-serif;
   }
 
   .red-line {
@@ -835,7 +835,6 @@ nav {
   }
 
   .who-we-are-text p {
-    font-family: 'Open Sans';
     font-size: 27px;
     font-weight: 100;
     letter-spacing: 1px;
@@ -845,7 +844,7 @@ nav {
 
   .who-we-are-welcome {
     display: block;
-    font-weight: 600;
+    font-family: "Avenir Heavy", sans-serif;
   }
 
   .red-line {
@@ -935,7 +934,7 @@ nav {
 
   /* WHO WE ARE */
   .who-we-are-title {
-    font-size: 100px;
+    font-size: 115px;
   }
 
   .who-we-are-welcome {
@@ -943,8 +942,8 @@ nav {
   }
 
   .who-we-are-text p {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 57px;
+    line-height: 76px;
     margin: 50px 0;
   }
 
