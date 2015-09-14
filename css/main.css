@@ -32,6 +32,10 @@ body {
   width: auto;
 }
 
+.only-small-screen {
+  display: none;
+}
+
 .top {
 	height: 850px;
   min-height: 600px;
@@ -222,6 +226,7 @@ nav {
   position: relative;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .nav-logo {
@@ -242,7 +247,7 @@ nav {
 .nav-option {
   color: #F8AC45;
   display: table-cell; 
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Avenir Heavy", sans-serif;
   font-size: 15px;
   padding: 10px;
   vertical-align: middle;
@@ -274,7 +279,151 @@ nav {
 
 /* WHO WE ARE */
 .who-we-are {
-  height: 850px;
+  background-image: url(../images/who-we-are.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #F8AC45;
+  font-family: 'Avenir Heavy', sans-serif;
+  height: 2000px;
+  position: relative;
+}
+
+.who-we-are-top-bar {
+  background-color: #002939;
+  height: 90px;
+  width: 100%;
+}
+
+.top-left-gears {
+  height: 400px;
+  left: 0;
+  padding: 12px;
+  position: absolute;
+  top: 90px;
+  width: 200px;
+  z-index: -1;
+}
+
+.spinning-turbine {
+  background:
+    linear-gradient(45deg, #003042 50%, transparent 50%),
+    linear-gradient(90deg, #003849 100%, transparent 100%),
+    linear-gradient(-45deg, #003849 50%, transparent 50%) 100% 0,
+    linear-gradient(-90deg, #003042 100%, transparent 100%) 100% 0, 
+    linear-gradient(45deg, transparent 50%, #003042 50%) 100% 100%,
+    linear-gradient(90deg, transparent 0, #003849 0) 100% 100%,
+    linear-gradient(-45deg, transparent 50%, #003849 50%) 0 100%,
+    linear-gradient(-90deg, transparent 0, #003042 0) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  border: 10px solid #003042;
+  border-radius: 50%;
+  transform: rotate(15deg);
+}
+
+.spinning-gear {
+  background: url(../images/spinning-gear.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.top-left-gears > .spinning-turbine {
+  display: inline-block;
+  height: 125px;
+  width: 125px;
+}
+
+.top-left-gears > .spinning-gear {
+  display: inline-block;
+  height: 80px;
+  margin-left: 134px;
+  margin-top: -54px;
+  width: 40%;
+}
+
+.top-right-gearbox {
+  background-color: #003243;
+  height: 75px;
+  position: absolute;
+  right: 0;
+  top: 90px;
+  width: 120px;
+  z-index: -1;
+}
+
+.top-right-gearbox > .spinning-turbine {
+  border: 5px solid #003042;
+  display: inline-block;
+  height: 37px;
+  margin: 8px;
+  padding: 5px;
+  width: 37px;
+}
+
+.top-right-gearbox  > .panel {
+  display: inline-block;
+  height: 100%;
+  padding: 17px 0;
+  position: absolute;
+  top: 0;
+  width: 35%;
+}
+
+.top-right-gearbox  > .panel > .blue-round-rectangle {
+  background-color: #002939;
+  border-radius: 5px;
+  display: inline-block;
+  height: 15px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.top-right-gearbox  > .panel > .blue-round-rectangle:first-child {
+  margin-bottom: 5px;
+}
+
+.who-we-are-text {
+  padding: 40px;
+  padding-top: 3em;
+  text-align: left;
+  width: 40%;
+}
+
+.who-we-are-title {
+  font-size: 3em;
+}
+
+.who-we-are-text p {
+  font-family: "Avenir Light", sans-serif;
+  font-size: 20px;
+  line-height: 33px;
+  padding: 15px 0;
+}
+
+.who-we-are-welcome {
+  display: inline;
+}
+
+.bottom-four-boxes {
+  height: 8em;
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+}
+
+.bottom-four-boxes img {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.red-line {
+  background-color: #CD372D;
+  display: none;
+  height: 10px;
+  margin: 10px 0;
+  margin-top: 0;
+  width: 100%;
 }
 
 /* FAQ */
@@ -293,7 +442,7 @@ nav {
 
 .sponsors .cropped {
   position: relative;
-  width: 1440px;
+  max-width: 1440px;
   height: calc(100% - 50px);
   margin: 0 auto;
 }
@@ -512,6 +661,111 @@ nav {
   padding-top: 30px;
 }
 
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1740px) { 
+  .who-we-are {
+    background-size: 1740px;
+  }
+
+  .who-we-are-text {
+    width: 705px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .not-small-screen {
+    display: none;
+  }
+
+  .only-small-screen {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+  .nav-show {
+    display: block;
+  }
+
+  .nav-option-bar {
+    background: #F8AC45;
+    padding: 0;font-family: "Avenir Heavy", sans-serif;
+    position: fixed;
+    right: -400px;
+    width: 400px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .nav-option {
+    border-bottom: dotted 2px #CD372D;
+    color: #CD372D;
+    display: block;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: inline;
+  }
+
+  .who-we-are {
+    background: none;
+  }
+
+  .who-we-are-title {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .who-we-are-text {
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+  }
+
+  .who-we-are-text p {
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin: 15px 0;
+  }
+
+  .who-we-are-welcome {
+    display: block;
+    font-family: "Avenir Heavy", sans-serif;
+  }
+
+  .red-line {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .robots {
+    justify-content: left;
+    -webkit-justify-content: left;
+  }
+}
+
+@media only screen and (max-height: 650px) {
+  .logo {
+    padding-top: 10%;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .logo {
@@ -523,57 +777,16 @@ nav {
   }
 }
 
-@media only screen and (max-height: 650px) {
-  .logo {
-    padding-top: 10%;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .robots {
-    justify-content: left;
-    -webkit-justify-content: left;
-  }
-}
-
-@media only screen and (max-width: 870px) {
-  nav {
-    display: none;
-  }
-  .nav-show {
-    display: block;
-  }
-
-  .nav-option-bar {
-    background: #F8AC45;
-    padding: 0;
-    position: fixed;
-    right: -400px;
-    width: 400px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-  }
-
-  .nav-option {
-    border-bottom: dotted 2px #CD372D;
-    color: #CD372D;
-    display: block;
-    padding: 20px 10px;
-    text-align: center;
-  }
-
-  .menu-btn {
-    display: inline;
-  }
-}
-
 /* TABLETish */
 @media only screen and (max-device-width: 1100px) {
+  .not-small-screen {
+    display: none;
+  }
+
+  .only-small-screen {
+    display: block;
+  }
+
   nav {
     display: none;
   }
@@ -606,6 +819,39 @@ nav {
 
   .menu-btn {
     display: inline;
+  }
+
+  .who-we-are {
+    background: none;
+  }
+
+  .who-we-are-title {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .who-we-are-text {
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+  }
+
+  .who-we-are-text p {
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin: 15px 0;
+  }
+
+  .who-we-are-welcome {
+    display: block;
+    font-family: "Avenir Heavy", sans-serif;
+  }
+
+  .red-line {
+    display: block;
   }
 }
 
@@ -690,8 +936,18 @@ nav {
   }
 
   /* WHO WE ARE */
-  .who-we-are {
-    height: 2000px;
+  .who-we-are-title {
+    font-size: 115px;
+  }
+
+  .who-we-are-welcome {
+    margin-bottom: 50px;
+  }
+
+  .who-we-are-text p {
+    font-size: 57px;
+    line-height: 76px;
+    margin: 50px 0;
   }
 
   /* FAQ */
@@ -751,6 +1007,16 @@ nav {
     .nav-option {
       font-size: 1em;
       padding: 10px 10px;
+    }
+
+    .who-we-are-title {
+      font-size: 50px;
+    }
+
+    .who-we-are-text p {
+      font-size: 25px;
+      line-height: 35px;
+      margin: 10px 0px;
     }
 
     @media (max-device-height:700px) {
