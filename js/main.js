@@ -1,10 +1,15 @@
 $(document).ready(function() {
   setLogoTopPadding();
 
+  // load the header as soon as the logo loads
+  $('#mainlogo').load(function() {
+    headerAnimation();
+  });
+
   $(".success-notification").hide();
   $(".failed-notification").hide();
-  $( "form"  ).submit(function( event  ) {
-    if(validateEmail($("#mce-EMAIL").val())){
+  $("form").submit(function( event  ) {
+    if (validateEmail($("#mce-EMAIL").val())){
       $(".success-notification").show();
       $(".failed-notification").hide();
     } else {
@@ -15,6 +20,9 @@ $(document).ready(function() {
   });
 });
 
+// load the header anyways
+setTimeout(headerAnimation, 1500);
+
 $(window).resize(function() {
 	setBottomBarHeight();
   setLogoTopPadding();
@@ -23,8 +31,9 @@ $(window).resize(function() {
   }
 });
 
+
 $(window).load(function() {
-  entranceAnimation();
+  footerAnimation();
   hoverAnimation();
 });
 
@@ -45,7 +54,18 @@ function setLogoTopPadding() {
   }
 }
 
-function entranceAnimation() {
+function headerAnimation() {
+  if ($('.top').css('visibility') == 'visible') return;
+
+  if ($(window).width() <= 600 || isMobile()) {
+    $('.top').addClass('animated bounceInDown');
+  } else {
+    $('.top').addClass('animated bounceInDown');
+  }
+  $('.top').css('visibility', 'visible');
+}
+
+function footerAnimation() {
   if ($(window).width() <= 600 || isMobile()) {
     $('.robots').addClass('animated bounceInDown');
     $('.top').addClass('animated bounceInDown');
@@ -57,7 +77,6 @@ function entranceAnimation() {
   $('.bottom-image').css('visibility', 'visible');
   setBottomBarHeight();
   $('.robots').css('visibility', 'visible');
-  $('.top').css('visibility', 'visible');
 
   // Center robots on smaller screens and mobile.
   if ($(window).width() <= 950 || isMobile()) {
