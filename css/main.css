@@ -448,27 +448,30 @@ nav {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-left: 250px;
+  color: #F8AC45;
+
 	padding-right: 250px;
 	padding-bottom: 180px;
 	position: relative;
 }
 
 #faq-title {
-	font-size: 2em;
-	font-weight: 700;
+	font-size: 3em;
+  font-family: 'Avenir Heavy', sans-serif;
   padding-top: 50px;
 }
 
 .faq-text {
-	color: #FFAD0B;
-	font-family: 'Avenir-Light';
-	font-weight: 100;
-	line-height: 150%;
+	color: #F8AC45;
+  font-family: "Avenir Light", sans-serif;
+	/*font-weight: 100;*/
+  font-size: 20px;
+	line-height: 33px;
 	padding-top: 30px;
 }
 
 .faq-bold-text {
-	font-family: 'Avenir-Heavy';
+	font-family: 'Avenir-Black';
 }
 
 .faq-link {
@@ -726,7 +729,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 1740px) { 
+@media only screen and (max-width: 1740px) {
   .who-we-are {
     background-size: 1740px;
   }
@@ -1039,10 +1042,11 @@ nav {
 
   /* FAQ */
   .faq {
-		padding-top: 200px;
+    color: #F8AC45;
 		height: auto;
 		padding-left: 23px;
 		padding-right: 23px;
+    padding-top: 200px;
 		background-image: none;
 		text-align: center;
   }
@@ -1056,19 +1060,19 @@ nav {
 	}
 
 	#faq-title {
-		font-size: 100px;
-		font-weight: 700;
-		text-align: center;
+        font-size: 115px;
+        font-weight: 600;
+        padding-top: 0;
+        text-align: center;
 	}
 
 	.faq-text {
-		color: #FFAD0B;
-		font-family: 'Avenir-Light';
-		font-weight: 100;
-		line-height: 100%;
+    font-size: 57px;
+    font-weight: 100;
+    line-height: 76px;
+    letter-spacing: 1px;
 		padding-top: 40px;
 		padding-bottom: 40px;
-		font-size: 25px;
 	}
 
 	.faq-bold-text {
