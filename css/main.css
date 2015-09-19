@@ -815,6 +815,23 @@ nav {
   .red-line {
     display: block;
   }
+
+  .faq {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  #faq-title {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 60px;
+  }
+
+  .faq-text {
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -857,14 +874,15 @@ nav {
 }
 
 @media only screen and (max-width: 560px) {
-	.faq {
+	/*.faq {
 		padding-top: 0px;
-		text-align: left;
+    padding-left: 23px;
+		text-align: center;
 	}
 
 	#faq-title {
 		padding-bottom: 0px;
-	}
+	}*/
 }
 
 /* TABLETish */
