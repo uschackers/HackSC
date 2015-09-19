@@ -825,12 +825,17 @@ nav {
   }
 
   #faq-title {
-    letter-spacing: 2px;
     font-weight: 600;
     font-size: 60px;
+    letter-spacing: 2px;
+    padding-bottom: 40px;
   }
 
   .faq-text {
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 45px;
   }
 }
 
@@ -838,11 +843,6 @@ nav {
   .robots {
     justify-content: left;
     -webkit-justify-content: left;
-  }
-
-  .faq {
-    padding-left: 125px;
-    padding-right: 125px;
   }
 
   .faq-machine-dropper-left {
