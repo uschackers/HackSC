@@ -436,7 +436,7 @@ nav {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  color: #ffad0b;
+  color: #F8AC45;
   font-family: "Avenir Light", sans-serif;
 }
 
@@ -651,8 +651,8 @@ nav {
   max-width: 950px;
   margin: 0 auto;
   padding: 0 20px;
-  line-height: 22px;
-  font-size: 18px;
+  line-height: 33px;
+  font-size: 20px;
   font-weight: lighter;
 }
 
@@ -747,6 +747,21 @@ nav {
   .who-we-are-welcome {
     display: block;
     font-family: "Avenir Heavy", sans-serif;
+  }
+
+  /*Sponsors*/
+  .sponsors > .wrapper > .title {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .sponsors > .wrapper > .subtitle {
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 15px 0;
+    line-height: 45px;
   }
 
   .red-line {
@@ -848,6 +863,21 @@ nav {
   .who-we-are-welcome {
     display: block;
     font-family: "Avenir Heavy", sans-serif;
+  }
+
+
+  /* Sponsors */
+  .sponsors > .wrappers > .title {
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+  }
+
+  .sponsors > .wrappers > .title {
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 45px;
   }
 
   .red-line {
@@ -955,6 +985,17 @@ nav {
     height: 2000px;
   }
 
+  /* Sponsors */
+  .sponsors > .wrapper > .title {
+    font-size: 115px;
+  }
+
+  .sponsors > .wrapper > .subtitle {
+    font-size: 57px;
+    line-height: 76px;
+    margin: 50px 0;
+  }
+
   /* iPHONE 4 and similar height screens */
   @media (max-device-height:500px) {
     .robots > img {
@@ -1014,6 +1055,17 @@ nav {
     }
 
     .who-we-are-text p {
+      font-size: 25px;
+      line-height: 35px;
+      margin: 10px 0px;
+    }
+
+    /* Sponsors */
+    .sponsors > .wrapper > .title {
+      font-size: 50px;
+    }
+
+    .sponsors > .wrapper > .subtitle {
       font-size: 25px;
       line-height: 35px;
       margin: 10px 0px;
