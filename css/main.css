@@ -547,13 +547,14 @@ nav {
   bottom: 4px;
   width: 100%;
   height: 61px;
-  background-color: #a9212a;
-  box-shadow: 0 -1px 1px #a9212a;
+  background-color: #ac082a;
+  box-shadow: 0 -1px 1px #ac082a;
 }
 
 .sponsors > .backgrounds .uncropped-lines {
   position: absolute;
   width: calc((100% - 1440px) / 2);
+  margin: 0;
 }
 
 .sponsors > .backgrounds .uncropped-lines.left {
@@ -563,22 +564,22 @@ nav {
 .sponsors > .backgrounds .uncropped-lines.left.dark-orange-line {
   bottom: 158px;
   height: 3px;
-  background-color: #ed413e;
-  box-shadow: 0 1px 1px #ed413e;
+  background-color: #f12d3e;
+  box-shadow: 0 1px 1px #f12d3e;
 }
 
 .sponsors > .backgrounds .uncropped-lines.left.yellow-line {
   bottom: 93px;
   height: 7px;
-  background-color: #faaf46;
-  box-shadow: 0 0 1px #faaf46;
+  background-color: #fdac4b;
+  box-shadow: 0 0 1px #fdac4b;
 }
 
 .sponsors > .backgrounds .uncropped-lines.left.light-orange-line {
   bottom: 45px;
   height: 1px;
   background-color: #e96d32;
-  border: 1px solid #d14f2e;
+  border: 1px solid #bc4729;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right {
@@ -594,44 +595,45 @@ nav {
 .sponsors > .backgrounds .uncropped-lines.right.orange-yellow-line {
   bottom: 230.5px;
   height: 2px;
-  background-color: #ea362e;
-  border-bottom: 5px solid #faaf46;
-  box-shadow: 0 -2px 0.5px #ea362e;
+  background-color: #ee1c2e;
+  border-bottom: 5px solid #fdac4b;
+  box-shadow: 0 -2px 0.5px #f31e2f;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.red-orange-line {
   bottom: 120px;
   height: 5.5px;
-  background-color: #a82029;
-  border-bottom: 7px solid #eb382f;
-  box-shadow: 0 0.5px 1px #eb382f;
+  background-color: #ac082a;
+  border-bottom: 7px solid #ef1e2f;
+  box-shadow: 0 0.5px 1px #ac082a;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.red-line {
+  display: block;
   bottom: 75px;
   height: 2.5px;
-  background-color: #a3212a;
+  background-color: #9d0c2c;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.dark-orange-line {
   bottom: 36px;
   height: 3px;
-  background-color: #eb382f;
-  box-shadow: 0 0 3px #eb382f;
+  background-color: #f01e2f;
+  box-shadow: 0 0 3px #f01e2f;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.yellow-line {
   bottom: 24px;
   height: 3px;
-  background-color: #faaf46;
+  background-color: #fdac4b;
   box-shadow: 0 0 1px #faaf46;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.light-orange-line {
   bottom: 13px;
   height: 2px;
-  background-color: #e76b31;
-  box-shadow: 0 0 1px #e76b31;
+  background-color: #ea6334;
+  box-shadow: 0 0 1px #ea6334;
 }
 
 .sponsors > .wrapper {
