@@ -41,7 +41,7 @@ body {
 }
 
 .top {
-	height: 850px;
+  height: 850px;
   min-height: 600px;
   position: relative;
   width: 100%;
@@ -285,10 +285,10 @@ nav {
 .who-we-are {
   background-image: url(../images/who-we-are.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   color: #F8AC45;
   font-family: 'Avenir Heavy', sans-serif;
-  height: 2000px;
+  min-height: 975px;
   position: relative;
 }
 
@@ -430,9 +430,70 @@ nav {
   width: 100%;
 }
 
+@font-face {
+    font-family: Avenir-Light;
+    src: url(../assets/Avenir-Light.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Black;
+    src: url(../assets/Avenir-Black.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Heavy;
+    src: url(../assets/Avenir-Heavy.ttf);
+}
+
 /* FAQ */
 .faq {
-  height: 850px;
+	background-image: url(../images/FAQ%20images/FAQs%20Page%20No%20Droppers.svg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-left: 250px;
+  color: #F8AC45;
+
+	padding-right: 250px;
+	padding-bottom: 180px;
+	position: relative;
+}
+
+#faq-title {
+	font-size: 3em;
+  font-family: 'Avenir Heavy', sans-serif;
+  padding-top: 50px;
+}
+
+.faq-text {
+	color: #F8AC45;
+  font-family: "Avenir Light", sans-serif;
+  font-size: 20px;
+	line-height: 33px;
+	padding-top: 30px;
+}
+
+.faq-bold-text {
+	font-family: 'Avenir-Black';
+}
+
+.faq-link {
+	color: #F8AC45;
+	text-decoration: none;
+}
+
+.faq-machine-dropper-left {
+	left: 3%;
+	height:450px;
+	position: absolute;
+	width:175px;
+}
+
+.faq-machine-dropper-right {
+	height:450px;
+	position: absolute;
+	right: 3%;
+	width:175px;
 }
 
 /* Sponsors */
@@ -693,6 +754,7 @@ nav {
   nav {
     display: none;
   }
+
   .nav-show {
     display: block;
   }
@@ -756,12 +818,44 @@ nav {
   .red-line {
     display: block;
   }
+
+  .faq {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  #faq-title {
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: 2px;
+    padding-bottom: 40px;
+  }
+
+  .faq-text {
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 45px;
+  }
 }
 
 @media only screen and (max-width: 950px) {
   .robots {
     justify-content: left;
     -webkit-justify-content: left;
+  }
+
+  .faq-machine-dropper-left {
+    width: 75px;
+    height: 150px;
+  }
+
+  .faq-machine-dropper-right {
+    width: 75px;
+    height: 150px;
   }
 }
 
@@ -775,10 +869,23 @@ nav {
   .logo {
     width: 80%;
   }
+
   .computers-image,
   .bottom-image {
     visibility: hidden;
   }
+}
+
+@media only screen and (max-width: 560px) {
+	/*.faq {
+		padding-top: 0px;
+    padding-left: 23px;
+		text-align: center;
+	}
+
+	#faq-title {
+		padding-bottom: 0px;
+	}*/
 }
 
 /* TABLETish */
@@ -956,8 +1063,48 @@ nav {
 
   /* FAQ */
   .faq {
-    height: 2000px;
+    color: #F8AC45;
+		height: auto;
+		padding-left: 23px;
+		padding-right: 23px;
+    padding-top: 200px;
+		background-image: none;
+		text-align: center;
   }
+
+	.faq-machine-dropper-right {
+		display: none;
+	}
+
+	.faq-machine-dropper-left {
+		display: none;
+	}
+
+	#faq-title {
+        font-size: 115px;
+        font-weight: 600;
+        padding-top: 0;
+        text-align: center;
+	}
+
+	.faq-text {
+    font-size: 57px;
+    font-weight: 100;
+    line-height: 76px;
+    letter-spacing: 1px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.faq-bold-text {
+		font-family: 'Avenir-Black';
+	}
+
+	.faq-link {
+		color: #FFAD0B;
+		text-decoration: none;
+	}
+
 
   /* iPHONE 4 and similar height screens */
   @media (max-device-height:500px) {
@@ -1012,6 +1159,15 @@ nav {
       font-size: 1em;
       padding: 10px 10px;
     }
+
+		#faq-title {
+			font-size: 50px;
+		}
+		.faq-text {
+			font-size: 20px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
 
     .who-we-are-title {
       font-size: 50px;
