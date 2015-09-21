@@ -24,6 +24,10 @@ button:focus {
 
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
   background-color: #003849;
   height: 100%;
@@ -279,7 +283,7 @@ nav {
 
 /* WHO WE ARE */
 .who-we-are {
-  background-image: url(../images/who-we-are.png);
+  background-image: url(../images/who-we-are.svg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #F8AC45;
@@ -443,7 +447,7 @@ nav {
 
 /* FAQ */
 .faq {
-	background-image: url(../images/FAQ%20images/Background%20Machinery-01.png);
+	background-image: url(../images/FAQ%20images/FAQs%20Page%20No%20Droppers.svg);
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;

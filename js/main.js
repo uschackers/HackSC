@@ -15,6 +15,10 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
+  $(".nav-option").click(function() {
+    menuBtnClick();
+  });
+
   $(".menu-btn").click(function() {
     menuBtnClick();
   });
@@ -81,7 +85,7 @@ function hoverAnimation() {
     var element = $(robot);
     element.hover(
       function() {
-        element.addClass('animated pulse');        
+        element.addClass('animated pulse');
         element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
           element.removeClass('animated pulse');
         });
