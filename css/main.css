@@ -24,6 +24,10 @@ button:focus {
 
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
   background-color: #003849;
   height: 100%;
@@ -66,7 +70,7 @@ body {
 }
 
 #mc_embed_signup {
-  clear:left; 
+  clear:left;
   padding: 3% 0 3% 0;
   width: 100%;
 }
@@ -219,7 +223,7 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   width: 10em;
 }
 
-.bottom-image, 
+.bottom-image,
 .robots,
 .top {
   visibility: hidden;
@@ -252,7 +256,7 @@ nav {
 
 .nav-option {
   color: #F8AC45;
-  display: table-cell; 
+  display: table-cell;
   font-family: "Avenir Heavy", sans-serif;
   font-size: 15px;
   padding: 10px;
@@ -285,7 +289,7 @@ nav {
 
 /* WHO WE ARE */
 .who-we-are {
-  background-image: url(../images/who-we-are.png);
+  background-image: url(../images/who-we-are.svg);
   background-repeat: no-repeat;
   background-size: contain;
   color: #F8AC45;
@@ -315,7 +319,7 @@ nav {
     linear-gradient(45deg, #003042 50%, transparent 50%),
     linear-gradient(90deg, #003849 100%, transparent 100%),
     linear-gradient(-45deg, #003849 50%, transparent 50%) 100% 0,
-    linear-gradient(-90deg, #003042 100%, transparent 100%) 100% 0, 
+    linear-gradient(-90deg, #003042 100%, transparent 100%) 100% 0,
     linear-gradient(45deg, transparent 50%, #003042 50%) 100% 100%,
     linear-gradient(90deg, transparent 0, #003849 0) 100% 100%,
     linear-gradient(-45deg, transparent 50%, #003849 50%) 0 100%,
@@ -721,7 +725,7 @@ nav {
     linear-gradient(45deg, #003042 50%, transparent 50%),
     linear-gradient(90deg, #003849 100%, transparent 100%),
     linear-gradient(-45deg, #003849 50%, transparent 50%) 100% 0,
-    linear-gradient(-90deg, #003042 100%, transparent 100%) 100% 0, 
+    linear-gradient(-90deg, #003042 100%, transparent 100%) 100% 0,
     linear-gradient(45deg, transparent 50%, #003042 50%) 100% 100%,
     linear-gradient(90deg, transparent 0, #003849 0) 100% 100%,
     linear-gradient(-45deg, transparent 50%, #003849 50%) 0 100%,
@@ -867,7 +871,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 1740px) { 
+@media only screen and (max-width: 1740px) {
   .who-we-are {
     background-size: 1740px;
   }
@@ -971,7 +975,7 @@ nav {
   .logo {
     width: 80%;
   }
-  .computers-image, 
+  .computers-image,
   .bottom-image {
     visibility: hidden;
   }
@@ -1101,7 +1105,7 @@ nav {
     font-size: 2.6em;
   }
 
-  .computers-image, 
+  .computers-image,
   .bottom-image {
     visibility: hidden;
   }
@@ -1163,7 +1167,7 @@ nav {
   }
 
   /* FIREFOX MOBILE */
-  @-moz-document url-prefix() { 
+  @-moz-document url-prefix() {
     body {
       min-width: 300px;
     }
@@ -1232,5 +1236,3 @@ nav {
     }
   }
 }
-
-
