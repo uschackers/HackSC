@@ -24,6 +24,10 @@ button:focus {
 
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
   background-color: #003849;
   height: 100%;
@@ -37,7 +41,7 @@ body {
 }
 
 .top {
-	height: 850px;
+  height: 850px;
   min-height: 600px;
   position: relative;
   width: 100%;
@@ -60,7 +64,7 @@ body {
 }
 
 #mc_embed_signup {
-  clear:left; 
+  clear:left;
   padding: 3% 0 3% 0;
   width: 100%;
 }
@@ -213,7 +217,7 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   width: 10em;
 }
 
-.bottom-image, 
+.bottom-image,
 .robots,
 .top {
   visibility: hidden;
@@ -246,7 +250,7 @@ nav {
 
 .nav-option {
   color: #F8AC45;
-  display: table-cell; 
+  display: table-cell;
   font-family: "Avenir Heavy", sans-serif;
   font-size: 15px;
   padding: 10px;
@@ -279,12 +283,12 @@ nav {
 
 /* WHO WE ARE */
 .who-we-are {
-  background-image: url(../images/who-we-are.png);
+  background-image: url(../images/who-we-are.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   color: #F8AC45;
   font-family: 'Avenir Heavy', sans-serif;
-  height: 2000px;
+  min-height: 975px;
   position: relative;
 }
 
@@ -309,7 +313,7 @@ nav {
     linear-gradient(45deg, #003042 50%, transparent 50%),
     linear-gradient(90deg, #003849 100%, transparent 100%),
     linear-gradient(-45deg, #003849 50%, transparent 50%) 100% 0,
-    linear-gradient(-90deg, #003042 100%, transparent 100%) 100% 0, 
+    linear-gradient(-90deg, #003042 100%, transparent 100%) 100% 0,
     linear-gradient(45deg, transparent 50%, #003042 50%) 100% 100%,
     linear-gradient(90deg, transparent 0, #003849 0) 100% 100%,
     linear-gradient(-45deg, transparent 50%, #003849 50%) 0 100%,
@@ -426,9 +430,70 @@ nav {
   width: 100%;
 }
 
+@font-face {
+    font-family: Avenir-Light;
+    src: url(../assets/Avenir-Light.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Black;
+    src: url(../assets/Avenir-Black.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Heavy;
+    src: url(../assets/Avenir-Heavy.ttf);
+}
+
 /* FAQ */
 .faq {
-  height: 850px;
+	background-image: url(../images/FAQ%20images/FAQs%20Page%20No%20Droppers.svg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-left: 250px;
+  color: #F8AC45;
+
+	padding-right: 250px;
+	padding-bottom: 180px;
+	position: relative;
+}
+
+#faq-title {
+	font-size: 3em;
+  font-family: 'Avenir Heavy', sans-serif;
+  padding-top: 50px;
+}
+
+.faq-text {
+	color: #F8AC45;
+  font-family: "Avenir Light", sans-serif;
+  font-size: 20px;
+	line-height: 33px;
+	padding-top: 30px;
+}
+
+.faq-bold-text {
+	font-family: 'Avenir-Black';
+}
+
+.faq-link {
+	color: #F8AC45;
+	text-decoration: none;
+}
+
+.faq-machine-dropper-left {
+	left: 3%;
+	height:450px;
+	position: absolute;
+	width:175px;
+}
+
+.faq-machine-dropper-right {
+	height:450px;
+	position: absolute;
+	right: 3%;
+	width:175px;
 }
 
 /* Sponsors */
@@ -523,7 +588,7 @@ nav {
     linear-gradient(45deg, #003042 50%, transparent 50%),
     linear-gradient(90deg, #003849 100%, transparent 100%),
     linear-gradient(-45deg, #003849 50%, transparent 50%) 100% 0,
-    linear-gradient(-90deg, #003042 100%, transparent 100%) 100% 0, 
+    linear-gradient(-90deg, #003042 100%, transparent 100%) 100% 0,
     linear-gradient(45deg, transparent 50%, #003042 50%) 100% 100%,
     linear-gradient(90deg, transparent 0, #003849 0) 100% 100%,
     linear-gradient(-45deg, transparent 50%, #003849 50%) 0 100%,
@@ -561,24 +626,23 @@ nav {
 }
 
 .sponsors > .backgrounds .uncropped-lines.left.dark-orange-line {
-  bottom: 158px;
+  bottom: 156px;
   height: 3px;
   background-color: #ed413e;
   box-shadow: 0 1px 1px #ed413e;
 }
 
 .sponsors > .backgrounds .uncropped-lines.left.yellow-line {
-  bottom: 93px;
+  bottom: 91px;
   height: 7px;
   background-color: #faaf46;
   box-shadow: 0 0 1px #faaf46;
 }
 
 .sponsors > .backgrounds .uncropped-lines.left.light-orange-line {
-  bottom: 45px;
-  height: 1px;
-  background-color: #e96d32;
-  border: 1px solid #d14f2e;
+  bottom: 43px;
+  height: 0px;
+  border: 1px solid #e96d32;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right {
@@ -592,19 +656,23 @@ nav {
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.orange-yellow-line {
-  bottom: 230.5px;
-  height: 2px;
+  bottom: 229px;
+  height: 4px;
   background-color: #ea362e;
   border-bottom: 5px solid #faaf46;
-  box-shadow: 0 -2px 0.5px #ea362e;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.red-orange-line {
-  bottom: 120px;
+  bottom: 118px;
   height: 5.5px;
   background-color: #a82029;
-  border-bottom: 7px solid #eb382f;
-  box-shadow: 0 0.5px 1px #eb382f;
+  border-bottom: 8px solid #eb382f;
+}
+
+.sponsors > .backgrounds .uncropped-lines.right.red-small-line {
+  bottom: 74px;
+  height: 2px;
+  background-color: #a82029;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.red-line {
@@ -614,24 +682,21 @@ nav {
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.dark-orange-line {
-  bottom: 36px;
-  height: 3px;
+  bottom: 34px;
+  height: 4px;
   background-color: #eb382f;
-  box-shadow: 0 0 3px #eb382f;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.yellow-line {
-  bottom: 24px;
-  height: 3px;
+  bottom: 22px;
+  height: 4px;
   background-color: #faaf46;
-  box-shadow: 0 0 1px #faaf46;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.light-orange-line {
-  bottom: 13px;
-  height: 2px;
+  bottom: 11px;
+  height: 3px;
   background-color: #e76b31;
-  box-shadow: 0 0 1px #e76b31;
 }
 
 .sponsors > .wrapper {
@@ -667,7 +732,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 1740px) { 
+@media only screen and (max-width: 1740px) {
   .who-we-are {
     background-size: 1740px;
   }
@@ -689,6 +754,7 @@ nav {
   nav {
     display: none;
   }
+
   .nav-show {
     display: block;
   }
@@ -767,12 +833,44 @@ nav {
   .red-line {
     display: block;
   }
+
+  .faq {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  #faq-title {
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: 2px;
+    padding-bottom: 40px;
+  }
+
+  .faq-text {
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 45px;
+  }
 }
 
 @media only screen and (max-width: 950px) {
   .robots {
     justify-content: left;
     -webkit-justify-content: left;
+  }
+
+  .faq-machine-dropper-left {
+    width: 75px;
+    height: 150px;
+  }
+
+  .faq-machine-dropper-right {
+    width: 75px;
+    height: 150px;
   }
 }
 
@@ -786,10 +884,23 @@ nav {
   .logo {
     width: 80%;
   }
-  .computers-image, 
+
+  .computers-image,
   .bottom-image {
     visibility: hidden;
   }
+}
+
+@media only screen and (max-width: 560px) {
+	/*.faq {
+		padding-top: 0px;
+    padding-left: 23px;
+		text-align: center;
+	}
+
+	#faq-title {
+		padding-bottom: 0px;
+	}*/
 }
 
 /* TABLETish */
@@ -931,7 +1042,7 @@ nav {
     font-size: 2.6em;
   }
 
-  .computers-image, 
+  .computers-image,
   .bottom-image {
     visibility: hidden;
   }
@@ -982,7 +1093,13 @@ nav {
 
   /* FAQ */
   .faq {
-    height: 2000px;
+    color: #F8AC45;
+		height: auto;
+		padding-left: 23px;
+		padding-right: 23px;
+    padding-top: 200px;
+		background-image: none;
+		text-align: center;
   }
 
   /* Sponsors */
@@ -996,6 +1113,39 @@ nav {
     margin: 50px 0;
   }
 
+	.faq-machine-dropper-right {
+		display: none;
+	}
+
+	.faq-machine-dropper-left {
+		display: none;
+	}
+
+	#faq-title {
+        font-size: 115px;
+        font-weight: 600;
+        padding-top: 0;
+        text-align: center;
+	}
+
+	.faq-text {
+    font-size: 57px;
+    font-weight: 100;
+    line-height: 76px;
+    letter-spacing: 1px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.faq-bold-text {
+		font-family: 'Avenir-Black';
+	}
+
+	.faq-link {
+		color: #FFAD0B;
+		text-decoration: none;
+	}
+
   /* iPHONE 4 and similar height screens */
   @media (max-device-height:500px) {
     .robots > img {
@@ -1004,7 +1154,7 @@ nav {
   }
 
   /* FIREFOX MOBILE */
-  @-moz-document url-prefix() { 
+  @-moz-document url-prefix() {
     body {
       min-width: 300px;
     }
@@ -1050,6 +1200,15 @@ nav {
       padding: 10px 10px;
     }
 
+		#faq-title {
+			font-size: 50px;
+		}
+		.faq-text {
+			font-size: 20px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
     .who-we-are-title {
       font-size: 50px;
     }
@@ -1084,5 +1243,3 @@ nav {
     }
   }
 }
-
-
