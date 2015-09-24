@@ -501,7 +501,7 @@ nav {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  color: #ffad0b;
+  color: #F8AC45;
   font-family: "Avenir Light", sans-serif;
 }
 
@@ -626,24 +626,23 @@ nav {
 }
 
 .sponsors > .backgrounds .uncropped-lines.left.dark-orange-line {
-  bottom: 158px;
+  bottom: 156px;
   height: 3px;
   background-color: #ed413e;
   box-shadow: 0 1px 1px #ed413e;
 }
 
 .sponsors > .backgrounds .uncropped-lines.left.yellow-line {
-  bottom: 93px;
+  bottom: 91px;
   height: 7px;
   background-color: #faaf46;
   box-shadow: 0 0 1px #faaf46;
 }
 
 .sponsors > .backgrounds .uncropped-lines.left.light-orange-line {
-  bottom: 45px;
-  height: 1px;
-  background-color: #e96d32;
-  border: 1px solid #d14f2e;
+  bottom: 43px;
+  height: 0px;
+  border: 1px solid #e96d32;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right {
@@ -657,19 +656,23 @@ nav {
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.orange-yellow-line {
-  bottom: 230.5px;
-  height: 2px;
+  bottom: 229px;
+  height: 4px;
   background-color: #ea362e;
   border-bottom: 5px solid #faaf46;
-  box-shadow: 0 -2px 0.5px #ea362e;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.red-orange-line {
-  bottom: 120px;
+  bottom: 118px;
   height: 5.5px;
   background-color: #a82029;
-  border-bottom: 7px solid #eb382f;
-  box-shadow: 0 0.5px 1px #eb382f;
+  border-bottom: 8px solid #eb382f;
+}
+
+.sponsors > .backgrounds .uncropped-lines.right.red-small-line {
+  bottom: 74px;
+  height: 2px;
+  background-color: #a82029;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.red-line {
@@ -679,24 +682,21 @@ nav {
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.dark-orange-line {
-  bottom: 36px;
-  height: 3px;
+  bottom: 34px;
+  height: 4px;
   background-color: #eb382f;
-  box-shadow: 0 0 3px #eb382f;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.yellow-line {
-  bottom: 24px;
-  height: 3px;
+  bottom: 22px;
+  height: 4px;
   background-color: #faaf46;
-  box-shadow: 0 0 1px #faaf46;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.light-orange-line {
-  bottom: 13px;
-  height: 2px;
+  bottom: 11px;
+  height: 3px;
   background-color: #e76b31;
-  box-shadow: 0 0 1px #e76b31;
 }
 
 .sponsors > .wrapper {
@@ -716,8 +716,8 @@ nav {
   max-width: 950px;
   margin: 0 auto;
   padding: 0 20px;
-  line-height: 22px;
-  font-size: 18px;
+  line-height: 33px;
+  font-size: 20px;
   font-weight: lighter;
 }
 
@@ -815,6 +815,27 @@ nav {
     font-family: "Avenir Heavy", sans-serif;
   }
 
+  /*Sponsors*/
+  .sponsors > .wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 85%;
+  }
+  .sponsors > .wrapper > .title {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .sponsors > .wrapper > .subtitle {
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin: 15px 0;
+    padding: 0;
+  }
+
   .red-line {
     display: block;
   }
@@ -839,6 +860,10 @@ nav {
     font-weight: 100;
     letter-spacing: 1px;
     line-height: 45px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 85%;
   }
 }
 
@@ -961,6 +986,18 @@ nav {
     font-family: "Avenir Heavy", sans-serif;
   }
 
+
+  /* Sponsors */
+  .sponsors > .wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 85%;
+  }
+
+  .sponsors > .wrapper > .subtitle {
+    padding: 0;
+  }
+
   .red-line {
     display: block;
   }
@@ -1072,6 +1109,17 @@ nav {
 		text-align: center;
   }
 
+  /* Sponsors */
+  .sponsors > .wrapper > .title {
+    font-size: 115px;
+  }
+
+  .sponsors > .wrapper > .subtitle {
+    font-size: 57px;
+    line-height: 76px;
+    margin: 50px 0;
+  }
+
 	.faq-machine-dropper-right {
 		display: none;
 	}
@@ -1081,10 +1129,10 @@ nav {
 	}
 
 	#faq-title {
-        font-size: 115px;
-        font-weight: 600;
-        padding-top: 0;
-        text-align: center;
+    font-size: 115px;
+    font-weight: 600;
+    padding-top: 0;
+    text-align: center;
 	}
 
 	.faq-text {
@@ -1092,8 +1140,9 @@ nav {
     font-weight: 100;
     line-height: 76px;
     letter-spacing: 1px;
-		padding-top: 40px;
-		padding-bottom: 40px;
+    margin: 0 auto;
+		padding: 40px;
+    width: 85%;
 	}
 
 	.faq-bold-text {
@@ -1104,7 +1153,6 @@ nav {
 		color: #FFAD0B;
 		text-decoration: none;
 	}
-
 
   /* iPHONE 4 and similar height screens */
   @media (max-device-height:500px) {
@@ -1174,6 +1222,17 @@ nav {
     }
 
     .who-we-are-text p {
+      font-size: 25px;
+      line-height: 35px;
+      margin: 10px 0px;
+    }
+
+    /* Sponsors */
+    .sponsors > .wrapper > .title {
+      font-size: 50px;
+    }
+
+    .sponsors > .wrapper > .subtitle {
       font-size: 25px;
       line-height: 35px;
       margin: 10px 0px;
