@@ -816,6 +816,11 @@ nav {
   }
 
   /*Sponsors*/
+  .sponsors > .wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 85%;
+  }
   .sponsors > .wrapper > .title {
     font-size: 60px;
     font-weight: 600;
@@ -826,8 +831,9 @@ nav {
     font-size: 27px;
     font-weight: 100;
     letter-spacing: 1px;
-    margin: 15px 0;
     line-height: 45px;
+    margin: 15px 0;
+    padding: 0;
   }
 
   .red-line {
@@ -854,6 +860,10 @@ nav {
     font-weight: 100;
     letter-spacing: 1px;
     line-height: 45px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 85%;
   }
 }
 
@@ -978,17 +988,14 @@ nav {
 
 
   /* Sponsors */
-  .sponsors > .wrappers > .title {
-    margin: 0 auto;
-    text-align: center;
+  .sponsors > .wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
     width: 85%;
   }
 
-  .sponsors > .wrappers > .title {
-    font-size: 27px;
-    font-weight: 100;
-    letter-spacing: 1px;
-    line-height: 45px;
+  .sponsors > .wrapper > .subtitle {
+    padding: 0;
   }
 
   .red-line {
@@ -1122,10 +1129,10 @@ nav {
 	}
 
 	#faq-title {
-        font-size: 115px;
-        font-weight: 600;
-        padding-top: 0;
-        text-align: center;
+    font-size: 115px;
+    font-weight: 600;
+    padding-top: 0;
+    text-align: center;
 	}
 
 	.faq-text {
@@ -1133,8 +1140,9 @@ nav {
     font-weight: 100;
     line-height: 76px;
     letter-spacing: 1px;
-		padding-top: 40px;
-		padding-bottom: 40px;
+    margin: 0 auto;
+		padding: 40px;
+    width: 85%;
 	}
 
 	.faq-bold-text {
