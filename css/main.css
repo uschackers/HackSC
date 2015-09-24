@@ -739,51 +739,9 @@ nav {
 }
 
 .hackschools > .backgrounds > .assembled-robots > .robot {
-  position: relative;
   width: 100%;
   height: 200px;
   margin-top: 35px;
-}
-
-.hackschools > .backgrounds > .assembled-robots > .robot::before {
-  position: absolute;
-  top: -15px;
-  z-index: 1;
-  width: 100%;
-  content: url(../images/HackSChools/claw.svg);
-}
-
-.hackschools > .backgrounds > .assembled-robots > .robot::after {
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  content: "";
-}
-
-.hackschools > .backgrounds > .assembled-robots > .robot.hardware::after {
-  padding: 105px 6px 0;
-  content: url(../images/hardware-robot.svg);
-}
-
-.hackschools > .backgrounds > .assembled-robots > .robot.web-development::after {
-  padding: 90px 8px 0 10px;
-  content: url(../images/web-robot.svg);
-}
-
-.hackschools > .backgrounds > .assembled-robots > .robot.printing::after {
-  padding: 75px 13px 0 14px;
-  content: url(../images/3-d-printing-robot.svg);
-}
-
-.hackschools > .backgrounds > .assembled-robots > .robot.vr-games::after {
-  padding: 90px 17px 0 18px;
-  content: url(../images/games-robot.svg);
-}
-
-.hackschools > .backgrounds > .assembled-robots > .robot.ios-android::after {
-  padding: 84px 30px 0;
-  content: url(../images/mobile-robot.svg);
 }
 
 .hackschools > .wrapper {
@@ -965,7 +923,7 @@ nav {
   position: absolute;
   left: 305px;
   width: 10px;
-  height: 40px;
+  height: 100%;
   margin-top: 185px;
   background-color: #003042;
 }
