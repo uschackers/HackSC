@@ -339,6 +339,7 @@ nav.nav-show {
 
 .who-we-are-title {
   font-size: 3em;
+  text-align: right;
 }
 
 .who-we-are-text p {
@@ -346,6 +347,7 @@ nav.nav-show {
   font-size: 20px;
   line-height: 33px;
   padding: 15px 0;
+  text-align: right;
 }
 
 .who-we-are-welcome {
@@ -1081,6 +1083,7 @@ nav.nav-show {
     font-size: 60px;
     font-weight: 600;
     letter-spacing: 2px;
+    text-align: center;
   }
 
   .who-we-are-text {
@@ -1095,6 +1098,7 @@ nav.nav-show {
     letter-spacing: 1px;
     line-height: 45px;
     margin: 15px 0;
+    text-align: center;
   }
 
   .who-we-are-welcome {
@@ -1258,6 +1262,7 @@ nav.nav-show {
     font-size: 60px;
     font-weight: 600;
     letter-spacing: 2px;
+    text-align: center;
   }
 
   .who-we-are-text {
@@ -1492,6 +1497,7 @@ nav.nav-show {
     font-size: 32px;
     line-height: 45px;
     margin: 50px 0;
+    text-align: center;
   }
 
   /* FAQ */
