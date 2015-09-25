@@ -227,7 +227,7 @@ nav.nav-show {
 
 /* WHO WE ARE */
 .who-we-are {
-  background-image: url(../images/who-we-are.svg);
+  background-image: url(../images/WhoWeAre/who-we-are.svg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #F8AC45;
@@ -750,7 +750,7 @@ nav.nav-show {
   margin: 0 auto;
   padding: 15px 0;
   line-height: 28px;
-  font-family: "Avenir Heavy", sans-serif;
+  font-family: "Avenir Black", sans-serif;
   font-size: 24px;
 }
 
@@ -1014,6 +1014,17 @@ nav.nav-show {
 @media only screen and (max-width: 600px) {
   .logo {
     width: 80%;
+  }
+}
+
+/* Who we are background support for very large screens */
+@media only screen and (min-width: 1740px) {
+  .who-we-are {
+    background-size: 1740px;
+  }
+
+  .who-we-are-text {
+    width: 705px;
   }
 }
 
