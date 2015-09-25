@@ -30,6 +30,7 @@ a {
 
 body {
   background-color: #003849;
+  font-family: "Avenir-Light", sans-serif;
   height: 100%;
 	margin: 0;
   min-width: 425px;
@@ -1418,7 +1419,7 @@ nav.nav-show {
 
   /* TOP SECTION */
   .top {
-    height: 1350px;
+    min-height: 1350px;
   }
 
   .logo {
