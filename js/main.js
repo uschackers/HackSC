@@ -104,8 +104,10 @@ function isMobile() {
 function showNavBar() {
   if ($('.bottom-bar').offset().top + $('.bottom-bar').height() < $(window).scrollTop()) {
     $('nav').addClass('nav-show');
+    $('.placeholder').addClass('nav-show');
   } else {
     $('nav').removeClass('nav-show');
+    $('.placeholder').removeClass('nav-show');
   }
 }
 
