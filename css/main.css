@@ -40,6 +40,12 @@ body {
   display: none;
 }
 
+.cropped {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .top {
   height: 850px;
   min-height: 600px;
@@ -496,6 +502,350 @@ nav {
 	width:175px;
 }
 
+/* Hack SChools */
+.hackschools {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  color: #ee4036;
+  font-family: "Avenir Light", sans-serif;
+}
+
+.hackschools > .backgrounds {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.hackschools > .backgrounds .misc-graphics {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.hackschools > .backgrounds > .top-horizontal-line {
+  width: 100%;
+  height: 70px;
+  background-color: #002939;
+}
+
+.hackschools > .backgrounds > .top-v {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 205px);
+  width: 400px;
+  height: 70px;
+}
+
+.hackschools > .backgrounds > .top-v::before,
+.hackschools > .backgrounds > .top-v::after {
+  position: absolute;
+  top: 5px;
+  width: 350px;
+  height: 15px;
+  background-color: #003243;
+  content: "";
+}
+
+.hackschools > .backgrounds > .top-v::before {
+  left: calc(50% - 10px);
+  transform: rotate(340deg);
+}
+
+.hackschools > .backgrounds > .top-v::after {
+  left: calc(60px - 50%);
+  transform: rotate(20deg);
+}
+
+.hackschools > .backgrounds > .school-columns {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 510px;
+}
+
+.hackschools > .backgrounds > .school-columns > .column::before {
+  position: absolute;
+  top: 70px;
+  left: calc(50% - 175px / 2);
+  width: 175px;
+  height: 20px;
+  background-color: #003042;
+  content: "";
+}
+
+.hackschools > .backgrounds > .school-columns > .column::after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 220px;
+  left: calc(50% - 75px);
+  width: 150px;
+  height: calc(50% + 70px);
+  background-color: #003849;
+  border-width: 0 3px;
+  border-style: solid;
+  border-color: #003042;
+  content: "";
+}
+
+.hackschools > .backgrounds > .school-columns > .column > .column-header {
+  box-sizing: border-box;
+  position: relative;
+  width: 150px;
+  height: 70px;
+  margin: 0 auto;
+  color: #003243;
+  border-style: solid;
+}
+
+.hackschools > .backgrounds > .school-columns > .column > .column-header::before {
+  position: absolute;
+  top: 7px;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  content: "";
+}
+
+.hackschools > .backgrounds > .school-columns > .column.hardware > .column-header,
+.hackschools > .backgrounds > .school-columns > .column.ios-android > .column-header {
+  border-width: 0 7px;
+}
+
+.hackschools > .backgrounds > .school-columns > .column.hardware > .column-header::before,
+.hackschools > .backgrounds > .school-columns > .column.ios-android > .column-header::before {
+  box-shadow: 0 5px,
+    0 12px, 0 17px,
+    0 24px, 0 29px,
+    0 36px, 0 41px,
+    0 49px, 0 54px;
+}
+
+.hackschools > .backgrounds > .school-columns > .column.web-development > .column-header,
+.hackschools > .backgrounds > .school-columns > .column.vr-games > .column-header {
+  border-width: 0 3px;
+}
+
+.hackschools > .backgrounds > .school-columns > .column.web-development > .column-header::before,
+.hackschools > .backgrounds > .school-columns > .column.vr-games > .column-header::before {
+  top: calc(50% - 8px);
+  height: 6px;
+}
+
+.hackschools > .backgrounds > .school-columns > .column.printing > .column-header {
+  border: none;
+}
+
+.hackschools > .backgrounds > .school-columns > .column.printing > .column-header::before {
+  background: none;
+}
+
+.hackschools > .backgrounds > .school-columns > .column > .school-icon {
+  position: relative;
+  left: calc(50% - 75px);
+  z-index: 1;
+  width: 150px;
+  height: 220px;
+  background: url(../images/PhilBlue.svg) center no-repeat #003042;
+  background-size: 60px;
+}
+
+.hackschools > .backgrounds > .school-columns > .column > .school-icon::before {
+  position: absolute;
+  top: 230px;
+  left: calc(50% - 60px);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: calc(100% - 30px) calc(100% - 30px);
+  content: "";
+}
+
+.hackschools > .backgrounds > .school-columns > .column.hardware > .school-icon::before {
+  background-image: url(../images/hardware-robot.svg);
+  background-color: #b83528;
+  transform: rotate(135deg);
+}
+
+.hackschools > .backgrounds > .school-columns > .column.web-development > .school-icon::before {
+  background-image: url(../images/web-robot.svg);
+  background-color: #002a35;
+  transform: rotate(260deg);
+}
+
+.hackschools > .backgrounds > .school-columns > .column.printing > .school-icon::before {
+  background-image: url(../images/3-d-printing-robot.svg);
+  background-color: #faaf37;
+  transform: rotate(160deg);
+}
+
+.hackschools > .backgrounds > .school-columns > .column.vr-games > .school-icon::before {
+  background-image: url(../images/games-robot.svg);
+  background-color: #ee4036;
+  transform: rotate(340deg);
+}
+
+.hackschools > .backgrounds > .school-columns > .column.ios-android > .school-icon::before {
+  background-image: url(../images/mobile-robot.svg);
+  background-color: #f6e400;
+  transform: rotate(45deg);
+}
+
+.hackschools > .backgrounds > .school-columns > .column > .school-icon::after {
+  position: absolute;
+  top: 235px;
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 4px;
+  margin-top: 125px;
+  color: #002939;
+  background-color: currentColor;
+  box-shadow:
+    -25px 10px, 25px 10px,
+    -25px 20px, 25px 20px,
+    -25px 30px, 25px 30px,
+    -25px 40px, 25px 40px,
+    -15px 50px, 15px 50px,
+    -25px 0, 25px 0, 0 60px;
+  content: "";
+}
+
+.hackschools > .backgrounds > .assembled-robots {
+  display: -webkit-flexbox;
+  display: -webkit-flex;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: -8%;
+  bottom: 85px;
+  width: 116%;
+}
+
+.hackschools > .backgrounds > .assembled-robots::before {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: #b83528;
+  box-shadow: 0 30px 0 #b83528;
+  content: "";
+}
+
+.hackschools > .backgrounds > .assembled-robots > .robot {
+  width: 100%;
+  height: 200px;
+  margin-top: 35px;
+}
+
+.hackschools > .wrapper {
+  position: relative;
+  padding: 60px 0 50px;
+  text-align: center;
+  z-index: 1;
+}
+
+.hackschools > .wrapper .bold {
+  font-family: "Avenir Heavy", sans-serif;
+}
+
+.hackschools > .wrapper > .title {
+  margin: 40px 0 10px;
+  font-family: "Avenir Heavy";
+  font-size: 44px;
+}
+
+.hackschools > .wrapper > .subtitle {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
+  line-height: 32px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.hackschools > .backgrounds > .school-columns,
+.hackschools > .wrapper > .school-list {
+  display: -webkit-flexbox;
+  display: -webkit-flex;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 42px 0 30px;
+}
+
+.hackschools > .wrapper > .school-list {
+  margin-top: 200px;
+}
+
+.hackschools > .backgrounds > .school-columns > .column,
+.hackschools > .wrapper > .school-list > .school-details {
+  position: relative;
+  width: 100%;
+}
+
+.hackschools > .wrapper > .school-list > .school-details > .school-icon {
+  width: 100%;
+  max-width: 260px;
+  max-height: 260px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #002939;
+}
+
+.hackschools > .wrapper > .school-list > .school-details > .school-icon > img {
+  margin: 27px 30px;
+}
+
+.hackschools > .wrapper > .school-list > .school-details > .school-title {
+  position: relative;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 15px 0;
+  line-height: 28px;
+  font-family: "Avenir Heavy", sans-serif;
+  font-size: 24px;
+}
+
+.hackschools > .wrapper > .school-list > .school-details > .school-title::after {
+  position: absolute;
+  top: -5px;
+  left: calc(50% - 20px);
+  z-index: -1;
+  width: 40px;
+  height: calc(100% + 10px);
+  background-color: #002939;
+  content: "";
+}
+
+.hackschools > .wrapper > .school-list > .school-details > .school-info {
+  box-sizing: border-box;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 15px 13px;
+  text-align: left;
+  border-radius: 20px;
+  background-color: #ac082a;
+  color: #003849;
+}
+
+.hackschools > .wrapper > .school-list > .school-details > .school-info > p {
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #ee4036;
+}
+
+.hackschools > .wrapper > .school-list > .school-details > .school-info > p + p {
+  margin-top: 15px;
+}
+
+
 /* Sponsors */
 .sponsors {
   position: relative;
@@ -506,10 +856,7 @@ nav {
 }
 
 .sponsors .cropped {
-  position: relative;
-  max-width: 1440px;
   height: calc(100% - 50px);
-  margin: 0 auto;
 }
 
 .sponsors > .backgrounds {
@@ -576,7 +923,7 @@ nav {
   position: absolute;
   left: 305px;
   width: 10px;
-  height: 40px;
+  height: 100%;
   margin-top: 185px;
   background-color: #003042;
 }
@@ -612,13 +959,14 @@ nav {
   bottom: 4px;
   width: 100%;
   height: 61px;
-  background-color: #a9212a;
-  box-shadow: 0 -1px 1px #a9212a;
+  background-color: #ab1f25;
+  box-shadow: 0 -1px 1px #ab1f25;
 }
 
 .sponsors > .backgrounds .uncropped-lines {
   position: absolute;
   width: calc((100% - 1440px) / 2);
+  margin: 0;
 }
 
 .sponsors > .backgrounds .uncropped-lines.left {
@@ -626,22 +974,20 @@ nav {
 }
 
 .sponsors > .backgrounds .uncropped-lines.left.dark-orange-line {
-  bottom: 156px;
-  height: 3px;
-  background-color: #ed413e;
-  box-shadow: 0 1px 1px #ed413e;
+  bottom: 157px;
+  height: 4px;
+  background-color: #ef4137;
 }
 
 .sponsors > .backgrounds .uncropped-lines.left.yellow-line {
-  bottom: 91px;
+  bottom: 93px;
   height: 7px;
-  background-color: #faaf46;
-  box-shadow: 0 0 1px #faaf46;
+  background-color: #FCB038;
+  box-shadow: 0 1px 1px #556043;
 }
 
 .sponsors > .backgrounds .uncropped-lines.left.light-orange-line {
-  bottom: 43px;
-  height: 0px;
+  bottom: 45px;
   border: 1px solid #e96d32;
 }
 
@@ -656,46 +1002,44 @@ nav {
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.orange-yellow-line {
-  bottom: 229px;
-  height: 4px;
-  background-color: #ea362e;
+  bottom: 230.5px;
+  height: 2px;
+  background-color: #df3827;
   border-bottom: 5px solid #faaf46;
+  box-shadow: 0 -2px 0.5px #f31e2f;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.red-orange-line {
-  bottom: 118px;
-  height: 5.5px;
+  bottom: 119px;
+  height: 6px;
   background-color: #a82029;
-  border-bottom: 8px solid #eb382f;
-}
-
-.sponsors > .backgrounds .uncropped-lines.right.red-small-line {
-  bottom: 74px;
-  height: 2px;
-  background-color: #a82029;
+  border-bottom: 7px solid #eb382f;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.red-line {
+  display: block;
   bottom: 75px;
-  height: 2.5px;
-  background-color: #a3212a;
+  height: 2px;
+  background-color: #9d0c2c;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.dark-orange-line {
-  bottom: 34px;
-  height: 4px;
-  background-color: #eb382f;
+  bottom: 35px;
+  height: 3px;
+  background-color: #ef3925;
+  box-shadow: 0 -1px 1px #ef3925;
 }
 
 .sponsors > .backgrounds .uncropped-lines.right.yellow-line {
-  bottom: 22px;
-  height: 4px;
+  bottom: 24px;
+  height: 2px;
   background-color: #faaf46;
+  border-bottom: 1px solid #faaf46;
+  box-shadow: 0 0px 1px #faaf46;
 }
-
 .sponsors > .backgrounds .uncropped-lines.right.light-orange-line {
-  bottom: 11px;
-  height: 3px;
+  bottom: 13px;
+  height: 2px;
   background-color: #e76b31;
 }
 
@@ -864,6 +1208,124 @@ nav {
     padding-left: 40px;
     padding-right: 40px;
     width: 85%;
+  }
+
+  .hackschools {
+    color: #F8AC45;
+  }
+
+  .hackschools > .backgrounds > .school-columns {
+    position: absolute;
+    top: auto;
+    bottom: 20px;
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 110px;
+    padding: 0;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column {
+    margin: 0 5px;
+    background-color: currentColor;
+    border: 15px solid currentColor;
+    border-radius: 50%;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column > .column-header,
+  .hackschools > .backgrounds > .school-columns *::before,
+  .hackschools > .backgrounds > .school-columns *::after {
+    display: none;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column > .school-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-size: contain;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.hardware {
+    color: #b83528;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.hardware > .school-icon {
+    background-image: url(../images/hardware-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.web-development {
+    color: #002a35;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.web-development > .school-icon {
+    background-image: url(../images/web-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.printing {
+    color: #faaf37;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.printing > .school-icon {
+    background-image: url(../images/3-d-printing-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.vr-games {
+    color: #ee4036;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.vr-games > .school-icon {
+    background-image: url(../images/games-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.ios-android {
+    color: #f6e400;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.ios-android > .school-icon {
+    background-image: url(../images/mobile-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .assembled-robots {
+    display: none;
+  }
+
+  .hackschools > .wrapper > .title {
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .hackschools > .wrapper > .subtitle {
+    margin: 0 20px 40px;
+    padding: 0;
+    font-size: 27px;
+    letter-spacing: 1px;
+    line-height: 45px;
+  }
+
+  .hackschools > .wrapper > .school-list {
+    display: block;
+    margin: 0 0 80px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .hackschools > .wrapper > .school-list > .school-details::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .hackschools > .wrapper > .school-list > .school-details > .school-title {
+    max-width: none;
+    padding: 5px 0;
+  }
+
+  .hackschools > .wrapper > .school-list > .school-details > .school-icon,
+  .hackschools > .wrapper > .school-list > .school-details > .school-title::after,
+  .hackschools > .wrapper > .school-list > .school-details > .school-info {
+    display: none;
   }
 }
 
