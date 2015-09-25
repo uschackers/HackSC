@@ -71,6 +71,7 @@ body {
 
 .register {
   background-color: #FFAD0B;
+  border: 1px #FFAD0B solid;
   border-radius: 5px;
   color: #003849;
   font-family: "Avenir Light", sans-serif;
@@ -79,6 +80,11 @@ body {
   padding: 4px;
   text-align: center;
   width: 200px;
+}
+
+.register:hover {
+  background-color: #003849;
+  color: #FFAD0B;;
 }
 
 /* do not group these rules */
@@ -176,7 +182,7 @@ nav {
 }
 
 .nav-logo {
-  display: none;
+  display: inline-block;
   float: left;
   height: 50px;
   padding: 5px 20px;
@@ -184,7 +190,7 @@ nav {
 
 .nav-option-bar {
   display: table;
-  float: none;
+  float: right;
   height: 100%;
   margin: 0 auto;
   padding-right: 10px;
@@ -210,17 +216,12 @@ nav {
   height: 100%;
 }
 
-.nav-show {
-  display: block;
+nav.nav-show {
   position: fixed;
 }
 
-.nav-show > .nav-option-bar {
-  float: right;
-}
-
-.nav-show > .nav-logo {
-  display: inline-block;
+.placeholder.nav-show {
+  height: 60px;
 }
 
 /* WHO WE ARE */
@@ -1035,8 +1036,12 @@ nav {
     display: none;
   }
 
-  .nav-show {
+  nav.nav-show {
     display: block;
+  }
+
+  .placeholder.nav-show {
+    height: 0;
   }
 
   .nav-option-bar {
@@ -1206,8 +1211,13 @@ nav {
   nav {
     display: none;
   }
-  .nav-show {
+
+  nav.nav-show {
     display: block;
+  }
+
+  .placeholder.nav-show {
+    height: 0;
   }
 
   .nav-option-bar {
@@ -1460,6 +1470,10 @@ nav {
 
   .nav-option {
     font-size: 3em;
+  }
+
+  .placeholder.nav-show {
+    height: 0;
   }
 
   /* WHO WE ARE */
