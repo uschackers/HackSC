@@ -405,7 +405,7 @@ nav.nav-show {
 #faq-title {
 	font-size: 3em;
   font-family: 'Avenir Heavy', sans-serif;
-  padding-top: 50px;
+  padding-top: 150px;
 }
 
 .faq-text {
@@ -417,6 +417,7 @@ nav.nav-show {
 }
 
 .faq-bold-text {
+  display: block;
 	font-family: 'Avenir-Black';
 }
 
@@ -1138,6 +1139,7 @@ nav.nav-show {
     font-size: 60px;
     letter-spacing: 2px;
     padding-bottom: 40px;
+    padding-top: 200px;
   }
 
   .faq-text {
@@ -1366,14 +1368,14 @@ nav.nav-show {
   .hackschools > .wrapper > .subtitle {
     margin: 40px 50px;
     padding: 0;
-    font-size: 57px;
+    font-size: 32px;
     letter-spacing: 1px;
-    line-height: 76px;
+    line-height: 45px;
   }
 
   .hackschools > .wrapper > .school-list {
     display: block;
-    margin: 0 0 150px;
+    margin: 0 0 220px;
     padding: 0;
     text-align: center;
   }
@@ -1486,8 +1488,8 @@ nav.nav-show {
   }
 
   .who-we-are-text p {
-    font-size: 57px;
-    line-height: 76px;
+    font-size: 32px;
+    line-height: 45px;
     margin: 50px 0;
   }
 
@@ -1495,8 +1497,8 @@ nav.nav-show {
   .faq {
     color: #F8AC45;
 		height: auto;
-		padding-left: 23px;
-		padding-right: 23px;
+		padding-left: 0;
+		padding-right: 0;
     padding-top: 200px;
 		background-image: none;
 		text-align: center;
@@ -1508,8 +1510,8 @@ nav.nav-show {
   }
 
   .sponsors > .wrapper > .subtitle {
-    font-size: 57px;
-    line-height: 76px;
+    font-size: 32px;
+    line-height: 45px;
     margin: 50px 0;
   }
 
@@ -1529,9 +1531,9 @@ nav.nav-show {
 	}
 
 	.faq-text {
-    font-size: 57px;
+    font-size: 32px;
     font-weight: 100;
-    line-height: 76px;
+    line-height: 45px;
     letter-spacing: 1px;
     margin: 0 auto;
 		padding: 40px;
@@ -1541,6 +1543,10 @@ nav.nav-show {
 	.faq-bold-text {
 		font-family: 'Avenir-Black';
 	}
+
+  .faq-text > .faq-bold-text {
+    padding-bottom: 40px;
+  }
 
 	.faq-link {
 		color: #FFAD0B;
