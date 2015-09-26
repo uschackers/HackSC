@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Avenir Light";
+  src: url("../assets/Avenir-Light.ttf")  format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url("../assets/Avenir-Heavy.ttf")  format("truetype");
+}
+
 html {
   height: 100%;
 }
@@ -14,15 +24,31 @@ button:focus {
 
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
   background-color: #003849;
+  font-family: "Avenir-Light", sans-serif;
   height: 100%;
 	margin: 0;
+  min-width: 425px;
   width: auto;
 }
 
+.only-small-screen {
+  display: none;
+}
+
+.cropped {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .top {
-	height: 100%;
+  height: 850px;
   min-height: 600px;
   position: relative;
   width: 100%;
@@ -38,91 +64,55 @@ body {
 
 .date {
 	color: #CD372D;
-  font-family: 'Roboto Bold', sans-serif;
+  font-family: "Avenir Light", sans-serif;
   font-weight: 700;
 	font-size: 2em;
 	text-align: center;
 }
 
-#mc_embed_signup {
-  clear:left; 
-  padding: 3% 0 3% 0;
-  width: 100%;
-}
-
-#mc_embed_signup_scroll {
-  display: -webkit-flexbox;
-  display: -moz-flexbox;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-  flex-direction: row;
-  -webkit-flex-direction: row;
-  align-items: center;
-  -webkit-align-items: center;
-}
-
-#mc_embed_signup .email {
-  background: transparent;
-  border-color: #CD372D;
-  border-radius: 7px;
-  border-style: solid;
-  box-shadow: none;
-  color: #FFAD0B;
-  font-family: 'Roboto Light', sans-serif;
-  font-size: 1.2em;
-  padding: 10px;
-  text-align: center;
-  width: 20em;
-}
-
-#mc_embed_signup .button {
+.register {
   background-color: #FFAD0B;
-  border: none;
-  border-radius: 7px;
-  box-shadow: none;
+  border: 1px #FFAD0B solid;
+  border-radius: 5px;
   color: #003849;
-  font-size: 1.2em;
-  margin-left: 20px;
-  padding: 10px;
-  -webkit-appearance: none;
-}
-
-#mc_embed_signup .button:hover {
-  background-color: #FF9F39;
-}
-
-.notification-bar {
-  display: -webkit-flexbox;
-  display: -moz-flexbox;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-  flex-direction: row;
-  -webkit-flex-direction: row;
-  align-items: center;
-  -webkit-align-items: center;
-  font-family: 'Roboto Light', sans-serif;
-  font-size: 1.2em;
-  padding: 1em;
+  font-family: "Avenir Light", sans-serif;
+  font-size: 25px;
+  margin: 35px auto;
+  padding: 4px;
   text-align: center;
+  width: 200px;
 }
 
-.success-notification {
-  color: #FFAD0B;
+.register:hover {
+  background-color: #003849;
+  color: #FFAD0B;;
 }
 
-.failed-notification {
+/* do not group these rules */
+*::-webkit-input-placeholder {
+  color: #CD372D;
+}
+*:-moz-placeholder {
+      /* FF 4-18 */
+  color: #CD372D;
+}
+*::-moz-placeholder {
+      /* FF 19+ */
+  color: #CD372D;
+}
+*:-ms-input-placeholder {
+      /* IE 10+ */
   color: #CD372D;
 }
 
+input:focus::-webkit-input-placeholder { color:transparent;  }
+input:focus:-moz-placeholder { color:transparent;  } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent;  } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
+
 .bottom {
-  height: 100em;
-  margin-top: -100em;
+  height: 20em;
+  margin-top: -20em;
   overflow: auto;
   position: relative;
 }
@@ -176,97 +166,1435 @@ body {
   width: 10em;
 }
 
-.bottom-image, 
+.bottom-image,
 .robots,
 .top {
   visibility: hidden;
 }
 
-/* do not group these rules */
-*::-webkit-input-placeholder {
-  color: #CD372D;
-}
-*:-moz-placeholder {
-      /* FF 4-18 */
-  color: #CD372D;
-}
-*::-moz-placeholder {
-      /* FF 19+ */
-  color: #CD372D;
-}
-*:-ms-input-placeholder {
-      /* IE 10+ */
-  color: #CD372D;
+nav {
+  background-color: #CD372D;
+  height: 60px;
+  min-width: 425px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent;  }
-input:focus:-moz-placeholder { color:transparent;  } /* FF 4-18 */
-input:focus::-moz-placeholder { color:transparent;  } /* FF 19+ */
-input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
+.nav-logo {
+  display: inline-block;
+  float: left;
+  height: 50px;
+  padding: 5px 20px;
+}
 
-@media (max-height: 650px) {
+.nav-option-bar {
+  display: table;
+  float: right;
+  height: 100%;
+  margin: 0 auto;
+  padding-right: 10px;
+}
+
+.nav-option {
+  color: #F8AC45;
+  display: table-cell;
+  font-family: "Avenir Heavy", sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.menu-btn {
+  display: none;
+  float: right;
+  height: calc(100% - 20px);
+  padding: 10px;
+}
+
+.menu-btn img {
+  height: 100%;
+}
+
+nav.nav-show {
+  position: fixed;
+}
+
+.placeholder.nav-show {
+  height: 60px;
+}
+
+/* WHO WE ARE */
+.who-we-are {
+  background-image: url(../images/WhoWeAre/who-we-are.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #F8AC45;
+  font-family: 'Avenir Heavy', sans-serif;
+  min-height: 975px;
+  position: relative;
+}
+
+.who-we-are-top-bar {
+  background-color: #002939;
+  height: 90px;
+  width: 100%;
+}
+
+.top-left-gears {
+  height: 400px;
+  left: 0;
+  padding: 12px;
+  position: absolute;
+  top: 90px;
+  width: 200px;
+  z-index: -1;
+}
+
+.spinning-turbine {
+  background:
+    linear-gradient(45deg, #003042 50%, transparent 50%),
+    linear-gradient(90deg, #003849 100%, transparent 100%),
+    linear-gradient(-45deg, #003849 50%, transparent 50%) 100% 0,
+    linear-gradient(-90deg, #003042 100%, transparent 100%) 100% 0,
+    linear-gradient(45deg, transparent 50%, #003042 50%) 100% 100%,
+    linear-gradient(90deg, transparent 0, #003849 0) 100% 100%,
+    linear-gradient(-45deg, transparent 50%, #003849 50%) 0 100%,
+    linear-gradient(-90deg, transparent 0, #003042 0) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  border: 10px solid #003042;
+  border-radius: 50%;
+  transform: rotate(15deg);
+}
+
+.spinning-gear {
+  background: url(../images/spinning-gear.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.top-left-gears > .spinning-turbine {
+  display: inline-block;
+  height: 125px;
+  width: 125px;
+}
+
+.top-left-gears > .spinning-gear {
+  display: inline-block;
+  height: 80px;
+  margin-left: 134px;
+  margin-top: -54px;
+  width: 40%;
+}
+
+.top-right-gearbox {
+  background-color: #003243;
+  height: 75px;
+  position: absolute;
+  right: 0;
+  top: 90px;
+  width: 120px;
+  z-index: -1;
+}
+
+.top-right-gearbox > .spinning-turbine {
+  border: 5px solid #003042;
+  display: inline-block;
+  height: 37px;
+  margin: 8px;
+  padding: 5px;
+  width: 37px;
+}
+
+.top-right-gearbox  > .panel {
+  display: inline-block;
+  height: 100%;
+  padding: 17px 0;
+  position: absolute;
+  top: 0;
+  width: 35%;
+}
+
+.top-right-gearbox  > .panel > .blue-round-rectangle {
+  background-color: #002939;
+  border-radius: 5px;
+  display: inline-block;
+  height: 15px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.top-right-gearbox  > .panel > .blue-round-rectangle:first-child {
+  margin-bottom: 5px;
+}
+
+.who-we-are-text {
+  padding: 40px;
+  padding-top: 3em;
+  text-align: left;
+  width: 40%;
+}
+
+.who-we-are-title {
+  font-size: 3em;
+  text-align: right;
+}
+
+.who-we-are-text p {
+  font-family: "Avenir Light", sans-serif;
+  font-size: 20px;
+  line-height: 33px;
+  padding: 15px 0;
+  text-align: right;
+}
+
+.who-we-are-welcome {
+  display: inline;
+}
+
+.bottom-four-boxes {
+  height: 8em;
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+}
+
+.bottom-four-boxes img {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.red-line {
+  background-color: #CD372D;
+  display: none;
+  height: 10px;
+  margin: 10px 0;
+  margin-top: 0;
+  width: 100%;
+}
+
+.belt {
+  display: none;
+}
+
+@font-face {
+    font-family: Avenir-Light;
+    src: url(../assets/Avenir-Light.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Black;
+    src: url(../assets/Avenir-Black.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Heavy;
+    src: url(../assets/Avenir-Heavy.ttf);
+}
+
+/* FAQ */
+.faq {
+	background-image: url(../images/FAQ%20images/FAQs%20Page%20No%20Droppers.svg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-left: 250px;
+  color: #F8AC45;
+
+	padding-right: 250px;
+	padding-bottom: 180px;
+	position: relative;
+}
+
+#faq-title {
+	font-size: 3em;
+  font-family: 'Avenir Heavy', sans-serif;
+  padding-top: 150px;
+}
+
+.faq-text {
+	color: #F8AC45;
+  font-family: "Avenir Light", sans-serif;
+  font-size: 20px;
+	line-height: 33px;
+	padding-top: 30px;
+}
+
+.faq-bold-text {
+  display: block;
+	font-family: 'Avenir-Black';
+}
+
+.faq-link {
+	color: #F8AC45;
+	text-decoration: none;
+}
+
+.faq-machine-dropper-left {
+	left: 3%;
+	height:450px;
+	position: absolute;
+	width:175px;
+}
+
+.faq-machine-dropper-right {
+	height:450px;
+	position: absolute;
+	right: 3%;
+	width:175px;
+}
+
+/* Hack SChools */
+.hackschools {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  color: #ee4036;
+  font-family: "Avenir Light", sans-serif;
+}
+
+.hackschools > .backgrounds {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.hackschools > .backgrounds .misc-graphics {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.hackschools > .backgrounds > .top-horizontal-line {
+  width: 100%;
+  height: 70px;
+  background-color: #002939;
+}
+
+.hackschools > .backgrounds > .top-v {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 205px);
+  width: 400px;
+  height: 70px;
+}
+
+.hackschools > .backgrounds > .top-v::before,
+.hackschools > .backgrounds > .top-v::after {
+  position: absolute;
+  top: 5px;
+  width: 350px;
+  height: 15px;
+  background-color: #003243;
+  content: "";
+}
+
+.hackschools > .backgrounds > .top-v::before {
+  left: calc(50% - 10px);
+  transform: rotate(340deg);
+}
+
+.hackschools > .backgrounds > .top-v::after {
+  left: calc(60px - 50%);
+  transform: rotate(20deg);
+}
+
+.hackschools > .backgrounds > .school-columns {
+  box-sizing: border-box;
+  top: -30px;
+  width: 100%;
+  height: 510px;
+}
+
+.hackschools > .backgrounds > .school-columns > .column::before {
+  position: absolute;
+  top: 70px;
+  left: calc(50% - 175px / 2);
+  width: 175px;
+  height: 20px;
+  background-color: #003042;
+  content: "";
+}
+
+.hackschools > .backgrounds > .school-columns > .column::after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 220px;
+  left: calc(50% - 75px);
+  width: 150px;
+  height: calc(50% + 70px);
+  background-color: #003849;
+  border-width: 0 3px;
+  border-style: solid;
+  border-color: #003042;
+  content: "";
+}
+
+.hackschools > .backgrounds > .school-columns > .column > .column-header {
+  box-sizing: border-box;
+  position: relative;
+  width: 150px;
+  height: 70px;
+  margin: 0 auto;
+  color: #003243;
+  border-style: solid;
+}
+
+.hackschools > .backgrounds > .school-columns > .column > .column-header::before {
+  position: absolute;
+  top: 7px;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  content: "";
+}
+
+.hackschools > .backgrounds > .school-columns > .column.hardware > .column-header,
+.hackschools > .backgrounds > .school-columns > .column.ios-android > .column-header {
+  border-width: 0 7px;
+}
+
+.hackschools > .backgrounds > .school-columns > .column.hardware > .column-header::before,
+.hackschools > .backgrounds > .school-columns > .column.ios-android > .column-header::before {
+  box-shadow: 0 5px,
+    0 12px, 0 17px,
+    0 24px, 0 29px,
+    0 36px, 0 41px,
+    0 49px, 0 54px;
+}
+
+.hackschools > .backgrounds > .school-columns > .column.web-development > .column-header,
+.hackschools > .backgrounds > .school-columns > .column.vr-games > .column-header {
+  border-width: 0 3px;
+}
+
+.hackschools > .backgrounds > .school-columns > .column.web-development > .column-header::before,
+.hackschools > .backgrounds > .school-columns > .column.vr-games > .column-header::before {
+  top: calc(50% - 8px);
+  height: 6px;
+}
+
+.hackschools > .backgrounds > .school-columns > .column.printing > .column-header {
+  border: none;
+}
+
+.hackschools > .backgrounds > .school-columns > .column.printing > .column-header::before {
+  background: none;
+}
+
+.hackschools > .backgrounds > .school-columns > .column > .school-icon {
+  position: relative;
+  left: calc(50% - 75px);
+  z-index: 1;
+  width: 150px;
+  height: 220px;
+  background: url(../images/PhilBlue.svg) center no-repeat #003042;
+  background-size: 60px;
+}
+
+.hackschools > .backgrounds > .school-columns > .column > .school-icon::before {
+  position: absolute;
+  top: 230px;
+  left: calc(50% - 60px);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: calc(100% - 30px) calc(100% - 30px);
+  content: "";
+}
+
+.hackschools > .backgrounds > .school-columns > .column.hardware > .school-icon::before {
+  background-image: url(../images/hardware-robot.svg);
+  background-color: #b83528;
+  transform: rotate(135deg);
+}
+
+.hackschools > .backgrounds > .school-columns > .column.web-development > .school-icon::before {
+  background-image: url(../images/web-robot.svg);
+  background-color: #002a35;
+  transform: rotate(260deg);
+}
+
+.hackschools > .backgrounds > .school-columns > .column.printing > .school-icon::before {
+  background-image: url(../images/3-d-printing-robot.svg);
+  background-color: #faaf37;
+  transform: rotate(160deg);
+}
+
+.hackschools > .backgrounds > .school-columns > .column.vr-games > .school-icon::before {
+  background-image: url(../images/games-robot.svg);
+  background-color: #ee4036;
+  transform: rotate(340deg);
+}
+
+.hackschools > .backgrounds > .school-columns > .column.ios-android > .school-icon::before {
+  background-image: url(../images/mobile-robot.svg);
+  background-color: #f6e400;
+  transform: rotate(45deg);
+}
+
+.hackschools > .backgrounds > .school-columns > .column > .school-icon::after {
+  position: absolute;
+  top: 235px;
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 4px;
+  margin-top: 125px;
+  color: #002939;
+  background-color: currentColor;
+  box-shadow:
+    -25px 10px, 25px 10px,
+    -25px 20px, 25px 20px,
+    -25px 30px, 25px 30px,
+    -25px 40px, 25px 40px,
+    -15px 50px, 15px 50px,
+    -25px 0, 25px 0, 0 60px;
+  content: "";
+}
+
+.hackschools > .backgrounds > .assembled-robots {
+  display: -webkit-flexbox;
+  display: -webkit-flex;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: -8%;
+  bottom: 85px;
+  width: 116%;
+}
+
+.hackschools > .backgrounds > .assembled-robots::before {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: #b83528;
+  box-shadow: 0 30px 0 #b83528;
+  content: "";
+}
+
+.hackschools > .backgrounds > .assembled-robots > .robot {
+  width: 100%;
+  height: 200px;
+  margin-top: 35px;
+}
+
+.hackschools > .wrapper {
+  position: relative;
+  padding: 60px 0 50px;
+  text-align: center;
+  z-index: 1;
+}
+
+.hackschools > .wrapper .bold {
+  font-family: "Avenir Heavy", sans-serif;
+}
+
+.hackschools > .wrapper > .title {
+  margin: 40px 0 10px;
+  font-family: "Avenir Heavy";
+  font-size: 44px;
+}
+
+.hackschools > .wrapper > .subtitle {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
+  line-height: 32px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.hackschools > .backgrounds > .school-columns,
+.hackschools > .wrapper > .school-list {
+  display: -webkit-flexbox;
+  display: -webkit-flex;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 42px 0 30px;
+}
+
+.hackschools > .wrapper > .school-list {
+  margin-top: 200px;
+}
+
+.hackschools > .backgrounds > .school-columns > .column,
+.hackschools > .wrapper > .school-list > .school-details {
+  position: relative;
+  width: 100%;
+}
+
+.hackschools > .wrapper > .school-list > .school-details > .school-icon {
+  width: 100%;
+  max-width: 260px;
+  max-height: 260px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #002939;
+}
+
+.hackschools > .wrapper > .school-list > .school-details > .school-icon > img {
+  margin: 27px 30px;
+}
+
+.hackschools > .wrapper > .school-list > .school-details > .school-title {
+  position: relative;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 15px 0;
+  line-height: 28px;
+  font-family: "Avenir Black", sans-serif;
+  font-size: 24px;
+}
+
+.hackschools > .wrapper > .school-list > .school-details > .school-title::after {
+  position: absolute;
+  top: -5px;
+  left: calc(50% - 20px);
+  z-index: -1;
+  width: 40px;
+  height: calc(100% + 10px);
+  background-color: #002939;
+  content: "";
+}
+
+.hackschools > .wrapper > .school-list > .school-details > .school-info {
+  box-sizing: border-box;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 15px 13px;
+  text-align: left;
+  border-radius: 20px;
+  background-color: #ac082a;
+  color: #003849;
+}
+
+.hackschools > .wrapper > .school-list > .school-details > .school-info > p {
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #ee4036;
+}
+
+.hackschools > .wrapper > .school-list > .school-details > .school-info > p + p {
+  margin-top: 15px;
+}
+
+
+/* Sponsors */
+.sponsors {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  color: #F8AC45;
+  font-family: "Avenir Light", sans-serif;
+}
+
+.sponsors .cropped {
+  height: calc(100% - 50px);
+}
+
+.sponsors > .backgrounds {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.sponsors > .backgrounds .top-horizontal-line {
+  width: 100%;
+  height: 50px;
+  background-color: #002939;
+}
+
+.sponsors > .backgrounds .vertical-line.left {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 20px;
+  height: calc(100% - 55px);
+  background-color: #002939;
+  box-shadow: 0 -50px #003342;
+}
+
+.sponsors > .backgrounds .glasses-bar > .glasses {
+  display: -webkit-flexbox;
+  display: -webkit-flex;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin-top: 20px;
+}
+
+.sponsors > .backgrounds .glasses-bar > .glasses.left {
+  left: 60px;
+}
+
+.sponsors > .backgrounds .glasses-bar > .glasses.left > .left-line {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  margin-top: 140px;
+  background-color: #003042;
+  box-shadow: -20px 0 #003042;
+}
+
+.sponsors > .backgrounds .glasses-bar > .glasses.right {
+  right: 40px;
+}
+
+.sponsors > .backgrounds .glasses-bar > .glasses.right > .right-line {
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  margin-top: 115px;
+  background-color: #003042;
+  box-shadow: -10px 0 #003042;
+}
+
+.sponsors > .backgrounds .glasses-bar > .glasses.right > .bottom-line {
+  position: absolute;
+  left: 305px;
+  width: 10px;
+  height: 100%;
+  margin-top: 185px;
+  background-color: #003042;
+}
+
+.sponsors > .backgrounds .glasses-bar > .glasses > .glass {
+  width: 165px;
+  height: 165px;
+  background:
+    linear-gradient(45deg, #003042 50%, transparent 50%),
+    linear-gradient(90deg, #003849 100%, transparent 100%),
+    linear-gradient(-45deg, #003849 50%, transparent 50%) 100% 0,
+    linear-gradient(-90deg, #003042 100%, transparent 100%) 100% 0,
+    linear-gradient(45deg, transparent 50%, #003042 50%) 100% 100%,
+    linear-gradient(90deg, transparent 0, #003849 0) 100% 100%,
+    linear-gradient(-45deg, transparent 50%, #003849 50%) 0 100%,
+    linear-gradient(-90deg, transparent 0, #003042 0) 0 100% #003849;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  border: 10px solid #003042;
+  border-radius: 50%;
+  transform: rotate(15deg);
+}
+
+.sponsors > .backgrounds .glasses-bar > .glasses > .bridge {
+  width: 30px;
+  height: 10px;
+  margin-top: 85px;
+  background-color: #003042;
+}
+
+.sponsors > .backgrounds .bottom-horizontal-line {
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  height: 61px;
+  background-color: #ab1f25;
+  box-shadow: 0 -1px 1px #ab1f25;
+}
+
+.sponsors > .backgrounds .uncropped-lines {
+  position: absolute;
+  width: calc((100% - 1440px) / 2);
+  margin: 0;
+}
+
+.sponsors > .backgrounds .uncropped-lines.left {
+  left: 0;
+}
+
+.sponsors > .backgrounds .uncropped-lines.left.dark-orange-line {
+  bottom: 157px;
+  height: 4px;
+  background-color: #ef4137;
+}
+
+.sponsors > .backgrounds .uncropped-lines.left.yellow-line {
+  bottom: 93px;
+  height: 7px;
+  background-color: #FCB038;
+  box-shadow: 0 1px 1px #556043;
+}
+
+.sponsors > .backgrounds .uncropped-lines.left.light-orange-line {
+  bottom: 45px;
+  border: 1px solid #e96d32;
+}
+
+.sponsors > .backgrounds .uncropped-lines.right {
+  right: 0;
+}
+
+.sponsors > .backgrounds .uncropped-lines.right.dark-blue-line {
+  top: 185px;
+  height: 10px;
+  background-color: #003042;
+}
+
+.sponsors > .backgrounds .uncropped-lines.right.orange-yellow-line {
+  bottom: 230.5px;
+  height: 2px;
+  background-color: #df3827;
+  border-bottom: 5px solid #faaf46;
+  box-shadow: 0 -2px 0.5px #f31e2f;
+}
+
+.sponsors > .backgrounds .uncropped-lines.right.red-orange-line {
+  bottom: 119px;
+  height: 6px;
+  background-color: #a82029;
+  border-bottom: 7px solid #eb382f;
+}
+
+.sponsors > .backgrounds .uncropped-lines.right.red-line {
+  display: block;
+  bottom: 75px;
+  height: 2px;
+  background-color: #9d0c2c;
+}
+
+.sponsors > .backgrounds .uncropped-lines.right.dark-orange-line {
+  bottom: 35px;
+  height: 3px;
+  background-color: #ef3925;
+  box-shadow: 0 -1px 1px #ef3925;
+}
+
+.sponsors > .backgrounds .uncropped-lines.right.yellow-line {
+  bottom: 24px;
+  height: 2px;
+  background-color: #faaf46;
+  border-bottom: 1px solid #faaf46;
+  box-shadow: 0 0px 1px #faaf46;
+}
+.sponsors > .backgrounds .uncropped-lines.right.light-orange-line {
+  bottom: 13px;
+  height: 2px;
+  background-color: #e76b31;
+}
+
+.sponsors > .wrapper {
+  position: relative;
+  padding-top: 50px;
+  text-align: center;
+  z-index: 1;
+}
+
+.sponsors > .wrapper > .title {
+  margin: 40px 0 20px;
+  font-family: "Avenir Heavy";
+  font-size: 44px;
+}
+
+.sponsors > .wrapper > .subtitle {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
+  line-height: 33px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.sponsors > .wrapper > .sponsors{
+  width: 100%;
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 80%;
+  }
+}
+
+/* Who we are background support for very large screens */
+@media only screen and (min-width: 1740px) {
+  .who-we-are {
+    background-image: url(../images/WhoWeAre/who-we-are-no-belt.svg);
+    background-position: right;
+    background-size: 1740px;
+  }
+
+  .belt {
+    background-image: url(../images/WhoWeAre/belt.svg);
+    background-size: cover;
+    bottom: 0;
+    display: block;
+    height: 47px;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1740px) {
+  .who-we-are {
+    background-size: 1740px;
+  }
+
+  .who-we-are-text {
+    width: 705px;
+  }
+}
+
+@media only screen and (min-width: 1950px) {
+  .faq {
+    padding-left: calc((100% - 1440px)/2);
+    padding-right: calc((100% - 1440px)/2);
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .not-small-screen {
+    display: none;
+  }
+
+  .only-small-screen {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.nav-show {
+    display: block;
+  }
+
+  .placeholder.nav-show {
+    height: 0;
+  }
+
+  .nav-option-bar {
+    background: #F8AC45;
+    padding: 0;font-family: "Avenir Heavy", sans-serif;
+    position: fixed;
+    right: -400px;
+    width: 400px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .nav-option {
+    border-bottom: dotted 2px #CD372D;
+    color: #CD372D;
+    display: block;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: inline;
+  }
+
+  .who-we-are {
+    background: none;
+  }
+
+  .who-we-are-title {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .who-we-are-text {
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+  }
+
+  .who-we-are-text p {
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .who-we-are-welcome {
+    display: block;
+    font-family: "Avenir Heavy", sans-serif;
+  }
+
+  /*Sponsors*/
+  .sponsors > .wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 85%;
+  }
+  .sponsors > .wrapper > .title {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .sponsors > .wrapper > .subtitle {
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin: 15px 0;
+    padding: 0;
+  }
+
+  .red-line {
+    display: block;
+  }
+
+  .faq {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  #faq-title {
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: 2px;
+    padding-bottom: 40px;
+    padding-top: 200px;
+  }
+
+  .faq-text {
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 85%;
+  }
+
+  .hackschools {
+    color: #F8AC45;
+  }
+
+  .hackschools > .backgrounds > .school-columns {
+    position: absolute;
+    top: auto;
+    bottom: 20px;
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 110px;
+    padding: 0;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column {
+    margin: 0 5px;
+    background-color: currentColor;
+    border: 15px solid currentColor;
+    border-radius: 50%;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column > .column-header,
+  .hackschools > .backgrounds > .school-columns *::before,
+  .hackschools > .backgrounds > .school-columns *::after {
+    display: none;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column > .school-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-size: contain;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.hardware {
+    color: #b83528;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.hardware > .school-icon {
+    background-image: url(../images/hardware-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.web-development {
+    color: #002a35;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.web-development > .school-icon {
+    background-image: url(../images/web-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.printing {
+    color: #faaf37;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.printing > .school-icon {
+    background-image: url(../images/3-d-printing-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.vr-games {
+    color: #ee4036;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.vr-games > .school-icon {
+    background-image: url(../images/games-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.ios-android {
+    color: #f6e400;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.ios-android > .school-icon {
+    background-image: url(../images/mobile-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .assembled-robots {
+    display: none;
+  }
+
+  .hackschools > .wrapper > .title {
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .hackschools > .wrapper > .subtitle {
+    margin: 0 20px 40px;
+    padding: 0;
+    font-size: 27px;
+    letter-spacing: 1px;
+    line-height: 45px;
+  }
+
+  .hackschools > .wrapper > .school-list {
+    display: block;
+    margin: 0 0 80px;
+    padding: 0;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .hackschools > .wrapper > .school-list > .school-details::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .hackschools > .wrapper > .school-list > .school-details > .school-title {
+    max-width: none;
+    padding: 5px 0;
+  }
+
+  .hackschools > .wrapper > .school-list > .school-details > .school-icon,
+  .hackschools > .wrapper > .school-list > .school-details > .school-title::after,
+  .hackschools > .wrapper > .school-list > .school-details > .school-info {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .robots {
+    justify-content: left;
+    -webkit-justify-content: left;
+  }
+
+  .faq-machine-dropper-left {
+    width: 75px;
+    height: 150px;
+  }
+
+  .faq-machine-dropper-right {
+    width: 75px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-height: 650px) {
   .logo {
     padding-top: 10%;
   }
 }
 
-@media (max-width: 950px) {
-  .robots {
-    justify-content: left;
-    -webkit-justify-content: left;
-  }
-}
-
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .logo {
     width: 80%;
   }
-  .computers-image, 
+
+  .computers-image,
   .bottom-image {
     visibility: hidden;
   }
 }
 
+@media only screen and (max-width: 560px) {
+	/*.faq {
+		padding-top: 0px;
+    padding-left: 23px;
+		text-align: center;
+	}
+
+	#faq-title {
+		padding-bottom: 0px;
+	}*/
+}
+
+/* TABLETish */
+@media only screen and (max-device-width: 1100px) {
+  .not-small-screen {
+    display: none;
+  }
+
+  .only-small-screen {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.nav-show {
+    display: block;
+  }
+
+  .placeholder.nav-show {
+    height: 0;
+  }
+
+  .nav-option-bar {
+    background: #F8AC45;
+    padding: 0;
+    position: fixed;
+    right: -400px;
+    width: 400px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .nav-option {
+    border-bottom: dotted 2px #CD372D;
+    color: #CD372D;
+    display: block;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: inline;
+  }
+
+  .who-we-are {
+    background: none;
+  }
+
+  .who-we-are-title {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .who-we-are-text {
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+  }
+
+  .who-we-are-text p {
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin: 15px 0;
+  }
+
+  .who-we-are-welcome {
+    display: block;
+    font-family: "Avenir Heavy", sans-serif;
+  }
+
+  /* HackSChools */
+  .hackschools {
+    color: #F8AC45;
+  }
+
+  .hackschools > .backgrounds > .school-columns {
+    position: absolute;
+    top: auto;
+    bottom: 20px;
+    left: 50px;
+    width: calc(100% - 100px);
+    height: 165px;
+    padding: 0;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column {
+    margin: 0 5px;
+    background-color: currentColor;
+    border: 15px solid currentColor;
+    border-radius: 50%;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column > .column-header,
+  .hackschools > .backgrounds > .school-columns *::before,
+  .hackschools > .backgrounds > .school-columns *::after {
+    display: none;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column > .school-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-size: contain;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.hardware {
+    color: #b83528;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.hardware > .school-icon {
+    background-image: url(../images/hardware-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.web-development {
+    color: #002a35;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.web-development > .school-icon {
+    background-image: url(../images/web-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.printing {
+    color: #faaf37;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.printing > .school-icon {
+    background-image: url(../images/3-d-printing-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.vr-games {
+    color: #ee4036;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.vr-games > .school-icon {
+    background-image: url(../images/games-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.ios-android {
+    color: #f6e400;
+  }
+
+  .hackschools > .backgrounds > .school-columns > .column.ios-android > .school-icon {
+    background-image: url(../images/mobile-robot.svg);
+  }
+
+  .hackschools > .backgrounds > .assembled-robots {
+    display: none;
+  }
+
+  .hackschools > .wrapper > .title {
+    font-size: 115px;
+    font-weight: bold;
+  }
+
+  .hackschools > .wrapper > .subtitle {
+    margin: 40px 50px;
+    padding: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+    line-height: 45px;
+  }
+
+  .hackschools > .wrapper > .school-list {
+    display: block;
+    margin: 0 0 220px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .hackschools > .wrapper > .school-list > .school-details::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .hackschools > .wrapper > .school-list > .school-details > .school-title {
+    max-width: none;
+    padding: 5px 0;
+  }
+
+  .hackschools > .wrapper > .school-list > .school-details > .school-icon,
+  .hackschools > .wrapper > .school-list > .school-details > .school-title::after,
+  .hackschools > .wrapper > .school-list > .school-details > .school-info {
+    display: none;
+  }
+
+  /* Sponsors */
+  .sponsors > .wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 85%;
+  }
+
+  .sponsors > .wrapper > .subtitle {
+    padding: 0;
+  }
+
+  .red-line {
+    display: block;
+  }
+}
+
 /* MOBILE */
-@media only screen and (max-device-width:800px) {
+@media only screen and (max-device-width: 800px) {
+
+  /* TOP SECTION */
   .top {
-    min-height: 1600px;
+    min-height: 1350px;
   }
 
   .logo {
     width: 80%;
+  }
+
+  .bottom {
+    height: 100em;
+    margin-top: -100em;
   }
 
   .date {
     font-size: 4em;
   }
 
-  #mc_embed_signup_scroll {
-    justify-content: center;
-    -webkit-justify-content: center;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    align-items: center;
-    -webkit-align-items: center;
+  .register {
+    font-size: 60px;
+    padding: 6px;
+    width: 400px;
   }
 
-  #mc_embed_signup .button {
-    font-size: 3em;
-    margin-top: 1em;
-    width: 10em;
-  }
-
-  #mc_embed_signup .email {
-    font-size: 3em;
-    padding: 15px;
-    width: 80%;
-  }
-
-  .notification-bar {
-    font-size: 2.6em;
-  }
-
-  .computers-image, 
+  .computers-image,
   .bottom-image {
     visibility: hidden;
   }
@@ -281,6 +1609,105 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
     width: 55%;
   }
 
+  /* NAV BAR */
+  nav {
+    height: 150px;
+  }
+
+  .nav-logo {
+    height: calc(100% - 20px);
+    padding: 10px 20px;
+  }
+
+  .nav-option-bar {
+    right: -70%;
+    width: 70%;
+  }
+
+  .nav-option {
+    font-size: 3em;
+  }
+
+  .placeholder.nav-show {
+    height: 0;
+  }
+
+  /* WHO WE ARE */
+  .who-we-are-title {
+    font-size: 115px;
+  }
+
+  .who-we-are-welcome {
+    margin-bottom: 50px;
+  }
+
+  .who-we-are-text p {
+    font-size: 32px;
+    line-height: 45px;
+    margin: 50px 0;
+    text-align: center;
+  }
+
+  /* FAQ */
+  .faq {
+    color: #F8AC45;
+		height: auto;
+		padding-left: 0;
+		padding-right: 0;
+    padding-top: 200px;
+		background-image: none;
+		text-align: center;
+  }
+
+  /* Sponsors */
+  .sponsors > .wrapper > .title {
+    font-size: 115px;
+  }
+
+  .sponsors > .wrapper > .subtitle {
+    font-size: 32px;
+    line-height: 45px;
+    margin: 50px 0;
+  }
+
+	.faq-machine-dropper-right {
+		display: none;
+	}
+
+	.faq-machine-dropper-left {
+		display: none;
+	}
+
+	#faq-title {
+    font-size: 115px;
+    font-weight: 600;
+    padding-top: 0;
+    text-align: center;
+	}
+
+	.faq-text {
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 45px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+		padding: 40px;
+    width: 85%;
+	}
+
+	.faq-bold-text {
+		font-family: 'Avenir-Black';
+	}
+
+  .faq-text > .faq-bold-text {
+    padding-bottom: 40px;
+  }
+
+	.faq-link {
+		color: #FFAD0B;
+		text-decoration: none;
+	}
+
   /* iPHONE 4 and similar height screens */
   @media (max-device-height:500px) {
     .robots > img {
@@ -289,32 +1716,85 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   }
 
   /* FIREFOX MOBILE */
-  @-moz-document url-prefix() { 
+  @-moz-document url-prefix() {
+    body {
+      min-width: 300px;
+    }
+
     .top {
-      min-height: 450px;
+      height: 50em;
+      min-height: 400px;
     }
 
     .date {
       font-size: 1.3em;
     }
 
-    #mc_embed_signup .email {
-      font-size: 1em;
-    }
-
-    #mc_embed_signup .button {
-      font-size: 1em;
-      margin-left: 0;
-    }
-
-    .notification-bar {
-      font-size: 1.2em;
+    .register {
+      font-size: 30px;
+      padding: 3px;
+      width: 200px;
     }
 
     .robots > img {
       width: 5em;
     }
+
+    nav {
+      height: 55px;
+      min-width: 300px;
+    }
+
+    .nav-logo {
+      height: calc(100% - 10px);
+      padding: 5px 10px;
+    }
+
+    .nav-option {
+      font-size: 1em;
+      padding: 10px 10px;
+    }
+
+		#faq-title {
+			font-size: 50px;
+		}
+		.faq-text {
+			font-size: 20px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+    .who-we-are-title {
+      font-size: 50px;
+    }
+
+    .who-we-are-text p {
+      font-size: 25px;
+      line-height: 35px;
+      margin: 10px 0px;
+    }
+
+    /* Sponsors */
+    .sponsors > .wrapper > .title {
+      font-size: 50px;
+    }
+
+    .sponsors > .wrapper > .subtitle {
+      font-size: 25px;
+      line-height: 35px;
+      margin: 10px 0px;
+    }
+
+    @media (max-device-height:700px) {
+      .top {
+        height: 38em;
+      }
+    }
+
+    @media (max-device-height:500px) {
+      .top {
+        height: 450px;
+      }
+    }
   }
 }
-
-

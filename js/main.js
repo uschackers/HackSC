@@ -1,5 +1,6 @@
 $(document).ready(function() {
   setLogoTopPadding();
+  showNavBar();
 
   // load the header as soon as the logo loads
   $('#mainlogo').load(function() {
@@ -18,6 +19,14 @@ $(document).ready(function() {
     }
     event.preventDefault();
   });
+
+  $(".nav-option").click(function() {
+    menuBtnClick();
+  });
+
+  $(".menu-btn").click(function() {
+    menuBtnClick();
+  });
 });
 
 // load the header anyways
@@ -29,6 +38,11 @@ $(window).resize(function() {
   if ($(window).width() <= 950) {
     centerRobots();
   }
+  showNavBar();
+});
+
+$(window).scroll(function () {
+  showNavBar();
 });
 
 
@@ -90,7 +104,7 @@ function hoverAnimation() {
     var element = $(robot);
     element.hover(
       function() {
-        element.addClass('animated pulse');        
+        element.addClass('animated pulse');
         element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
           element.removeClass('animated pulse');
         });
@@ -104,4 +118,35 @@ function centerRobots() {
 
 function isMobile() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+function showNavBar() {
+  if ($('.bottom-bar').offset().top + $('.bottom-bar').height() < $(window).scrollTop()) {
+    $('nav').addClass('nav-show');
+    $('.placeholder').addClass('nav-show');
+  } else {
+    $('nav').removeClass('nav-show');
+    $('.placeholder').removeClass('nav-show');
+  }
+}
+
+function menuBtnClick() {
+  var navbar = $(".nav-option-bar");
+  var width = $(".nav-option-bar").width();
+  if (navbar.hasClass("open")) {
+    navbar.removeClass("open");
+    $('.page-content').unbind('click');
+    $('body').css('overflow', 'visible');
+    navbar.animate({ "right": -width + "px" }, "now" );
+  } else {
+    navbar.addClass("open");
+    navbar.css("top", $("nav").height());
+    navbar.animate({ "right": "0" }, "now" );
+    $('.page-content').click(bodyClickFn);
+    $('body').css('overflow', 'hidden');
+  }
+}
+
+function bodyClickFn(evt) {
+  menuBtnClick();
 }
