@@ -376,6 +376,10 @@ nav.nav-show {
   width: 100%;
 }
 
+.belt {
+  display: none;
+}
+
 @font-face {
     font-family: Avenir-Light;
     src: url(../assets/Avenir-Light.ttf);
@@ -504,8 +508,7 @@ nav.nav-show {
 
 .hackschools > .backgrounds > .school-columns {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
+  top: -30px;
   width: 100%;
   height: 510px;
 }
@@ -1020,11 +1023,17 @@ nav.nav-show {
 /* Who we are background support for very large screens */
 @media only screen and (min-width: 1740px) {
   .who-we-are {
+    background-image: url(../images/WhoWeAre/who-we-are-no-belt.svg);
+    background-position: right;
     background-size: 1740px;
   }
 
-  .who-we-are-text {
-    width: 705px;
+  .belt {
+    bottom: 0;
+    display: block;
+    height: 39px;
+    position: absolute;
+    width: 100%;
   }
 }
 
@@ -1035,6 +1044,13 @@ nav.nav-show {
 
   .who-we-are-text {
     width: 705px;
+  }
+}
+
+@media only screen and (min-width: 1950px) {
+  .faq {
+    padding-left: calc((100% - 1440px)/2);
+    padding-right: calc((100% - 1440px)/2);
   }
 }
 
@@ -1267,6 +1283,7 @@ nav.nav-show {
     display: block;
     margin: 0 0 80px;
     padding: 0;
+    padding-bottom: 50px;
     text-align: center;
   }
 
