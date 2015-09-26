@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  moveBoxLeft();
   setLogoTopPadding();
   showNavBar();
 
@@ -131,3 +132,20 @@ function menuBtnClick() {
 function bodyClickFn(evt) {
   menuBtnClick();
 }
+
+
+/* Animation Functions */
+function moveBoxLeft() {
+  $('.phil-box').each(function(){
+    var off = $(this).offset();
+    var width = $(this).width();
+    if(off.left < $(window).width()) {
+      $(this).offset({top: off.top, left: off.left + 1});
+    } else {
+      $(this).offset({top: off.top, left:-width});
+    }
+  });
+  setTimeout(moveBoxLeft, 10);
+}
+
+

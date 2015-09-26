@@ -217,6 +217,26 @@ nav {
   height: 100%;
 }
 
+.animate-box {
+  margin-top: 167px;
+}
+
+.phil-box {
+  width: 67px;
+  height: 66px;
+  background-color: #ec9032;
+  display: inline-block;
+}
+
+.phil-box-bg {
+  margin-top: 6px; 
+  margin-left: 8px;
+  width: 67px;
+  height: 67px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
 nav.nav-show {
   position: fixed;
 }
