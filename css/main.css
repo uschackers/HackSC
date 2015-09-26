@@ -232,7 +232,7 @@ nav.nav-show {
   background-size: cover;
   color: #F8AC45;
   font-family: 'Avenir Heavy', sans-serif;
-  min-height: 975px;
+  min-height: 910px;
   position: relative;
 }
 
@@ -338,14 +338,14 @@ nav.nav-show {
 }
 
 .who-we-are-title {
-  font-size: 3em;
+  font-size: 44px;
   text-align: right;
 }
 
 .who-we-are-text p {
   font-family: "Avenir Light", sans-serif;
-  font-size: 20px;
-  line-height: 33px;
+  font-size: 18px;
+  line-height: 27px;
   padding: 15px 0;
   text-align: right;
 }
@@ -410,7 +410,7 @@ nav.nav-show {
 }
 
 #faq-title {
-	font-size: 3em;
+	font-size: 44px;
   font-family: 'Avenir Heavy', sans-serif;
   padding-top: 150px;
 }
@@ -418,8 +418,8 @@ nav.nav-show {
 .faq-text {
 	color: #F8AC45;
   font-family: "Avenir Light", sans-serif;
-  font-size: 20px;
-	line-height: 33px;
+  font-size: 18px;
+	line-height: 27px;
 	padding-top: 30px;
 }
 
@@ -437,6 +437,7 @@ nav.nav-show {
 	left: 3%;
 	height:450px;
 	position: absolute;
+  top: 70px;
 	width:175px;
 }
 
@@ -444,6 +445,7 @@ nav.nav-show {
 	height:450px;
 	position: absolute;
 	right: 3%;
+  top: 70px;
 	width:175px;
 }
 
@@ -1021,11 +1023,11 @@ nav.nav-show {
 }
 
 /* Who we are background support for very large screens */
-@media only screen and (min-width: 1740px) {
+@media only screen and (min-width: 1620px) {
   .who-we-are {
     background-image: url(../images/WhoWeAre/who-we-are-no-belt.svg);
     background-position: right;
-    background-size: 1740px;
+    background-size: 1620px;
   }
 
   .belt {
@@ -1039,13 +1041,13 @@ nav.nav-show {
   }
 }
 
-@media only screen and (max-width: 1740px) {
+@media only screen and (max-width: 1620px) {
   .who-we-are {
-    background-size: 1740px;
+    background-size: 1620px;
   }
 
   .who-we-are-text {
-    width: 705px;
+    width: 595px;
   }
 }
 
@@ -1185,6 +1187,14 @@ nav.nav-show {
     padding-left: 40px;
     padding-right: 40px;
     width: 85%;
+  }
+
+  .faq-machine-dropper-right {
+    display: none;
+  }
+
+  .faq-machine-dropper-left {
+    display: none;
   }
 
   .hackschools {
