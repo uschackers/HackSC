@@ -1,5 +1,7 @@
+boxImages = ['Phil-01.png', 'flower.png'];
+boxColors = ['#AA1E24', '#ec9032'];
+
 $(document).ready(function() {
-  moveBoxLeft();
   setLogoTopPadding();
   showNavBar();
 
@@ -32,6 +34,12 @@ $(window).resize(function() {
     centerRobots();
   }
   showNavBar();
+
+
+  // Move boxes to correct position on resize
+  $('.phil-box').each(function(){
+    $(this).offset({top: $('.animate-box').offset().top, left: $(this).offset().left});
+  });
 });
 
 $(window).scroll(function () {
@@ -41,6 +49,8 @@ $(window).scroll(function () {
 $(window).load(function() {
   entranceAnimation();
   hoverAnimation();
+  newBox();
+  moveBoxLeft();
 });
 
 function validateEmail(email) {
@@ -133,19 +143,39 @@ function bodyClickFn(evt) {
   menuBtnClick();
 }
 
+function newBox() {
+  // Select which type of box it is
+  var random = Math.floor((Math.random()*2)+1);
+  var boxImage = 'images/' + boxImages[random % 2];
+  var boxColor = boxColors[random % 2];
+
+  // Generate box from 1980
+  var $phil_box_div = "<div class='phil-box' style='background-color: "+ boxColors[random%2] +";'><div class='phil-box-bg' style='background-image: url(" + boxImage + ");'></div></div>";
+  $('.animate-box').append($phil_box_div);
+  $('.animate-box').children('.phil-box').last().offset({top: $('.animate-box').offset().top,  left: 1980})
+
+  // Call function again with variable wait time (random length in between boxes)
+  setTimeout(newBox, 2100 + Math.floor(Math.random()*600));
+}
 
 /* Animation Functions */
 function moveBoxLeft() {
+  // Perform correct animation for each box
   $('.phil-box').each(function(){
+    // Get the boxes current position and width
     var off = $(this).offset();
     var width = $(this).width();
-    if(off.left < $(window).width()) {
-      $(this).offset({top: off.top, left: off.left + 1});
+
+    // If the box goes out of view, remove it from the DOM
+    if(off.left > -width) {
+      // Move box 1 pixel to the left
+      $(this).offset({top: off.top, left: off.left - 1});
     } else {
-      $(this).offset({top: off.top, left:-width});
+      // Remove the box from the DOM
+      $(this).remove();
     }
   });
+
+  // Wait 10 milliseconds and run function again
   setTimeout(moveBoxLeft, 10);
 }
-
-
