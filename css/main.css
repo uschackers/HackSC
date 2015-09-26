@@ -1029,9 +1029,11 @@ nav.nav-show {
   }
 
   .belt {
+    background-image: url(../images/WhoWeAre/belt.svg);
+    background-size: cover;
     bottom: 0;
     display: block;
-    height: 39px;
+    height: 47px;
     position: absolute;
     width: 100%;
   }
