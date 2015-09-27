@@ -34,7 +34,6 @@ setTimeout(headerAnimation, 1500);
 
 $(window).resize(function() {
 	setBottomBarHeight();
-  setLogoTopPadding();
   if ($(window).width() <= 950) {
     centerRobots();
   }
@@ -60,12 +59,6 @@ function setBottomBarHeight() {
   /* Work around for safari where bottom bar height is not set until resize. */
   var height = .3 * $('.computers-image').height();
   $('.bottom-bar').height(height == 0 ? '3em' : height);
-}
-
-function setLogoTopPadding() {
-  if ($(window).height() > 500) {
-    $('.logo').css('padding-top', ($(window).height() > 600) ? $(window).height() * .2 : $(window).height() * .15);
-  }
 }
 
 function headerAnimation() {
