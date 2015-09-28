@@ -20,11 +20,12 @@ $(document).ready(function() {
   });
 
   $(".nav-option").click(function() {
-    menuBtnClick();
+    if ($('.menu-btn').css('display') == 'block') {
+      menuBtnClick();
+    }
   });
 
   $(".menu-btn").click(function() {
-    console.log("click");
     menuBtnClick();
   });
 });
