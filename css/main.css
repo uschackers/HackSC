@@ -1319,7 +1319,6 @@ nav.nav-show {
   .robots {
     justify-content: left;
     -webkit-justify-content: left;
-    overflow-x: scroll;
   }
 
   .faq-machine-dropper-left {
@@ -1612,7 +1611,6 @@ nav.nav-show {
   .robots {
     justify-content: left;
     -webkit-justify-content: left;
-    overflow-x: scroll;
   }
 
   .robots > img {
