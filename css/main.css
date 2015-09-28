@@ -151,7 +151,7 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   align-items: flex-end;
   -webkit-align-items: flex-end;
   bottom: 0; left: 0; right: 0;
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: visible;
   padding-top: 1em;
   position: absolute;
@@ -1321,6 +1321,7 @@ nav.nav-show {
   .robots {
     justify-content: left;
     -webkit-justify-content: left;
+    overflow-x: scroll;
   }
 
   .faq-machine-dropper-left {
@@ -1613,6 +1614,7 @@ nav.nav-show {
   .robots {
     justify-content: left;
     -webkit-justify-content: left;
+    overflow-x: scroll;
   }
 
   .robots > img {
