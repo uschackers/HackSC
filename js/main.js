@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  setLogoTopPadding();
   showNavBar();
 
   // load the header as soon as the logo loads
@@ -25,6 +24,7 @@ $(document).ready(function() {
   });
 
   $(".menu-btn").click(function() {
+    console.log("click");
     menuBtnClick();
   });
 });
