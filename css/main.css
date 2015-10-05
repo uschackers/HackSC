@@ -113,7 +113,6 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
 .bottom {
   height: 20em;
   margin-top: -20em;
-  overflow: auto;
   position: relative;
 }
 
@@ -151,8 +150,7 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   align-items: flex-end;
   -webkit-align-items: flex-end;
   bottom: 0; left: 0; right: 0;
-  overflow-x: scroll;
-  overflow-y: visible;
+  overflow: hidden;
   padding-top: 1em;
   position: absolute;
   z-index: 1;
