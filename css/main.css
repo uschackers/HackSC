@@ -1723,14 +1723,19 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
       min-height: 400px;
     }
 
+    .logo {
+      max-width: 400px;
+      padding-top: 10%;
+    }
+
     .date {
       font-size: 1.3em;
     }
 
     .register {
-      font-size: 30px;
+      font-size: 20px;
       padding: 3px;
-      width: 200px;
+      width: 160px;
     }
 
     .robots > img {
@@ -1784,13 +1789,13 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
 
     @media (max-device-height:700px) {
       .top {
-        height: 38em;
+        height: 500px;
       }
     }
 
-    @media (max-device-height:500px) {
+    @media (max-device-width:450px) {
       .top {
-        height: 450px;
+        height: 300px;
       }
     }
   }
