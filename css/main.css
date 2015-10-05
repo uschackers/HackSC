@@ -235,7 +235,7 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   background-size: contain;
   color: #F8AC45;
   font-family: 'Avenir Heavy', sans-serif;
-  min-height: 910px;
+  min-height: 795px;
   position: relative;
 }
 
