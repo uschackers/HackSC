@@ -162,7 +162,7 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   margin-left: 2%;
   margin-right: 2%;
   padding-bottom: 1em;
-  width: 10em;
+  width: 160px;
   transition: transform cubic-bezier(0.25, 0.1, 0.25, 1.25) 600ms;
 }
 
