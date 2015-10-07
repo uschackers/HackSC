@@ -36,7 +36,7 @@
 
   function mobileMenuClick() {
     var open = navOptionBar.classList.toggle("open");
-    document.body.style.overflow = open ? "hidden" : "visible";
+    document.body.style.overflow = (open && window.innerWidth <= 870) ? "hidden" : "visible";
     if (open)
       navOptionBar.style.top = nav.getBoundingClientRect().height + "px";
   }
