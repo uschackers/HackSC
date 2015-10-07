@@ -230,13 +230,24 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
 
 /* WHO WE ARE */
 .who-we-are {
-  background-image: url(../images/WhoWeAre/who-we-are.svg);
+  background-image: url(../images/WhoWeAre/who-we-are-no-belt.svg);
+  background-position: right;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 1415px;
   color: #F8AC45;
   font-family: 'Avenir Heavy', sans-serif;
   min-height: 795px;
   position: relative;
+}
+
+.belt {
+  background-image: url(../images/WhoWeAre/belt.svg);
+  background-size: cover;
+  bottom: 0;
+  display: block;
+  height: 47px;
+  position: absolute;
+  width: 100%;
 }
 
 .who-we-are-top-bar {
@@ -377,10 +388,6 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   margin: 10px 0;
   margin-top: 0;
   width: 100%;
-}
-
-.belt {
-  display: none;
 }
 
 @font-face {
@@ -1031,32 +1038,18 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   }
 }
 
-/* Who we are background support for very large screens */
-@media only screen and (min-width: 1415px) {
-  .who-we-are {
-    background-image: url(../images/WhoWeAre/who-we-are-no-belt.svg);
-    background-position: right;
-    background-size: 1415px;
-  }
-
-  .belt {
-    background-image: url(../images/WhoWeAre/belt.svg);
-    background-size: cover;
-    bottom: 0;
-    display: block;
-    height: 47px;
-    position: absolute;
-    width: 100%;
-  }
-}
-
 @media only screen and (max-width: 1415px) {
   .who-we-are {
-    background-size: 1415px;
+    background-image: url(../images/WhoWeAre/who-we-are.svg);
+    background-position: left;
   }
 
   .who-we-are-text {
     width: 560px;
+  }
+
+  .belt {
+    display: none;
   }
 }
 
