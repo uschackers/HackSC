@@ -1333,16 +1333,6 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   }
 }
 
-@media only screen and (max-height: 650px) {
-  .logo {
-    padding-top: 10%;
-  }
-
-  .top {
-    height: auto;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .logo {
     width: 80%;
