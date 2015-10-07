@@ -1,108 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 298.8 324.1" style="enable-background:new 0 0 298.8 324.1;" xml:space="preserve">
+	 viewBox="-156 234.9 298.8 324.1" style="enable-background:new -156 234.9 298.8 324.1;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#EF4137;}
 	.st1{fill:#FCB038;}
 	.st2{clip-path:url(#SVGID_2_);fill:#B93628;}
 	.st3{clip-path:url(#SVGID_4_);fill:#B93628;}
 	.st4{fill:#B93628;}
-	.st5{clip-path:url(#SVGID_6_);fill:#FCB038;}
+	.st5{clip-path:url(#SVGID_7_);fill:#FCB038;}
 </style>
 <g>
-	<rect x="135.3" y="96.1" class="st0" width="29" height="30.6"/>
-	<ellipse class="st0" cx="150.7" cy="266.5" rx="6.5" ry="37.6"/>
-	<ellipse class="st0" cx="150.7" cy="258.7" rx="21.2" ry="20.3"/>
-	<ellipse class="st0" cx="219.9" cy="58.7" rx="7" ry="13.9"/>
-	<ellipse class="st0" cx="81.2" cy="58.7" rx="7" ry="13.9"/>
-	<ellipse class="st1" cx="150.1" cy="59.4" rx="65.8" ry="48.2"/>
-	<rect x="179.8" y="133.3" class="st0" width="29.5" height="11.3"/>
-	<rect x="90.3" y="133.1" class="st0" width="29.5" height="11.3"/>
-	<path class="st1" d="M171.9,254.7h-43.6c-16.3,0-29.6-14.2-29.6-31.8v-74.8c0-17.6,13.2-31.8,29.6-31.8h43.6
-		c16.3,0,29.6,14.2,29.6,31.8v74.8C201.4,240.4,188.2,254.7,171.9,254.7z"/>
-	<ellipse class="st0" cx="124.6" cy="55" rx="15.2" ry="14.6"/>
-	<ellipse class="st0" cx="171.9" cy="55" rx="15.2" ry="14.6"/>
-	<rect x="115.3" y="138.8" class="st0" width="28.4" height="23.4"/>
-	<rect x="156.7" y="138.8" class="st0" width="30.5" height="60.4"/>
-	<rect x="115.3" y="176.2" class="st0" width="28.4" height="23.4"/>
-	<rect x="78.5" y="143.9" class="st0" width="7.9" height="87.9"/>
-	<rect x="212.9" y="143.7" class="st0" width="7.9" height="87.9"/>
-	<polygon class="st0" points="246.4,210.2 216.9,138.6 224.6,135.7 254.1,207.3 	"/>
-	<polygon class="st0" points="53.2,211.1 82.7,139.6 75,136.6 45.5,208.2 	"/>
-	<ellipse class="st1" cx="82" cy="138.6" rx="12.4" ry="11.9"/>
-	<ellipse class="st1" cx="216.9" cy="138.1" rx="12.4" ry="11.9"/>
+	<rect x="-19.2" y="346.3" class="st0" width="26.1" height="27.6"/>
+	<ellipse class="st0" cx="-5.2" cy="499.8" rx="5.9" ry="33.8"/>
+	<ellipse class="st0" cx="-5.2" cy="492.8" rx="19.1" ry="18.2"/>
+	<ellipse class="st0" cx="57" cy="312.7" rx="6.3" ry="12.6"/>
+	<ellipse class="st0" cx="-67.9" cy="312.7" rx="6.3" ry="12.6"/>
+	<ellipse class="st1" cx="-5.8" cy="313.3" rx="59.3" ry="43.4"/>
+	<rect x="21" y="379.9" class="st0" width="26.6" height="10.2"/>
+	<rect x="-59.6" y="379.7" class="st0" width="26.6" height="10.2"/>
+	<path class="st1" d="M13.9,489.2h-39.3c-14.7,0-26.7-12.8-26.7-28.7v-67.4c0-15.9,11.9-28.7,26.7-28.7h39.3
+		c14.7,0,26.7,12.8,26.7,28.7v67.4C40.4,476.3,28.6,489.2,13.9,489.2z"/>
+	<ellipse class="st0" cx="-28.7" cy="309.4" rx="13.7" ry="13.1"/>
+	<ellipse class="st0" cx="13.9" cy="309.4" rx="13.7" ry="13.1"/>
+	<rect x="-37.2" y="384.8" class="st0" width="25.6" height="21"/>
+	<rect x="0.1" y="384.8" class="st0" width="27.5" height="54.4"/>
+	<rect x="-37.2" y="418.5" class="st0" width="25.6" height="21"/>
+	<rect x="-70.3" y="389.5" class="st0" width="7.1" height="79.2"/>
+	<rect x="50.8" y="389.3" class="st0" width="7.1" height="79.2"/>
+	<polygon class="st0" points="81,449.1 54.4,384.7 61.3,382 87.9,446.5 	"/>
+	<polygon class="st0" points="-93.1,450 -66.5,385.6 -73.4,382.8 -100,447.3 	"/>
+	<ellipse class="st1" cx="-67.1" cy="384.7" rx="11.1" ry="10.7"/>
+	<ellipse class="st1" cx="54.4" cy="384.2" rx="11.1" ry="10.7"/>
 	<g>
-		<defs>
-			<ellipse id="SVGID_1_" cx="124.6" cy="55" rx="15.2" ry="14.6"/>
-		</defs>
-		<clipPath id="SVGID_2_">
-			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-		</clipPath>
-		<polygon class="st2" points="115.3,43.5 131.6,68 127.3,82 103,55 107.1,41.9 		"/>
+		<g>
+			<g>
+				<defs>
+					<ellipse id="SVGID_1_" cx="-28.7" cy="309.4" rx="13.7" ry="13.1"/>
+				</defs>
+				<clipPath id="SVGID_2_">
+					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+				</clipPath>
+				<polygon class="st2" points="-37.2,299 -22.5,321.1 -26.4,333.6 -48.2,309.4 -44.5,297.6 				"/>
+			</g>
+		</g>
 	</g>
 	<g>
-		<defs>
-			<ellipse id="SVGID_3_" cx="171.9" cy="55" rx="15.2" ry="14.6"/>
-		</defs>
-		<clipPath id="SVGID_4_">
-			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
-		</clipPath>
-		<polygon class="st3" points="162.5,43.5 178.8,68 174.6,82 150.3,55 154.4,41.9 		"/>
+		<g>
+			<g>
+				<defs>
+					<ellipse id="SVGID_3_" cx="13.9" cy="309.4" rx="13.7" ry="13.1"/>
+				</defs>
+				<clipPath id="SVGID_4_">
+					<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+				</clipPath>
+				<polygon class="st3" points="5.3,299 20,321.1 16.2,333.6 -5.6,309.4 -1.9,297.6 				"/>
+			</g>
+		</g>
 	</g>
-	<ellipse class="st1" cx="164.5" cy="147.3" rx="3.6" ry="3.4"/>
-	<ellipse class="st4" cx="179.8" cy="147.3" rx="3.6" ry="3.4"/>
-	<path class="st1" d="M217.1,235.8c5.1,0,9.3,7.5,10.2,17.4c0.1-1.3,0.2-2.6,0.2-3.9c0-11.7-4.7-21.3-10.4-21.3s-10.4,9.5-10.4,21.3
-		c0,1.3,0.1,2.6,0.2,3.9C207.8,243.3,212,235.8,217.1,235.8z"/>
-	<path class="st1" d="M82.5,235.7c5.1,0,9.3,6.6,10.2,15.2c0.1-1.1,0.2-2.2,0.2-3.4c0-10.3-4.7-18.7-10.4-18.7s-10.4,8.4-10.4,18.7
-		c0,1.2,0.1,2.3,0.2,3.4C73.2,242.3,77.4,235.7,82.5,235.7z"/>
-	<path class="st1" d="M151.1,310.7c5.4,0,10.1,2.8,12.8,6.9c1.2-2,1.8-4.4,1.8-6.9c0-7.9-6.7-14.4-15-14.4c-8.3,0-15,6.4-15,14.4
-		c0,2.7,0.8,5.3,2.2,7.5C140.5,313.7,145.4,310.7,151.1,310.7z"/>
-	<ellipse class="st1" cx="164.5" cy="158.8" rx="3.6" ry="3.4"/>
-	<ellipse class="st4" cx="179.8" cy="158.8" rx="3.6" ry="3.4"/>
-	<ellipse class="st1" cx="164.3" cy="170.5" rx="3.6" ry="3.4"/>
-	<ellipse class="st4" cx="179.5" cy="170.5" rx="3.6" ry="3.4"/>
-	<ellipse class="st1" cx="164.3" cy="182.1" rx="3.6" ry="3.4"/>
-	<ellipse class="st4" cx="179.5" cy="182.1" rx="3.6" ry="3.4"/>
-	<ellipse class="st1" cx="164.3" cy="193" rx="3.6" ry="3.4"/>
-	<ellipse class="st4" cx="179.5" cy="193" rx="3.6" ry="3.4"/>
+	<ellipse class="st1" cx="7.2" cy="392.5" rx="3.2" ry="3.1"/>
+	<ellipse class="st4" cx="21" cy="392.5" rx="3.2" ry="3.1"/>
+	<path class="st1" d="M54.6,472.2c4.6,0,8.3,6.8,9.2,15.7c0.1-1.2,0.2-2.3,0.2-3.6c0-10.6-4.2-19.1-9.3-19.1s-9.3,8.6-9.3,19.1
+		c0,1.2,0.1,2.3,0.2,3.6C46.1,478.9,49.9,472.2,54.6,472.2z"/>
+	<path class="st1" d="M-66.6,472.1c4.6,0,8.3,5.9,9.2,13.7c0.1-1,0.2-2,0.2-3.1c0-9.2-4.2-16.8-9.3-16.8s-9.3,7.6-9.3,16.8
+		c0,1.1,0.1,2.1,0.2,3.1C-75.1,478-71.3,472.1-66.6,472.1z"/>
+	<path class="st1" d="M-4.9,539.6c4.9,0,9.1,2.6,11.6,6.2c1.1-1.8,1.7-4,1.7-6.2c0-7.1-6-13-13.5-13s-13.5,5.8-13.5,13
+		c0,2.4,0.7,4.8,2,6.8C-14.5,542.4-10,539.6-4.9,539.6z"/>
+	<ellipse class="st1" cx="7.2" cy="402.8" rx="3.2" ry="3.1"/>
+	<ellipse class="st4" cx="21" cy="402.8" rx="3.2" ry="3.1"/>
+	<ellipse class="st1" cx="7" cy="413.4" rx="3.2" ry="3.1"/>
+	<ellipse class="st4" cx="20.7" cy="413.4" rx="3.2" ry="3.1"/>
+	<ellipse class="st1" cx="7" cy="423.8" rx="3.2" ry="3.1"/>
+	<ellipse class="st4" cx="20.7" cy="423.8" rx="3.2" ry="3.1"/>
+	<ellipse class="st1" cx="7" cy="433.6" rx="3.2" ry="3.1"/>
+	<ellipse class="st4" cx="20.7" cy="433.6" rx="3.2" ry="3.1"/>
 	<g>
-		<polygon class="st1" points="279.5,196.5 233.4,214.1 235.3,218.8 281.4,201.1 		"/>
-		<path class="st1" d="M281.5,198c-1.3-4.3,0-8.7,2.9-11.8c-2-0.4-4.2-0.4-6.4,0.2c-6.9,1.9-10.8,8.7-8.9,15.3
-			c2,6.6,9.1,10.4,16,8.5c2.4-0.7,4.4-1.9,5.9-3.5C286.6,205.7,282.8,202.5,281.5,198z"/>
+		<polygon class="st1" points="110.8,436.9 69.3,452.7 70.9,456.9 112.4,441 		"/>
+		<path class="st1" d="M112.5,438.2c-1.2-3.9,0-7.8,2.6-10.7c-1.8-0.3-3.8-0.3-5.8,0.2c-6.2,1.7-9.7,7.8-8,13.8
+			c1.8,5.9,8.2,9.3,14.5,7.7c2.1-0.7,4-1.7,5.3-3.1C117.1,445.1,113.8,442.2,112.5,438.2z"/>
 	</g>
-	<path class="st1" d="M134.8,104.3"/>
-	<polygon class="st4" points="135.3,106.4 164.5,116.2 135.3,116.2 	"/>
+	<path class="st1" d="M-19.6,353.8"/>
+	<polygon class="st4" points="-19.2,355.7 7.2,364.4 -19.2,364.4 	"/>
 	<g>
-		<ellipse class="st4" cx="179.2" cy="236.4" rx="2.6" ry="2.4"/>
-		<path class="st0" d="M176.7,236.3c-0.9,0.9-9.8,5.2-9.8,0C166.9,231.1,176.7,236.3,176.7,236.3z"/>
-		<path class="st0" d="M177.2,237.9c0,1.2-3.1,10.3-6.9,6.6C166.5,240.9,177.2,237.9,177.2,237.9z"/>
-		<path class="st0" d="M179.1,239.3c0.9,0.8,5.4,9.4,0,9.4S179.1,239.3,179.1,239.3z"/>
-		<path class="st0" d="M181,238.2c1.3,0,10.7,3,6.9,6.6C184.1,248.5,181,238.2,181,238.2z"/>
-		<path class="st0" d="M181.8,236.5c0.9-0.9,9.8-5.2,9.8,0S181.8,236.5,181.8,236.5z"/>
-		<path class="st0" d="M179.2,234c-0.9-0.8-5.4-9.4,0-9.4S179.2,234,179.2,234z"/>
-		<path class="st0" d="M177.5,234.7c-1.3,0-10.7-3-6.9-6.6S177.5,234.7,177.5,234.7z"/>
-		<path class="st0" d="M180.9,234.7c0-1.2,3.1-10.3,6.9-6.6C191.6,231.7,180.9,234.7,180.9,234.7z"/>
-	</g>
-	<g>
-		<polygon class="st1" points="55.9,212.3 50.3,224.8 23.5,213.7 29.1,201.2 		"/>
-		<polygon class="st1" points="10.1,236.7 8.4,240.5 8.8,245.3 12.8,242.4 14.5,238.5 		"/>
-		<polygon class="st0" points="21.7,229.2 17,239.5 7.5,235.6 12.1,225.2 		"/>
-		<polygon class="st1" points="35.7,204 22.1,234.3 8.1,228.4 21.7,198.2 		"/>
-		<polygon class="st1" points="59.8,213.9 52.3,230.5 43.2,226.8 50.7,210.2 		"/>
+		<ellipse class="st4" cx="20.4" cy="472.8" rx="2.3" ry="2.1"/>
+		<path class="st0" d="M18.1,472.7c-0.8,0.8-8.8,4.7-8.8,0S18.1,472.7,18.1,472.7z"/>
+		<path class="st0" d="M18.6,474.1c0,1.1-2.8,9.2-6.2,5.9C9,476.8,18.6,474.1,18.6,474.1z"/>
+		<path class="st0" d="M20.3,475.3c0.8,0.7,4.9,8.5,0,8.5S20.3,475.3,20.3,475.3z"/>
+		<path class="st0" d="M22,474.3c1.2,0,9.7,2.7,6.2,5.9C24.8,483.7,22,474.3,22,474.3z"/>
+		<path class="st0" d="M22.8,472.8c0.8-0.8,8.8-4.7,8.8,0S22.8,472.8,22.8,472.8z"/>
+		<path class="st0" d="M20.4,470.6c-0.8-0.7-4.9-8.5,0-8.5S20.4,470.6,20.4,470.6z"/>
+		<path class="st0" d="M18.9,471.2c-1.2,0-9.7-2.7-6.2-5.9C16.1,462.1,18.9,471.2,18.9,471.2z"/>
+		<path class="st0" d="M21.9,471.2c0-1.1,2.8-9.2,6.2-5.9C31.6,468.6,21.9,471.2,21.9,471.2z"/>
 	</g>
 	<g>
-		<defs>
-			<ellipse id="SVGID_5_" cx="216.9" cy="138.1" rx="12.5" ry="12"/>
-		</defs>
-		<use xlink:href="#SVGID_5_"  style="overflow:visible;fill:#EF4137;"/>
-		<clipPath id="SVGID_6_">
-			<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
-		</clipPath>
-		<path class="st5" d="M208.4,129.3c0,0-0.1,15.3,0.6,15.3c0.5,0-0.2-15.6,0.3-15.6c12.4-0.2,0.5,17.4,0.7,17.4s2.6-4.7,7-0.4
-			c4.3,4.3,10.5-1.3,10.1-10.2c-0.4-8.8,0.1,5.3-1.5,5.5s0.3,0.8,0.2-5.5c0-6.2,2.3-12.3-3.6-12.9s-13.7,4.4-13.7,4.4L208.4,129.3z"
-			/>
+		<polygon class="st1" points="-90.7,451 -95.7,462.3 -119.8,452.3 -114.8,441.1 		"/>
+		<polygon class="st1" points="-131.9,473 -133.4,476.5 -133.1,480.8 -129.5,478.1 -127.9,474.7 		"/>
+		<polygon class="st0" points="-121.5,466.2 -125.7,475.6 -134.3,472 -130.1,462.7 		"/>
+		<polygon class="st1" points="-108.8,443.5 -121,470.9 -133.7,465.6 -121.5,438.3 		"/>
+		<polygon class="st1" points="-87.1,452.4 -93.9,467.4 -102.1,464.1 -95.3,449.1 		"/>
+	</g>
+	<g>
+		<g>
+			<ellipse id="SVGID_5_" class="st0" cx="54.4" cy="384.2" rx="11.2" ry="10.8"/>
+		</g>
+		<g>
+			<g>
+				<defs>
+					<ellipse id="SVGID_6_" cx="54.4" cy="384.2" rx="11.2" ry="10.8"/>
+				</defs>
+				<clipPath id="SVGID_7_">
+					<use xlink:href="#SVGID_6_"  style="overflow:visible;"/>
+				</clipPath>
+				<path class="st5" d="M46.7,376.2c0,0-0.1,13.8,0.6,13.8c0.4,0-0.2-14,0.2-14c11.1-0.2,0.4,15.7,0.7,15.7c0.2,0,2.3-4.2,6.3-0.3
+					c3.9,3.9,9.5-1.2,9.1-9.2c-0.3-7.9,0.1,4.8-1.3,5c-1.4,0.2,0.2,0.7,0.2-5c0-5.6,2.1-11.1-3.2-11.6c-5.3-0.6-12.3,4-12.3,4
+					L46.7,376.2z"/>
+			</g>
+		</g>
 	</g>
 </g>
 </svg>
