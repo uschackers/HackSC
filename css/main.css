@@ -1023,6 +1023,7 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
 
 .sponsors > .wrapper > .sponsors{
   width: 100%;
+  margin-top: -170px;
   padding-top: 30px;
 }
 
