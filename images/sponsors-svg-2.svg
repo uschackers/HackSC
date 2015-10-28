@@ -72,7 +72,7 @@
 <text transform="matrix(1 0 0 1 697.8799 111.3188)" class="st4" style="font-family:'Avenir-Light'; font-size:24px; letter-spacing:3;"> </text>
 <text transform="matrix(1 0 0 1 707.6799 111.3188)" class="st4" style="font-family:'Avenir-Light'; font-size:24px;">you’re </text>
 <text transform="matrix(1 0 0 1 192.2799 146.5189)" class="st4" style="font-family:'Avenir-Light'; font-size:24px;">building your project. They’re invaluable resources.</text>
-<a xlink:href="//www.buzzfeed.com/" xlink:title="BuzzFeed">
+<a xlink:href="//www.buzzfeed.com/" xlink:title="BuzzFeed" xlink:show="new">
 	<rect class="link-hack" x="150" y="357" width="308" height="56"/>
 	<g>
 		<path class="st5" d="M150.8,358.2c8.6,0,17.3-0.1,25.9,0.1c6.6,0.2,11.9,4.7,13,10.8c1.3,7-2.4,12.9-7.9,14.5
@@ -112,7 +112,7 @@
 			c0.4-0.5,0.8-1,1.3-1.7C278.5,381.6,272.9,381.6,267.1,381.6z"/>
 	</g>
 </a>
-<a xlink:href="//www.disney.com/" xlink:title="Disney">
+<a xlink:href="//www.disney.com/" xlink:title="Disney" xlink:show="new">
 	<rect class="link-hack" x="498" y="461" width="277" height="119"/>
 	<g>
 		<path class="st4" d="M651.4,504.8c-0.6,0-1.7,0.1-2.8,0.1c-2.9,0.2-5.8,0.6-8.6,1.3c-2.6,0.6-5.1,1.5-7.4,2.9
@@ -236,7 +236,7 @@
 			C619.1,477.9,620.1,477.8,621.1,477.8z"/>
 	</g>
 </a>
-<a xlink:href="//www.microsoft.com/" xlink:title="Microsoft">
+<a xlink:href="//www.microsoft.com/" xlink:title="Microsoft" xlink:show="new">
 	<rect class="link-hack" x="274" y="206" width="383" height="81"/>
 	<g>
 		<path class="st6" d="M424.7,233.5c0.1,0,0.2,0,0.3,0.1c0,0.4,0.1,0.9,0.1,1.3c0,11.7,0,23.4,0,35.2c0,0.8,0.2,1.1,1.1,1.1
@@ -327,7 +327,7 @@
 			c-0.3,0-0.6,0-1,0c0-12.9,0-25.7,0-38.6C329.9,247.9,342.8,247.9,355.7,247.9z"/>
 	</g>
 </a>
-<a xlink:href="//www.daqri.com/" xlink:title="Daqri">
+<a xlink:href="//www.daqri.com/" xlink:title="Daqri" xlink:show="new">
 	<rect class="link-hack" x="500" y="306" width="273" height="126"/>
 	<g>
 		<path class="st5" d="M679.7,402.6c0-4-0.8-7.8-2.3-11.3s-3.7-6.6-6.4-9.2s-5.9-4.7-9.5-6.2s-7.5-2.3-11.7-2.3
@@ -354,7 +354,7 @@
 		</g>
 	</g>
 </a>
-<a xlink:href="//www.twosigma.com/" xlink:title="Two Sigma">
+<a xlink:href="//www.twosigma.com/" xlink:title="Two Sigma" xlink:show="new">
 	<rect class="link-hack" x="148" y="476" width="312" height="58"/>
 	<g>
 		<g>
