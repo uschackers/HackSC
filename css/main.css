@@ -1313,6 +1313,10 @@ input:focus:-ms-input-placeholder { color:transparent;  } /* IE 10+ */
   .hackschools > .wrapper > .school-list > .school-details > .school-info {
     display: none;
   }
+
+  .sponsors > .wrapper > .sponsors {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 950px) {
