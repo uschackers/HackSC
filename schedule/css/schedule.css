@@ -56,6 +56,11 @@ body {
     font-family: "Avenir-Heavy";
 }
 
+.link {
+    text-decoration: none;
+    color: #FFAD0B;
+}
+
 .itinerary {
     font-weight: 500;
     font-size: 24px;
