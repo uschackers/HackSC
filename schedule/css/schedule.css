@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "Avenir Light";
+  src: url("../assets/Avenir-Light.ttf")  format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url("../assets/Avenir-Heavy.ttf")  format("truetype");
+}
+
+html {
+    background-color: #003849;
+}
+
+body {
+    margin-bottom: 0;
+}
+
+.schedule-container {
+    position: relative;
+    margin: auto;
+    text-align: center;
+
+    font-family: "Avenir-Light";
+    color: #FFAD0B;
+}
+
+.get-ready {
+    margin: auto;
+    padding: 30px;
+
+    font-size: 34px;
+    font-family: "Avenir-Heavy";
+}
+
+.hello-hackers {
+    position: relative;
+    margin: auto;
+
+    font-family: "Avenir-Light";
+    font-size: 18px;
+    font-weight: 100;
+    width: 800px;
+}
+
+
+.schedule {
+    position: absolute;
+    width: 100%;
+}
+
+.schedule-absolute {
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    font-family: "Avenir-Heavy";
+}
+
+.itinerary {
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.friday {
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    width: 300px;
+
+    margin-top: 20px;
+    margin-left: 205px;
+}
+
+.saturday {
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    width: 300px;
+
+    margin-top: 270px;
+    margin-left: 205px;
+}
+
+.sunday {
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    width: 300px;
+
+    margin-top: 25px;
+    margin-left: 500px;
+}
+
+.hacksc-table {
+    margin-top: -5px;
+    margin-left: 10px;
+    font-family: "Avenir-Light";
+    font-size: 13px;
+}
+
+td {
+    text-align: left;
+    padding: 4px 20px;
+}
+
+.lines {
+
+}
+
+.dark {
+    background-color: #002939;
+}
+
+.line-one {
+    position: absolute;
+    margin-top: -317px;
+    left: -10px;
+    right: 80%;
+    height: 8px;
+}
+
+.line-two {
+    position: absolute;
+    margin-top: -242px;
+    left: 80%;
+    width: 1000px;
+    height: 8px;
+}
+
+.line-three {
+    position: absolute;
+    margin-top: -194px;
+    left: -10px;
+    right: 80%;
+    height: 10px;
+}
+
+.line-four {
+    position: absolute;
+    margin-top: -134px;
+    left: 80%;
+    width: 1000px;
+    height: 13px;
+}
+
+.line-six {
+    position: absolute;
+    background-color: #003042;
+    margin-left: -30px;
+    margin-top: -48px;
+    width: 2000px;
+    height: 13px;
+}
+
+@media only screen and (max-width: 1020px) {
+    .sched-svg {
+        display: none;
+    }
+
+    .lines {
+        display: none;
+    }
+
+    .get-ready {
+        width: 80%;
+    }
+
+    .hello-hackers {
+        width: 80%;
+    }
+
+    .schedule, .schedule-absolute, .itinerary, .friday, .saturday, .sunday {
+        position: relative;
+        margin: auto;
+    }
+
+    .itinerary {
+        font-size: 45px;
+        padding: 30px;
+    }
+
+    .friday, .saturday, .sunday {
+        font-size: 32px;
+        width: 400px;
+    }
+
+    .schedule-absolute {
+        width: 80%;
+    }
+
+    td {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .sched-svg {
+        display: none;
+    }
+
+    .lines {
+        display: none;
+    }
+
+    .get-ready {
+        width: 80%;
+        font-size: 22px;
+    }
+
+    .hello-hackers {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .schedule, .schedule-absolute, .itinerary, .friday, .saturday, .sunday {
+        position: relative;
+        margin: auto;
+    }
+
+    .itinerary {
+        font-size: 24px;
+        padding: 30px;
+    }
+
+    .friday {
+        margin-top: -20px;
+    }
+
+    .friday, .saturday, .sunday {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .schedule-absolute {
+        width: 400px;
+    }
+
+    td {
+        font-size: 22px;
+    }
+}
