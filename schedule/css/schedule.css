@@ -56,7 +56,12 @@ body {
     font-family: "Avenir-Heavy";
 }
 
-.link {
+a {
+    text-decoration: none;
+    color: #FFAD0B;
+}
+
+a:visited {
     text-decoration: none;
     color: #FFAD0B;
 }
